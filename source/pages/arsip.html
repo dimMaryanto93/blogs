@@ -1,0 +1,40 @@
+---
+layout: page
+title: "Arsip"
+---
+
+<div>
+  <div>
+  	<ul class="list-unstyled">
+  	  {% for post in site.posts %}
+  	    {% unless post.next %}
+  	      <span id="{{ post.date | date: '%Y-%b' }}" class="post-list-header text-primary">
+            <i class="fa fa-calendar-o"></i> {{ post.date | date: '%B %Y' }}
+          </span>
+          <hr>
+  	    {% else %}
+  	      {% capture year %}{{ post.date | date: '%Y - %B' }}{% endcapture %}
+  	      {% capture nyear %}{{ post.next.date | date: '%Y - %B' }}{% endcapture %}
+  	      {% if year != nyear %}
+  	        <span id="{{ post.date | date: '%Y-%b' }}" class="post-list-header  text-primary">
+              <i class="fa fa-calendar-o"></i> {{ post.date | date: '%B %Y' }}
+            </span>
+            <hr>
+  	      {% endif %}
+  	    {% endunless %}
+
+  	    <li class="post-list">
+          <div>
+            <a href="{{ post.url }}" class="h3">
+              <span class="fa fa-chevron-right small"></span> {{ post.title }}
+            </a>
+          </div>
+          <div class="text-muted small post-list-date">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            {{ post.date | date: '%Y, %B %d - %A' }}
+          </div>
+        </li>
+  	  {% endfor %}
+  	</ul>
+  </div>
+</div>

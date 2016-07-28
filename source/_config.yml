@@ -1,3 +1,20 @@
-name: Your New Jekyll Site
-markdown: redcarpet
-pygments: true
+# Site settings
+title: Blog - Dimas Maryanto
+email: software.dimmaryanto@hotmail.com
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://blog-dimmaryanto.rhcloud.com" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+paginate: 3
+
+# Permalinks
+permalink: post/:categories/:title/
+paginate_path: halaman-:num/
+
+# Plugins
+gems:
+- jekyll-paginate
+- jekyll-youtube
+- jekyll-gist

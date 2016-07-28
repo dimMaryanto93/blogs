@@ -1,0 +1,27 @@
+---
+layout: {{ layout }}
+title: "{{ title }}"
+author: Dimas Maryanto
+comments: yes
+os:
+- windows8
+- linux
+- apple
+- debian
+- ubuntu
+- redhat
+- android
+language: {{ language }}
+repository: {{ repo }}
+categories:
+- {{ category }}
+- {{ category }}
+tags:
+- {{ tag }}
+- {{ tag }}
+- {{ tag }}
+references:
+- {{ ref }}
+- {{ ref }}
+- {{ ref }}
+---

@@ -1,0 +1,14 @@
+{% if page.references %}
+<hr>
+<h2>
+  <i class="fa fa-external-link-square"></i>
+  <small>Sumber Referensi</small>
+</h2>
+<div>
+  <ul>
+    {% for ref in page.references %}
+      <li><a href="{{ ref }}" target="_blank" class="text-info small">{{ ref }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}

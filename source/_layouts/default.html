@@ -1,44 +1,115 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+    <title>
+      {% if page.title %}
+        Blog: Dimas Maryanto - {{ page.title | escape }}
+      {% else %}
+        Blog: Dimas Maryanto
+      {% endif %}
+    </title>
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-    </head>
-    <body>
+    <!-- css unused
+      <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+      <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    -->
+    <link rel="stylesheet" href="{{ "/assets/awesome-icon/css/font-awesome.min.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/assets/bootstrap/css/bootstrap.min.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/assets/jquery/css/jquery-ui.min.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/assets/prismjs/css/prism.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/assets/bxslider/jquery.bxslider.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/static/css/index.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/assets/devicon/devicon.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/assets/devicon/devicon-colors.css" | prepend: site.baseurl }}">
 
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
+    <script type="text/javascript" src="{{ "/assets/jquery/js/jquery-1.12.3.min.js" | prepend: site.baseurl }}"></script>
+    <script type="text/javascript" src="{{ "/assets/jquery/js/jquery-ui.min.js" | prepend: site.baseurl }}"></script>
+    <script type="text/javascript" src="{{ "/assets/jquery/js/jquery.waypoints.min.js" | prepend: site.baseurl }}"></script>
+    <script type="text/javascript" src="{{ "/assets/bootstrap/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+    <script type="text/javascript" src="{{ "/assets/prismjs/js/prism.js" | prepend: site.baseurl }}"></script>
 
-          {{ content }}
-
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
-            </div>
-          </div>
+    <script type="text/javascript" src="{{ "/static/js/smooth-scrolling.js" | prepend: site.baseurl }}"></script>
+    <script type="text/javascript" src="{{ "/assets/bxslider/jquery.fitvids.js" | prepend: site.baseurl }}"></script>
+    <script type="text/javascript" src="{{ "/assets/bxslider/jquery.bxslider.min.js" | prepend: site.baseurl }}"></script>
+    <script type="text/javascript" src="{{ "/static/js/bxslider.js" | prepend: site.baseurl }}"></script>
+    <script type="text/javascript" src="{{ "/static/js/responsive.js" | prepend: site.baseurl }}"></script>
+    <script type="text/javascript" src="{{ "/static/js/facebook-plugin.js" | prepend: site.baseurl }}"></script>
+  </head>
+  <body id="home">
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{{ site.baseurl }}/">
+            <span class="fa fa-code"></span>
+            {{ site.title }}
+          </a>
         </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="{{ site.baseurl }}/pages/arsip/" target="_self">Arsip</a></li>
+            <li><a href="http://personal-dimmaryanto.rhcloud.com" target="_blank">Daftar Riwayat Hidup</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 
-    </body>
+    <div class="container">
+      <div class="col-md-4">
+        <div id="profile">
+          <h3>Profil Saya</h3>
+          <hr>
+          <p>{{ site.data.profile.status }}</p>
+          <img id="picture_profile" src="/static/img/profile.png" alt="" class="img-responsive img-thumbnail img-rounded" width="150" height="150"/>
+          <h3>{{ site.data.profile.nama }}</h3>
+          <p class="text-muted">
+            {{ site.data.profile.messages }}
+          </p>
+        </div>
+        <hr>
+      </div>
+      <div class="col-md-8 lead">
+        {{ content }}
+      </div>
+    </div>
+  </body>
+  <footer class="footer">
+    <div class="container-fluid footer-content">
+      <div>
+        <ul class="list-inline" id="footer-linked">
+            <li><a href="#home">Home</a></li>
+            <li class="footer-menu-divider">&sdot;</li>
+            <li><a href="{{ site.baseurl }}/pages/arsip/">Arsip</a></li>
+            <li class="footer-menu-divider">&sdot;</li>
+            <li><a href="http://personal-dimmaryanto.rhcloud.com" target="_blank">Daftar Riwayat Hidup</a></li>
+        </ul>
+      </div>
+      <div class="text-right text-muted" id="footer-sponsored">
+        <div>
+          Proudly hosted by
+          <a href="https://github.com/" class="hosted" target="_blank">
+            <i class="devicon-github-plain-wordmark colored"></i>
+          </a>
+        </div>
+        <div>
+          Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
+        </div>
+      </div>
+      <div class="text-muted" id="footer-copy">
+        {{ site.data.profile.copyright }}
+      </div>
+    </div>
+  </footer>
 </html>

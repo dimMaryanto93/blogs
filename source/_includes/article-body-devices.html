@@ -1,0 +1,20 @@
+<div class="devices">
+  {% if page.os %}
+  <p class="text-muted small">
+    Bacaan untuk pengguna OS:
+  </p>
+  <ul class="list-inline">
+    {% for device in page.os %}
+      {% for icon in site.data.devicon %}
+        {% if icon.name == device %}
+          {% assign versions = icon.versions %}
+          <li>
+            <i class="devicon-{{ icon.name }}-{{ versions.font[0] }} colored icon-title"></i>
+          </li>
+          {{ break; }}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </ul>
+  {% endif %}
+</div>

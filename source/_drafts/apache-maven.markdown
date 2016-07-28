@@ -1,0 +1,24 @@
+---
+layout: post
+title: "Apache-maven"
+author: Dimas Maryanto
+comments: yes
+os:
+- windows8
+- linux
+- apple
+- debian
+- ubuntu
+- redhat
+- android
+language:
+repository:
+categories:
+- Java
+- Maven
+tags:
+- Java
+- Build Tools
+- Apache Maven
+references:
+---
