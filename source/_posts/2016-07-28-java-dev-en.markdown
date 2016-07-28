@@ -34,13 +34,13 @@ Di bahasa pemograman Java kita harus melakukan setup JDK atau kependekan dari _J
 
 * javac (untuk melakukan compilasi)
 
-```
+```bash
 javac NamaKelas.java
 ```
 
 * java (untuk menjalankan hasil compilasi atau bytecode)
 
-```
+```bash
 java NamaKelas
 ```
 
@@ -128,7 +128,7 @@ java -version && javac -version
 
 kalo berhasil maka outputnya seperti berikut:
 
-```
+```bash
 C:\Users\softw>java -version && java -version
 java version "1.8.0_91"
 Java(TM) SE Runtime Environment (build 1.8.0_91-b15)
@@ -150,31 +150,31 @@ Nah untuk setting di Windows udah selesai dan klo install di MacOS kurang lebih 
 
 Sekarang saya mau setting di Linux UBuntu dan Fedora. Untuk pertama saya setting di UBuntu dulu ya. Kalo di ubuntu sih sebenernya gampang kita bisa install via ppa dengan menambahkan ```ppa:webupd8team/java``` berikut perintahnya
 
-```
+```bash
 sudo add-apt-repository ppa:webupd8team/java
 ```
 
 Setelah itu kita update systemnya
 
-```
+```bash
 sudo apt-get update
 ```
 
 Kemudian kita install
 
-```
+```bash
 sudo apt-get install oracle-java8-installer
 ```
 
 Setelah itu kita update konfigurasi runtime environmentnya menggunakan perintah berikut ini:
 
-```
+```bash
 sudo update-alternatives --config java
 ```
 
 maka akan menampilkan output seperti berikut:
 
-```
+```bash
 root@Aspire-E5-473G:~# update-alternatives --config java
 There are 2 choices for the alternative java (providing /usr/bin/java).
 
@@ -189,13 +189,13 @@ Press <enter> to keep the current choice[*], or type selection number:
 
 Nah dari output diatas kita pilih yang **java-8-oracle** jadi kita input ```0``` sebagai default runtime environmentnya. kemudian kita cek deh dengan terminal:
 
-```
+```bash
 java -version && javac -version
 ```
 
 berikut adalah outputnya:
 
-```
+```bash
 dimmaryanto@Aspire-E5-473G:~$ java -version && javac -version
 java version "1.8.0_101"
 Java(TM) SE Runtime Environment (build 1.8.0_101-b13)
@@ -215,26 +215,26 @@ Untuk install Oracle JDK di Fedora sebenarnya ada banyak cara salah satunya meng
 
 Setelah selesai di download silahkan anda buka terminalnya kemudian arahkan ke hasil download seperti berikut:
 
-```
+```bash
 [root@localhost ~]# cd /home/dimmaryanto93/Downloads/
 ```
 
 Untuk melakukan cek filenya ada atau gak gunakan perintah ```ls``` berikut outputnya:
 
-```
+```bash
 [root@localhost Downloads]# ls
 jdk-8u101-linux-x64.rpm
 ```
 
 Setelah file ditemukan sekarang kita install filenya menggunakan ```rpm``` seperti berikut:
 
-```
+```bash
 [root@localhost Downloads]# rpm -Uivh jdk-8u101-linux-x64.rpm
 ```
 
 Berikut outputnya:
 
-```
+```bash
 Preparing...                          ################################# [100%]
 Updating / installing...
    1:jdk1.8.0_101-2000:1.8.0_101-fcs  ################################# [100%]
@@ -251,13 +251,13 @@ Unpacking JAR files...
 
 Kemudian setelah selesai kita setting default runtime environtmentnya, karena secara default Fedora sendiri udah menggunakan OpenJDK. karena saya disini bekerja dengan Java 8 maka saya update configurasi ke OracleJDK berikut ada perintahnya:
 
-```
+```bash
 alternatives --config java
 ```
 
 berikut outputnya:
 
-```
+```bash
 [root@localhost ~]# alternatives --config java
 
 There are 2 programs which provide 'java'.
@@ -272,13 +272,13 @@ Enter to keep the current selection[+], or type selection number:
 
 Kemudian kita pilih yang version Oracle yaitu yang nomor ```2``` atau ```/usr/java/jdk1.8.0_101/jre/bin/java``` sebagai default runtime environmentnya. setelah itu tekan **Enter** dan selesai deh tinggal kita cek dengan perintah berikut:
 
-```
+```bash
 java -version && javac -version
 ```
 
 maka berikut outputnya:
 
-```
+```bash
 [dimmaryanto93@localhost ~]$ java -version && javac -version
 java version "1.8.0_101"
 Java(TM) SE Runtime Environment (build 1.8.0_101-b13)
