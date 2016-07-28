@@ -3,7 +3,7 @@ title: Blog - Dimas Maryanto
 email: software.dimmaryanto@hotmail.com
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://blog-dimmaryanto.rhcloud.com" # the base hostname & protocol for your site
+url: "http://software.dimmaryanto93.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
