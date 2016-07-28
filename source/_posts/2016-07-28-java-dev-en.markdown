@@ -223,9 +223,9 @@ Untuk install Oracle JDK di Fedora sebenarnya ada banyak cara salah satunya meng
 
 Setelah selesai di download silahkan anda buka terminalnya kemudian arahkan ke hasil download seperti berikut:
 
-```bash
+{% highlight bash %}
 [root@localhost ~]# cd /home/dimmaryanto93/Downloads/
-```
+{% endhighlight %}
 
 Untuk melakukan cek filenya ada atau gak gunakan perintah ```ls``` berikut outputnya:
 
