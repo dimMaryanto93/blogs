@@ -10,7 +10,7 @@ markdown: kramdown
 paginate: 3
 
 # Permalinks
-permalink: post/:categories/:title/
+permalink: berita/:categories/:title/
 paginate_path: halaman-:num/
 
 # Plugins

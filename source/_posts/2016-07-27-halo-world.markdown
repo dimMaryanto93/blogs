@@ -9,7 +9,7 @@ language:
 references:
 repository:
 categories:
-- none
+- uncategory
 tags:
 - Pembukaan
 ---

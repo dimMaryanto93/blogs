@@ -44,7 +44,7 @@
   <body id="home">
     <!-- Static navbar -->
     <nav class="navbar navbar-default navbar-static-top">
-      <div class="container-fluid">
+      <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -59,7 +59,13 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="{{ site.baseurl }}/pages/arsip/" target="_self">Arsip</a></li>
+            {% for page in site.pages %}
+              {% if page.title %}
+              <li>
+                <a href="{{ page.url }}" target="_self">{{ page.title }}</a>
+              </li>
+              {% endif %}
+            {% endfor %}
             <li><a href="http://personal.dimmaryanto93.com" target="_blank">Daftar Riwayat Hidup</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -86,21 +92,12 @@
     </div>
   </body>
   <footer class="footer">
-    <div class="container-fluid footer-content">
-      <div>
-        <ul class="list-inline" id="footer-linked">
-            <li><a href="#home">Home</a></li>
-            <li class="footer-menu-divider">&sdot;</li>
-            <li><a href="{{ site.baseurl }}/pages/arsip/">Arsip</a></li>
-            <li class="footer-menu-divider">&sdot;</li>
-            <li><a href="http://personal.dimmaryanto93.com" target="_blank">Daftar Riwayat Hidup</a></li>
-        </ul>
-      </div>
+    <div class="container footer-content">
       <div class="text-right text-muted" id="footer-sponsored">
         <div>
           Proudly hosted by
-          <a href="https://github.com/" class="hosted" target="_blank">
-            <i class="devicon-github-plain-wordmark colored"></i>
+          <a href="https://www.openshift.com" class="hosted" target="_blank">
+            <i class="devicon-redhat-plain-wordmark colored"></i>
           </a>
         </div>
         <div>
