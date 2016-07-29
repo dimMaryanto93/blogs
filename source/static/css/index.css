@@ -49,7 +49,7 @@ html {
 }
 
 body {
-  margin: 0 0 125px; /* bottom = footer height */
+  margin: 75px 0 125px; /* bottom = footer height */
 }
 
 footer {

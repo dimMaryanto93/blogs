@@ -32,6 +32,8 @@ Halo nah sesuai topik yang di Judul, jadi kali ini saya akan membuat atau membah
 
 Di bahasa pemograman Java kita harus melakukan setup JDK atau kependekan dari _Java Development Kit_. JDK bertujuan untuk menyediakan sekumpulan tools handal yang disediakan oleh para insyinyur Java (gelar) contoh diantarnya sebagai berikut
 
+<!--more-->
+
 * javac (untuk melakukan compilasi)
 
 {% highlight bash %}

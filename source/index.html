@@ -40,11 +40,13 @@ layout: default
         <!-- end post header -->
 
         <!-- start post body -->
-        <div class="body-post">
-          {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
-          <a href="{{ post.url }}" class="btn btn-link">
-            Lanjutkan...
-          </a>
+        <div class="lead body-post">
+          {% if post.content contains '<!--more-->' %}
+	         {{ post.content | split:'<!--more-->' | first }}
+	         <p><a href="{{ post.url }}">Lanjut membaca ...</a></p>
+          {% else %}
+	         {{ post.content }}
+          {% endif %}
         </div>
         <!-- end post body -->
         <hr>
