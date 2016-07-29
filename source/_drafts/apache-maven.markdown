@@ -11,7 +11,7 @@ os:
 - ubuntu
 - redhat
 - android
-language:
+language: java
 repository:
 categories:
 - Java
