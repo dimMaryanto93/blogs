@@ -42,6 +42,10 @@
   font-size:20px;
 }
 
+#list-button-follow li{
+  padding: 5px;
+}
+
 html {
   position: relative;
   min-height: 100%;
@@ -103,6 +107,3 @@ pre {
   margin: 0 auto;
   display: block;
 }
-
-.fb-comments, .fb-comments iframe[style], .fb-like-box, .fb-like-box iframe[style] {width: 100% !important;}
-.fb-comments span, .fb-comments iframe span[style], .fb-like-box span, .fb-like-box iframe span[style] {width: 100% !important;}

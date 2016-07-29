@@ -30,6 +30,7 @@
 
     <link rel="stylesheet" href="{{ "/static/css/index.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/static/css/sintax.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/static/css/facebook-responsive.css" | prepend: site.baseurl }}">
 
     <script type="text/javascript" src="{{ "/assets/jquery/js/jquery-1.12.3.min.js" | prepend: site.baseurl }}"></script>
     <script type="text/javascript" src="{{ "/assets/jquery/js/jquery-ui.min.js" | prepend: site.baseurl }}"></script>
@@ -79,36 +80,21 @@
     <div class="container">
       <div class="col-md-4">
         <div id="profile">
-          <h3>Profil Saya</h3>
-          <hr>
           <p>{{ site.data.profile.status }}</p>
           <img id="picture_profile" src="/static/img/profile.png" alt=""
             class="img-responsive img-thumbnail img-rounded" width="150" height="150"/>
           <h3>{{ site.data.profile.nama }}</h3>
+          <div>
+            {% include profile-button-follow.html %}
+          </div>
           <p class="text-muted">
             {{ site.data.profile.messages }}
           </p>
         </div>
         <div>
-          <ul class="list-inline">
-            <li>
-              <div class="fb-follow" data-href="https://www.facebook.com/dimmaryanto93"
-              data-layout="box_count" data-size="large" data-show-faces="true"></div>
-            </li>
-            <li>
-              <a href="https://twitter.com/dimMaryanto93" class="twitter-follow-button"
-                data-size="large" data-lang="id" data-show-count="true">
-                  Follow @dimMaryanto93
-              </a>
-            </li>
-          </ul>
+          {% include profile-twitter-embed.html %}
         </div>
-        <div>
-          <a class="twitter-timeline" data-lang="id"
-            data-height="400" href="https://twitter.com/dimMaryanto93">
-            Tweets by dimMaryanto93
-          </a>
-        </div>
+        <hr>
       </div>
       <div class="col-md-8 lead">
         {{ content }}

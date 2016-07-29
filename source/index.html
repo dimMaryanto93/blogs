@@ -22,7 +22,9 @@ layout: default
             {% else %}
               <i class="fa fa-pencil icon-title text-warning"></i>
             {% endif %}
-            {{post.title}}
+            <a href="{{ post.url }}">
+              {{post.title}}
+            </a>
           </div>
           <div class="post-metadata text-muted">
             <ul class="list-inline">
