@@ -1,0 +1,17 @@
+<div class="tags">
+  <p class="text-muted small">
+    {% if page.tags %}
+    <hr>
+      <ul class="list-inline">
+        {% for tag in page.tags %}
+          <li>
+            <span class="label label-default">
+              <i class="fa fa-tag"></i>
+              {{ tag }}
+            </span>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </p>
+</div>
