@@ -341,7 +341,7 @@ package: com.hotmail.dimmaryanto.software
 
 Kemudian tekan **Enter** dan maka berikut adalah log nya:
 
-{% highlight log %}
+{% highlight bash %}
 [INFO] ----------------------------------------------------------------------------
 [INFO] Using following parameters for creating project from Old (1.x) Archetype: maven-archetype-quickstart:1.1
 [INFO] ----------------------------------------------------------------------------
