@@ -10,7 +10,6 @@ os:
 - debian
 - ubuntu
 - redhat
-- android
 language: java
 repository:
 categories:

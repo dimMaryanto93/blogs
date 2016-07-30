@@ -13,7 +13,7 @@ os:
 - redhat
 - android
 language: java
-repository: https://github.com/dimMaryanto93/tutorial-java-mvn.git
+repository: https://github.com/dimMaryanto93/belajar-apache-maven.git
 categories:
 - Java
 - BuildTool
