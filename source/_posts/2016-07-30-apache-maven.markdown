@@ -418,7 +418,7 @@ Folder ini pada umumnya digunakan menyimpan kodingan kita akan tulis atau bahasa
 
 Folder ini digunakan untuk menyimpan source code hanya file ```.java``` saja, jika menyimpan file berekstensi lain contohnya ```.xml```, ```.png``` dan lain. maka file tersebut tidak akan ikut diikutsertakan dihasil akhirnya. Untuk membuktikannya ok kita buat file misalnya ```style.css``` dalam folder ini, kurang lebih hasilnya kayak gini.
 
-```
+{% highlight bash %}
 dimmaryanto@MSI-Z87:~/temp/dimmaryanto-blog/java-buildtools-mvn/template-mvn-quickstart$ tree src/main/java/
 src/main/java/
 ├── com
@@ -429,7 +429,7 @@ src/main/java/
 └── style.css
 
 4 directories, 2 files
-```
+{% endhighlight %}
 
 kemudian kita lakukan perintah ```mvn package``` setelah ikut kita lihat hasilnya apakah file ```style.css``` ada dalam ```.jar```, file ```.jar``` dapat ditemukan di folder ```target/```, Berikut ini hasilnya
 
@@ -458,10 +458,10 @@ mkdir -p src/main/resources
 
 maka hasilnya seperti berikut:
 
-```
+{% highlight bash %}
 dimmaryanto@MSI-Z87:~/temp/dimmaryanto-blog/java-buildtools-mvn/template-mvn-quickstart$ ls src/main/
 java  resources
-```
+{% endhighlight %}
 
 Dalam folder ```src/main/``` ada 2 folder yaitu ```java``` dan ```resources```
 
@@ -473,7 +473,7 @@ mv template-mvn-quickstart/src/main/java/style.css template-mvn-quickstart/src/m
 
 Dan hasilnya seperti berikut setelah dipindahkan
 
-```
+{% highlight bash %}
 src/main/
 ├── java
 │   └── com
@@ -485,7 +485,7 @@ src/main/
     └── style.css
 
 6 directories, 2 files
-```
+{% endhighlight %}
 
 Setelah itu kita lakukan package lagi dan karena kita menyimpanya diluar maka pasti filenya ada di root direktory jadi kita bisa buka pake program archive seperti zip, winrar dan lain-lain. Berikut adalah hasilnya
 
