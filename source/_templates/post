@@ -12,6 +12,7 @@ os:
 - redhat
 - android
 language: {{ language }}
+gist: {{ gist }}
 repository: {{ repo }}
 categories:
 - {{ category }}

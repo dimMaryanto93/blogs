@@ -4,6 +4,7 @@ title: "Setup Oracle JDK, Java Development Environtment"
 date: 2016-07-28T17:30:24+07:00
 author: Dimas Maryanto
 comments: yes
+gist:
 os:
 - windows8
 - linux

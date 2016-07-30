@@ -5,6 +5,7 @@ date: 2016-07-27T12:37:49+07:00
 author: Dimas Maryanto
 comments: yes
 os:
+gist: 
 language:
 references:
 repository:

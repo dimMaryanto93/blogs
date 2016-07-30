@@ -12,6 +12,7 @@ os:
 - redhat
 language: java
 repository:
+gist:
 categories:
 - Java
 - JPA

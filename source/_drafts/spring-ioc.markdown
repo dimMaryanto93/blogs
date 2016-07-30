@@ -11,6 +11,7 @@ os:
 - ubuntu
 - redhat
 language: java
+gist:
 repository: https://github.com/dimMaryanto93/belajar-spring-framework.git
 categories:
 - Java
