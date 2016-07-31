@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<article class="post text-justify" itemscope itemtype="http://schema.org/BlogPosting">
+  {% include article-header.html %}
+  <section id="article-body">
+    <div itemprop="articleBody">
+      {% include article-body-header.html %}
+      {% include article-body-devices.html %}
+      <hr>
+      <div class="post-content">
+        {{ content }}
+      </div>
+      <div class="post-tags">
+        {% include article-body-tags.html %}
+      </div>
+      <div class="post-references">
+        {% include article-body-refrences.html %}
+      </div>
+    </div>
+
+    <div class="post-sosial">
+      {% include article-body-sosial.html %}
+    </div>
+
+    <div class="post-related small">
+      {% include article-body-related-post.html %}
+    </div>
+  </section>
+</article>

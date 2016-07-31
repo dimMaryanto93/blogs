@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
     <title>
       {% if page.title %}
@@ -13,113 +14,8 @@
       {% endif %}
     </title>
 
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-
-    <!-- css unused
-      <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-      <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-      <link rel="stylesheet" href="{{ "/assets/prismjs/css/prism.css" | prepend: site.baseurl }}">
-      <script type="text/javascript" src="{{ "/assets/prismjs/js/prism.js" | prepend: site.baseurl }}"></script>
-    -->
-    <link rel="stylesheet" href="{{ "/assets/awesome-icon/css/font-awesome.min.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ "/assets/bootstrap/css/bootstrap.min.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ "/assets/jquery/css/jquery-ui.min.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ "/assets/bxslider/jquery.bxslider.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ "/assets/devicon/devicon.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ "/assets/devicon/devicon-colors.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ "/assets/img-zoom/zoom.css" | prepend: site.baseurl }}">
-
-    <link rel="stylesheet" href="{{ "/static/css/index.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ "/static/css/sintax.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ "/static/css/facebook-responsive.css" | prepend: site.baseurl }}">
-
-    <script type="text/javascript" src="{{ "/assets/jquery/js/jquery-1.12.3.min.js" | prepend: site.baseurl }}"></script>
-    <script type="text/javascript" src="{{ "/assets/jquery/js/jquery-ui.min.js" | prepend: site.baseurl }}"></script>
-    <script type="text/javascript" src="{{ "/assets/jquery/js/jquery.waypoints.min.js" | prepend: site.baseurl }}"></script>
-    <script type="text/javascript" src="{{ "/assets/bootstrap/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
-    <script type="text/javascript" src="{{ "/assets/bxslider/jquery.fitvids.js" | prepend: site.baseurl }}"></script>
-    <script type="text/javascript" src="{{ "/assets/bxslider/jquery.bxslider.min.js" | prepend: site.baseurl }}"></script>
-    <script type="text/javascript" src="{{ "/assets/img-zoom/zoom.min.js" | prepend: site.baseurl }}"></script>
-    <script type="text/javascript" src="{{ "/assets/img-zoom/transition.js" | prepend: site.baseurl }}"></script>
-
-    <script type="text/javascript" src="{{ "/static/js/smooth-scrolling.js" | prepend: site.baseurl }}"></script>
-    <script type="text/javascript" src="{{ "/static/js/bxslider.js" | prepend: site.baseurl }}"></script>
-    <script type="text/javascript" src="{{ "/static/js/responsive.js" | prepend: site.baseurl }}"></script>
-    <script type="text/javascript" src="{{ "/static/js/facebook-plugin.js" | prepend: site.baseurl }}"></script>
-    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
   </head>
-  <body id="home">
-    <!-- Static navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-            data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="{{ site.baseurl }}/">
-            <span class="fa fa-code"></span>
-            {{ site.title }}
-          </a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            {% for page in site.pages %}
-              {% if page.title %}
-              <li>
-                <a href="{{ page.url }}" target="_self">{{ page.title }}</a>
-              </li>
-              {% endif %}
-            {% endfor %}
-            <li><a href="http://personal.dimmaryanto93.com" target="_blank">Daftar Riwayat Hidup</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+  <body>
 
-    <div class="container">
-      <div class="col-md-4">
-        <div id="profile">
-          <p>{{ site.data.profile.status }}</p>
-          <img id="picture_profile" src="/static/img/profile.png" alt=""
-            class="img-responsive img-thumbnail img-rounded" width="150" height="150"/>
-          <h3>{{ site.data.profile.nama }}</h3>
-          <div>
-            {% include profile-button-follow.html %}
-          </div>
-          <p class="text-muted">
-            {{ site.data.profile.messages }}
-          </p>
-        </div>
-        <div>
-          {% include profile-twitter-embed.html %}
-        </div>
-        <hr>
-      </div>
-      <div id="post-content" class="col-md-8 lead">
-        {{ content }}
-      </div>
-    </div>
   </body>
-  <footer class="footer">
-    <div class="container footer-content">
-      <div class="text-right text-muted" id="footer-sponsored">
-        <div>
-          Proudly hosted by
-          <a href="https://www.openshift.com" class="hosted" target="_blank">
-            <i class="devicon-redhat-plain-wordmark colored"></i>
-          </a>
-        </div>
-        <div>
-          Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
-        </div>
-      </div>
-      <div class="text-muted" id="footer-copy">
-        {{ site.data.profile.copyright }}
-      </div>
-    </div>
-  </footer>
 </html>

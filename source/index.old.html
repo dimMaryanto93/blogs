@@ -1,0 +1,94 @@
+---
+layout: default
+---
+
+<section id="post">
+  <!-- start post loop -->
+  <div>
+    <ul class="list-unstyled">
+      {% for post in paginator.posts %}
+      <li>
+        <!-- start post header -->
+        <div class="header-post">
+          <div class="post-title">
+            {% if post.language %}
+              {% for icon in site.data.devicon %}
+                {% if icon.name == post.language %}
+                  {% assign versions = icon.versions %}
+                  <i class="devicon-{{ icon.name }}-{{ versions.font[0] }} colored icon-title"></i>
+                  {{ break }}
+                {% endif %}
+              {% endfor %}
+            {% else %}
+              <i class="fa fa-pencil icon-title text-warning"></i>
+            {% endif %}
+            <a href="{{ post.url }}">
+              {{post.title}}
+            </a>
+          </div>
+          <div class="post-metadata text-muted">
+            <ul class="list-inline">
+              <li>
+                <span class="fa fa-calendar text-danger icon-metadata"></span>
+                {{ post.date | date: "%d %B %Y" }}
+              </li>
+              <li>
+                <span class="fa fa-user icon-metadata text-primary"></span>
+                {{ post.author }}
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- end post header -->
+
+        <!-- start post body -->
+        <div class="lead body-post">
+          {% if post.content contains '<!--more-->' %}
+	         {{ post.content | split:'<!--more-->' | first }}
+	         <p><a href="{{ post.url }}">Lanjut membaca ...</a></p>
+          {% else %}
+	         {{ post.content }}
+          {% endif %}
+        </div>
+        <!-- end post body -->
+        <hr>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <!-- end loop post -->
+  <!-- start pagination control -->
+  <div class="post-pagination">
+    <ul class="pagination">
+      {% if paginator.total_pages > 1 %}
+        <li class="page-item disabled">
+          <a><i class="fa fa-files-o" aria-hidden="true"></i> Halaman:</a>
+        </li>
+        {% if paginator.previous_page %}
+        <li class="page-item">
+          <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+          </a>
+        </li>
+        {% else %}
+        <li class="page-item disabled">
+          <a><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+        </li>
+        {% endif %}
+        <li class="page-item active disabled"><a href="#">{{ paginator.page }} dari {{ paginator.total_pages }}</a></li>
+        {% if paginator.next_page %}
+        <li class="page-item">
+          <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        {% else %}
+        <li class="page-item disabled">
+          <a><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+        </li>
+        {% endif %}
+      {% endif %}
+    </ul>
+  </div>
+  <!-- end pagination control -->
+</section>
