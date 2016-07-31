@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="{{ "/assets/bxslider/jquery.bxslider.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/assets/devicon/devicon.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/assets/devicon/devicon-colors.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/assets/img-zoom/zoom.css" | prepend: site.baseurl }}">
 
     <link rel="stylesheet" href="{{ "/static/css/index.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/static/css/sintax.css" | prepend: site.baseurl }}">
@@ -38,6 +39,8 @@
     <script type="text/javascript" src="{{ "/assets/bootstrap/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
     <script type="text/javascript" src="{{ "/assets/bxslider/jquery.fitvids.js" | prepend: site.baseurl }}"></script>
     <script type="text/javascript" src="{{ "/assets/bxslider/jquery.bxslider.min.js" | prepend: site.baseurl }}"></script>
+    <script type="text/javascript" src="{{ "/assets/img-zoom/zoom.min.js" | prepend: site.baseurl }}"></script>
+    <script type="text/javascript" src="{{ "/assets/img-zoom/transition.js" | prepend: site.baseurl }}"></script>
 
     <script type="text/javascript" src="{{ "/static/js/smooth-scrolling.js" | prepend: site.baseurl }}"></script>
     <script type="text/javascript" src="{{ "/static/js/bxslider.js" | prepend: site.baseurl }}"></script>
@@ -96,7 +99,7 @@
         </div>
         <hr>
       </div>
-      <div class="col-md-8 lead">
+      <div id="post-content" class="col-md-8 lead">
         {{ content }}
       </div>
     </div>
