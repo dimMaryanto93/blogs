@@ -29,11 +29,9 @@ references:
 
 Halo balik lagi di blog saya, nah kali ini sama mau share lagi tentang JDBC yaitu Java Database Connectivity. Nah JDBC ini adalah salah satu teknologi yang penting jika ingin membuat aplikasi yang berbasis Database seperti membuat aplikasi berbasis Sistem Informasi. karena konsepnya sendiri dari sistem informasi adalah
 
-<ol class="breadcrumb">
-  <li>Input</li>
-  <li>Proses</li>
-  <li class="active">Output</li>
-</ol>
+* Input
+* Proses
+* Output
 
 Untuk menghandle input yang paling mudah adalah dengan menggunakan database sebenarnya bisa saja kita tanpa menggunakan database tetapi menggunakan sebuah file untuk menampung datanya tapi menurut saya itu ribet dan butuh proses panjang dalam melakukan pencarian datanya maka dari  itu disini kita menggunakan database.
 

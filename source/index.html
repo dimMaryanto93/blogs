@@ -1,3 +1,87 @@
 ---
 layout: default
 ---
+<section>
+  {% for post in paginator.posts %}
+    <div class="section">
+      <div class="post-metadata">
+        <div>
+          <small>
+            <i class="fa fa-calendar-o"></i>
+            {{ post.date | date: "%d %B %Y" }}
+          </small>
+        </div>
+        <div>
+          <small>
+            <i class="fa fa-user"></i>
+            {{ post.author }}
+          </small>
+        </div>
+      </div>
+      <div class="post-title center">
+        <h4>
+          {% if post.language %}
+            {% for icon in site.data.devicon %}
+              {% if icon.name == post.language %}
+                {% assign versions = icon.versions %}
+                  <i class="devicon-{{ icon.name }}-{{ versions.font[0] }} colored icon-title"></i>
+                {{ break }}
+              {% endif %}
+            {% endfor %}
+          {% else %}
+          <i class="fa fa-pencil icon-title text-warning"></i>
+          {% endif %}
+          <small>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </small>
+        </h4>
+      </div>
+
+      <div class="post-content">
+        {% if post.content contains '<!--more-->' %}
+          {{ post.content | split:'<!--more-->' | first }}
+          <p><a href="{{ post.url }}">Lanjut membaca ...</a></p>
+        {% else %}
+          {{ post.content }}
+        {% endif %}
+      </div>
+    </div>
+    <div class="divider"></div>
+  {% endfor %}
+</section>
+<section>
+  <!-- start pagination control -->
+  <div>
+    <ul class="pagination">
+      {% if paginator.total_pages > 1 %}
+        <li>
+          <a>Halaman:</a>
+        </li>
+        {% if paginator.previous_page %}
+        <li>
+          <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+            <i class="material-icons">chevron_left</i>
+          </a>
+        </li>
+        {% else %}
+        <li class="disabled">
+          <a><i class="material-icons">chevron_left</i></a>
+        </li>
+        {% endif %}
+          <li><a>{{ paginator.page }} dari {{ paginator.total_pages }}</a></li>
+        {% if paginator.next_page %}
+        <li>
+          <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+            <i class="material-icons">chevron_right</i>
+          </a>
+        </li>
+        {% else %}
+        <li class="disabled">
+          <a><i class="material-icons">chevron_right</i></a>
+        </li>
+        {% endif %}
+      {% endif %}
+    </ul>
+  </div>
+  <!-- end pagination control -->
+</section>

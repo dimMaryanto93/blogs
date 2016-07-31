@@ -1,0 +1,46 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.center-image{
+  margin: 0 auto;
+  display: block;
+}
+
+.post-content li{
+  list-style: inside;
+  list-style-position: inside;
+}
+
+pre{
+  font-size: 16px;
+  padding: 10px;
+  margin: 10px;
+}
+
+figure pre{
+  border-radius: 5px;
+  border: 0.5px solid lightgray;
+}
+
+h1{
+  font-size: 35px;
+}
+
+h2{
+  font-size: 30px;
+}
+
+h3{
+  font-size: 28px;
+}
+
+#logo-hosted, #text-hosted{
+  text-shadow: 1px 1px darkgray;
+}

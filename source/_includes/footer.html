@@ -1,0 +1,42 @@
+<footer class="page-footer light-blue">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Halaman</h5>
+        <div>
+          {% for page in site.pages %}
+            {% if page.title %}
+              <div>
+                <a href="{{ page.url }}">
+                  <span class="white-text">{{ page.title }}</span>
+                </a>
+              </div>
+            {% endif %}
+          {% endfor %}
+          <div>
+            <a href="http://personal.dimmaryanto93.com" target="_blank">
+              <span class="white-text">Daftar Riwayat Hidup</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col l4 offset-l2 s12 flow-text">
+        <div class="white-text" id="text-hosted">
+          Proudly hosted by
+        </div>
+        <div class="right" id="logo-hosted">
+          <a href="https://www.openshift.com" class="hosted" target="_blank">
+            <i class="large devicon-redhat-plain-wordmark colored"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright blue">
+    <div class="container">
+      <div>
+        {{ site.data.profile.copyright }}
+      </div>
+    </div>
+  </div>
+</footer>

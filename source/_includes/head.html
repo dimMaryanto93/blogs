@@ -1,0 +1,31 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+<title>
+  {% if page.title %}
+    Blog: Dimas Maryanto - {{ page.title | escape }}
+  {% else %}
+    Blog: Dimas Maryanto
+  {% endif %}
+</title>
+
+<!-- css import -->
+<link rel="stylesheet" href="{{ "/assets/awesome-icon/css/font-awesome.min.css" | prepend: site.baseurl }}">
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="{{ "/assets/materialize/css/materialize.min.css" | prepend: site.baseurl }}">
+<link rel="stylesheet" href="{{ "/static/css/responsive.css" | prepend: site.baseurl }}">
+<link rel="stylesheet" href="{{ "/static/css/sintax.css" | prepend: site.baseurl }}">
+<link rel="stylesheet" href="{{ "/static/css/facebook-responsive.css" | prepend: site.baseurl }}">
+<link rel="stylesheet" href="{{ "/assets/devicon/devicon.css" | prepend: site.baseurl }}">
+<link rel="stylesheet" href="{{ "/assets/devicon/devicon-colors.css" | prepend: site.baseurl }}">
+<!-- end of css import -->
+
+<!-- js import -->
+<script type="text/javascript" src="{{ "/assets/jquery/js/jquery-1.12.3.min.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/static/js/responsive.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/assets/materialize/js/materialize.min.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/static/js/facebook-plugin.js" | prepend: site.baseurl }}"></script>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!-- end of js import -->

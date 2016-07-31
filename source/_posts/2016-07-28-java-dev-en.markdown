@@ -33,20 +33,20 @@ Halo nah sesuai topik yang di Judul, jadi kali ini saya akan membuat atau membah
 
 Di bahasa pemograman Java kita harus melakukan setup JDK atau kependekan dari _Java Development Kit_. JDK bertujuan untuk menyediakan sekumpulan tools handal yang disediakan oleh para insyinyur Java (gelar) contoh diantarnya sebagai berikut
 
-* javac (untuk melakukan compilasi)
+1. javac (untuk melakukan compilasi)
 
 {% highlight bash %}
 javac NamaKelas.java
 {% endhighlight %}
 
-* java (untuk menjalankan hasil compilasi atau bytecode)
+2. java (untuk menjalankan hasil compilasi atau bytecode)
 
 
 {% highlight bash %}
 java NamaKelas
 {% endhighlight %}
 
-* dan lain-lain, karena masih banyak tools yang gak bisa disebutin satu persatu. seperti arsitektur JDK pada gambar dibawah ini:
+3. dan lain-lain, karena masih banyak tools yang gak bisa disebutin satu persatu. seperti arsitektur JDK pada gambar dibawah ini:
 
 ![JDK 1.8 arstiktur](/images/2016-07/java-dev-en/arc-jdk-1.8.png "Gambar diambil dari http://docs.oracle.com/javase/8/docs/ pada tangal 28-07-2016")
 

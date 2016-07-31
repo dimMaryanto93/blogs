@@ -1,3 +1,74 @@
 ---
 layout: default
 ---
+
+<article itemscope itemtype="http://schema.org/BlogPosting">
+  <section id="article-body">
+    <div class="post-title">
+      <h2>
+        {{ page.title }}
+      </h2>
+    </div>
+    <div class="post-metadata ">
+      <small>
+        <span class="fa fa-calendar-o text-primary"></span>
+        <time datetime="{{ page.date | date_to_xmlschema }}"
+          itemprop="datePublished">{{ page.date | date: "%Y, %b %-d" }}
+        </time>
+        {% if page.author %}•
+        <span itemprop="author"  itemscope itemtype="http://schema.org/Person">
+          <i class="fa fa-user text-primary"></i> <span itemprop="name">{{ page.author }}</span>
+        </span>
+        {% endif %}
+      </small>
+    </div>
+    <div class="post-content">
+      {{ content }}
+    </div>
+    <div class="divider"></div>
+    <div class="tags">
+      {% for tag in page.tags %}
+        <div class="chip">
+          <i class="fa fa-tag"></i>
+          {{ tag }}
+        </div>
+      {% endfor %}
+    </div>
+    <div class="divider"></div>
+    <div class="social">
+      <div class="fb-like"
+        data-share="true"
+        data-show-faces="true">
+      </div>
+      {% if page.comments %}
+      <div>
+        <div class="fb-comments" data-href="{{ site.url }}{{ page.url }}" data-num-posts="10"></div>
+      </div>
+      {% endif %}
+    </div>
+    <div class="divider"></div>
+    <div class="related-post">
+      {% if site.related_posts %}
+        <ul id="post-related-list" class="collection with-header">
+          <li class="collection-header">
+            <h4>
+              <i class="fa fa-bell-o" aria-hidden="true"></i>
+              Artikel terkait
+            </h4>
+          </li>
+          {% for post in site.related_posts limit:5 %}
+            <li class="collection-item">
+              <a href="{{ post.url }}">
+                <small>
+                  {{ post.title }}
+                </small>
+                <span class="badge">{{ post.date | date: "%Y, %b %d"}}</span>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% else %}
+      {% endif %}
+    </div>
+  </section>
+</article>
