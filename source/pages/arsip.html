@@ -36,14 +36,14 @@ permalink: /halaman/arsip/
               {% if icon.name == post.language %}
                 {% assign versions = icon.versions %}
                 <div>
-                  <i class="devicon-{{ icon.name }}-{{ versions.font[0] }} circle blue"></i>
+                  <i class="devicon-{{ icon.name }}-{{ versions.font[0] }} blue circle"></i>
                 </div>
                 {{ break }}
               {% endif %}
             {% endfor %}
           {% else %}
           <div>
-            <i class="fa fa-pencil icon-title circle blue"></i>
+            <i class="fa fa-pencil blue circle"></i>
           </div>
           {% endif %}
           <a href="{{ post.url }}">

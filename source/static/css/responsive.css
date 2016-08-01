@@ -52,3 +52,7 @@ h3{
     overflow: hidden;
     position: relative;
 }
+
+.collection-header{
+  padding-top: 15px;
+}
