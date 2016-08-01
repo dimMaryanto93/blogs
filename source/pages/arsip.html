@@ -15,7 +15,7 @@ permalink: /halaman/arsip/
             {{ post.date | date: '%B %Y' }}
           </span>
         </li>
-          <hr>
+        <hr>
   	    {% else %}
   	      {% capture year %}{{ post.date | date: '%Y - %B' }}{% endcapture %}
   	      {% capture nyear %}{{ post.next.date | date: '%Y - %B' }}{% endcapture %}
@@ -27,7 +27,7 @@ permalink: /halaman/arsip/
               </span>
             </li>
             <hr>
-  	      {% endif %}
+  	    {% endif %}
   	    {% endunless %}
 
   	    <li class="collection-item avatar">
@@ -35,15 +35,15 @@ permalink: /halaman/arsip/
             {% for icon in site.data.devicon %}
               {% if icon.name == post.language %}
                 {% assign versions = icon.versions %}
-                <div class="circle">
-                  <i class="devicon-{{ icon.name }}-{{ versions.font[0] }} colored"></i>
+                <div>
+                  <i class="devicon-{{ icon.name }}-{{ versions.font[0] }} circle blue"></i>
                 </div>
                 {{ break }}
               {% endif %}
             {% endfor %}
           {% else %}
-          <div class="circle">
-            <i class="fa fa-pencil icon-title"></i>
+          <div>
+            <i class="fa fa-pencil icon-title circle blue"></i>
           </div>
           {% endif %}
           <a href="{{ post.url }}">
