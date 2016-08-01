@@ -44,3 +44,11 @@ h3{
 #logo-hosted, #text-hosted{
   text-shadow: 1px 1px darkgray;
 }
+
+#arsip {
+    border: none;
+    border-radius: 0px;
+    margin: 0.5rem 0 1rem;
+    overflow: hidden;
+    position: relative;
+}

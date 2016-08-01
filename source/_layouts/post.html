@@ -49,11 +49,9 @@ layout: default
     <div class="divider"></div>
     <div class="references">
       <ul id="post-related-list" class="collection with-header">
-        <li class="collection-header">
-          <h4>
-            <i class="material-icons">link</i>
-            Referensi
-          </h4>
+        <li class="collection-header">          
+          <i class="material-icons">link</i>
+          Referensi
         </li>
         {% for ref in page.references %}
           <li class="collection-item">
@@ -83,10 +81,8 @@ layout: default
     <div class="related-post">
       <ul id="post-related-list" class="collection with-header">
         <li class="collection-header">
-          <h4>
-            <i class="material-icons">book</i>
-            Artikel terkait
-          </h4>
+          <i class="material-icons">book</i>
+          Artikel terkait
         </li>
         {% for post in site.related_posts limit:5 %}
           <li class="collection-item">
