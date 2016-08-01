@@ -6,10 +6,21 @@ layout: default
   <section id="article-body">
     <div class="post-title">
       <h2>
+        {% if page.language %}
+          {% for icon in site.data.devicon %}
+            {% if icon.name == page.language %}
+              {% assign versions = icon.versions %}
+              <i class="devicon-{{ icon.name }}-{{ versions.font[0] }} colored icon-title"></i>
+              {{ break }}
+            {% endif %}
+          {% endfor %}
+        {% else %}
+          <i class="fa fa-pencil icon-title text-warning"></i>
+        {% endif %}
         {{ page.title }}
       </h2>
     </div>
-    <div class="post-metadata ">
+    <div class="post-metadata">
       <small>
         <span class="fa fa-calendar-o text-primary"></span>
         <time datetime="{{ page.date | date_to_xmlschema }}"
@@ -34,6 +45,28 @@ layout: default
         </div>
       {% endfor %}
     </div>
+    {% if page.references %}
+    <div class="divider"></div>
+    <div class="references">
+      <ul id="post-related-list" class="collection with-header">
+        <li class="collection-header">
+          <h4>
+            <i class="material-icons">link</i>
+            Referensi
+          </h4>
+        </li>
+        {% for ref in page.references %}
+          <li class="collection-item">
+            <a href="{{ ref }}">
+              <small>
+                {{ ref }}
+              </small>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
     <div class="divider"></div>
     <div class="social">
       <div class="fb-like"
@@ -48,27 +81,47 @@ layout: default
     </div>
     <div class="divider"></div>
     <div class="related-post">
-      {% if site.related_posts %}
-        <ul id="post-related-list" class="collection with-header">
-          <li class="collection-header">
-            <h4>
-              <i class="fa fa-bell-o" aria-hidden="true"></i>
-              Artikel terkait
-            </h4>
+      <ul id="post-related-list" class="collection with-header">
+        <li class="collection-header">
+          <h4>
+            <i class="material-icons">book</i>
+            Artikel terkait
+          </h4>
+        </li>
+        {% for post in site.related_posts limit:5 %}
+          <li class="collection-item">
+            <a href="{{ post.url }}">
+              <small>
+                {{ post.title }}
+              </small>
+              <span class="badge">{{ post.date | date: "%Y, %b %d"}}</span>
+            </a>
           </li>
-          {% for post in site.related_posts limit:5 %}
-            <li class="collection-item">
-              <a href="{{ post.url }}">
-                <small>
-                  {{ post.title }}
-                </small>
-                <span class="badge">{{ post.date | date: "%Y, %b %d"}}</span>
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
-      {% else %}
-      {% endif %}
+        {% endfor %}
+      </ul>
     </div>
   </section>
+  {% if page.repository %}
+  <div class="fixed-action-btn vertical click-to-toggle" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-large red">
+      <i class="material-icons">file_download</i>
+    </a>
+    <ul>
+      <li>
+        <a class="btn-floating red waves-effect waves-light btn tooltipped"
+          title="View source code" href="{{ page.repository }}" target="_blank"
+          data-position="left" data-delay="50" data-tooltip="Lihat source code di {{ page.repository }}">
+            <i class="fa fa-github"></i>
+        </a>
+      </li>
+      <li>
+        <a id="copyboard" class="btn-floating yellow darken-1 waves-effect waves-light btn tooltipped" title="Copy to clipboard"
+          data-clipboard-text="git clone {{ page.repository }}" alt="Copy to clipboard"
+          data-position="left" data-delay="50" data-tooltip="Copy to clipboard 'git clone {{ page.repository }}'">
+          <i class="fa fa-clipboard"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  {% endif %}
 </article>
