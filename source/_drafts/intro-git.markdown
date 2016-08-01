@@ -87,3 +87,295 @@ Sedangkan di Fedora 22 kebawah bisa pake
 {% highlight bash %}
 sudo yum install git
 {% endhighlight %}
+
+OK setelah di install silahkan buat folder bebas dimana saya klo saya buatnya di ```C:\Users\softw\temp>``` nama foldernya adalah ```belajar-git``` seperti berikut:
+
+{% highlight bash %}
+C:\Users\softw\temp>mkdir belajar-git
+
+C:\Users\softw\temp>dir
+ Volume in drive C has no label.
+ Volume Serial Number is DEE3-0EB1
+
+ Directory of C:\Users\softw\temp
+
+08/01/2016  10:27 PM    <DIR>          .
+08/01/2016  10:27 PM    <DIR>          ..
+08/01/2016  10:27 PM    <DIR>          belajar-git
+{% endhighlight %}
+
+Kemudian pindahkan pointer ke folder ```belajar-git``` seperti berikut:
+
+{% highlight bash %}
+C:\Users\softw\temp>cd belajar-git
+
+C:\Users\softw\temp\belajar-git>
+{% endhighlight %}
+
+Nah sekarang kita mulai untuk membuat project Git, yaitu dengan menggunakan perintah seperti berikut:
+
+## Membuat project Git
+
+{% highlight git %}
+git init
+{% endhighlight %}
+
+Maka hasilnya seperti berikut:
+
+{% highlight bash %}
+C:\Users\softw\temp\belajar-git>git init
+Initialized empty Git repository in C:/Users/softw/temp/belajar-git/.git/
+
+C:\Users\softw\temp\belajar-git>
+{% endhighlight %}
+
+## Check status
+
+Untuk mengetahui sebuah folder adalah project Git atau bukan dan untuk mengetahui perubahan sebuah file kita bisa gunakan perintah seperti berikut:
+
+{% highlight git %}
+git status
+{% endhighlight %}
+
+Kalo folder tersebut adalah project git maka akan outputnya seperti berikut:
+
+{% highlight bash %}
+C:\Users\softw\temp\belajar-git>git status
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+
+C:\Users\softw\temp\belajar-git>git status
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+
+C:\Users\softw\temp\belajar-git>
+{% endhighlight %}
+
+atau seperti berikut:
+
+{% highlight bash %}
+C:\Users\softw\temp\java-buildtools-mvn>git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+
+C:\Users\softw\temp\java-buildtools-mvn>
+{% endhighlight %}
+
+Tetapi jika bukan project Git maka outputnya seperti berikut:
+
+{% highlight bash %}
+C:\Users\softw\temp>git status
+fatal: Not a git repository (or any of the parent directories): .git
+
+C:\Users\softw\temp>
+{% endhighlight %}
+
+## Tracking files
+
+Nah supaya file kita bisa direcord oleh Git kita harus tambahkan files yang ingin di tracking perubahnayan bisa menggunakan perintah seperti berikut:
+
+{% highlight git %}
+git add .
+{% endhighlight %}
+
+Jadi tanda ```.``` digunakan untuk men-track semua file yang terdeteksi oleh Git atau klo mau mengembutkan nama filenya langsung contohnya saya punya file dengan nama ```Halo.java``` jadi seperti berikut:
+
+{% highlight git %}
+git add Halo.java
+{% endhighlight %}
+
+Nah sekarang saya bakanlan buat file dengan nama ```README.md``` di dalam direktory tersebut:
+
+![New File](/images/2016-08/intro-git/new-file.png)
+
+sekarang anda coba cek statusnya seperti berikut:
+
+{% highlight git %}
+C:\Users\softw\temp\belajar-git>git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\softw\temp\belajar-git>
+{% endhighlight %}
+
+Dari output diatas terlihat bahwa ada file baru yang belum di track oleh Git. selanjutnya adalah kita tambahkan file tersebut sepaya di track oleh Git dengan perintah berikut:
+
+{% highlight git %}
+git add README.md
+{% endhighlight %}
+
+Untuk melihat hasilnya, kembali gunakan perintah status maka hasilnya seperti berikut:
+
+{% highlight bash %}
+C:\Users\softw\temp\belajar-git>git add README.md
+
+C:\Users\softw\temp\belajar-git>git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   README.md
+
+
+C:\Users\softw\temp\belajar-git>
+{% endhighlight %}
+
+## Simpan secara permanen
+
+Untuk menyimpan file yang telah direcord tadi kita bisa gunakan perintah seperti berikut:
+
+{% highlight git %}
+git commit -m "Pesan atau message aktivitas"
+{% endhighlight %}
+
+Sekarang studikasusnya saya mau mengimpan file yang tadi telah saya buat yaitu ```README.md``` meskimpun belum ada isinya, saran saya sih sering-seringlah atau secara berkala melakukan ```commit``` bisa di revert jika terjadi file corrupt atau kerusakan file lainya.
+
+{% highlight git %}
+git commit -m "Membut project git"
+{% endhighlight %}
+
+Maka outputnya seperti berikut:
+
+{% highlight bash %}
+C:\Users\softw\temp\belajar-git>git commit -m "Membut project git"
+[master (root-commit) 885b801] Membut project git
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+
+C:\Users\softw\temp\belajar-git>
+{% endhighlight %}
+
+## Melihat aktifitas
+
+Untuk melihat aktivitas kita bisa menggunakan perintah seperti berikut:
+
+{% highlight git %}
+git log
+{% endhighlight %}
+
+atau untuk mempersingkat bisa menggunakan parameter ```--oneline``` seperti berikut:
+
+{% highlight git %}
+git log --oneline
+{% endhighlight %}
+
+Jika di eksekusi kita akan melihat output seperti berikut:
+
+{% highlight bash %}
+C:\Users\softw\temp\belajar-git>git log
+commit 885b80170b69257284a91dbf07ad83a03f8a8ed5
+Author: dimMaryanto@win10 <software.dimmaryanto@hotmail.com>
+Date:   Mon Aug 1 23:17:08 2016 +0700
+
+    Membut project git
+
+C:\Users\softw\temp\belajar-git>
+{% endhighlight %}
+
+## Reset ke commit sebelumnya
+
+Untuk reset pada dasarnya adalah mengembalikan file ke kondisi tertentu, nah ini lah salah satu keuggulan dari VCS atau kepanjangan Version Control System. ok untuk itu kita buat commit lagi tpi syaratnya filenya harus diubah dulu, sekarang kita ubah filenya dengan menambahkan text seperti berikut:
+
+{% highlight bash %}
+Ini adalah text
+{% endhighlight %}
+
+seperti berikut:
+
+![Perubahan file](/images/2016-08/intro-git/plain-text.png)
+
+sekarang coba anda lihat statunya kembali maka outputnya seperti berikut:
+
+{% highlight git %}
+C:\Users\softw\temp\belajar-git>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\softw\temp\belajar-git>
+{% endhighlight %}
+
+Setelah itu kita track kembali dengan perintah seperti berikut:
+
+{% highlight git %}
+git add .
+{% endhighlight %}
+
+Kemudian kita simpan secara permanen menggunakan perintah berikut:
+
+{% highlight git %}
+git commit -m "commit ke 2"
+{% endhighlight %}
+
+Maka outputnya seperti berikut:
+
+{% highlight bash %}
+C:\Users\softw\temp\belajar-git>git add .
+
+C:\Users\softw\temp\belajar-git>git commit -m "commit ke 2"
+[master 9e33033] commit ke 2
+ 1 file changed, 1 insertion(+)
+
+C:\Users\softw\temp\belajar-git>
+{% endhighlight %}
+
+Nah sekarang kita lihat lognya:
+
+{% highlight git %}
+git log --oneline
+{% endhighlight %}
+
+Berikut outputnya:
+
+{% highlight bash %}
+C:\Users\softw\temp\belajar-git>git log --oneline
+9e33033 commit ke 2
+885b801 Membut project git
+
+C:\Users\softw\temp\belajar-git>
+{% endhighlight %}
+
+Kemudian untuk memastikan bahwa filenya memiliki isi coba anda buka kembali filenya:
+
+![Membuka lagi filenya](/images/2016-08/intro-git/plain-text.png)
+
+Masih ada ya isinya yaitu ```Ini adalah text``` setelah itu sama mau kembalikan ke commit pertama yaitu ```Membuat project git``` dengan ref ```885b801``` jadi perintahnya adalah
+
+{% highlight git %}
+C:\Users\softw\temp\belajar-git>git reset --hard 885b801
+{% endhighlight %}
+
+Berikut outputnya:
+
+{% highlight bash %}
+HEAD is now at 885b801 Membut project git
+{% endhighlight %}
+
+Nah sekarang anda buka lagi filenya:
+
+![Buka filenya lagi setelah reset](/images/2016-08/intro-git/blank-text.png)
+
+Nah filenya udah kembali ke versi sebelum commit ke dua lebih tepatnya dikemabalikan ke commit pertama. Ok munggin sekian dulu pembahasan tentang pengenalan Git, untuk perintah ```push```, ```merge```, ```pull``` dan masih banyak lagi nanti saya akan lanjutkan di postingan selanjutnya tentang Git. see you next post!.
