@@ -117,7 +117,7 @@ Nah sekarang kita mulai untuk membuat project Git, yaitu dengan menggunakan peri
 
 ## Membuat project Git
 
-{% highlight git %}
+{% highlight bash %}
 git init
 {% endhighlight %}
 
@@ -134,7 +134,7 @@ C:\Users\softw\temp\belajar-git>
 
 Untuk mengetahui sebuah folder adalah project Git atau bukan dan untuk mengetahui perubahan sebuah file kita bisa gunakan perintah seperti berikut:
 
-{% highlight git %}
+{% highlight bash %}
 git status
 {% endhighlight %}
 
@@ -182,13 +182,13 @@ C:\Users\softw\temp>
 
 Nah supaya file kita bisa direcord oleh Git kita harus tambahkan files yang ingin di tracking perubahnayan bisa menggunakan perintah seperti berikut:
 
-{% highlight git %}
+{% highlight bash %}
 git add .
 {% endhighlight %}
 
 Jadi tanda ```.``` digunakan untuk men-track semua file yang terdeteksi oleh Git atau klo mau mengembutkan nama filenya langsung contohnya saya punya file dengan nama ```Halo.java``` jadi seperti berikut:
 
-{% highlight git %}
+{% highlight bash %}
 git add Halo.java
 {% endhighlight %}
 
@@ -198,7 +198,7 @@ Nah sekarang saya bakanlan buat file dengan nama ```README.md``` di dalam direkt
 
 sekarang anda coba cek statusnya seperti berikut:
 
-{% highlight git %}
+{% highlight bash %}
 C:\Users\softw\temp\belajar-git>git status
 On branch master
 
@@ -216,7 +216,7 @@ C:\Users\softw\temp\belajar-git>
 
 Dari output diatas terlihat bahwa ada file baru yang belum di track oleh Git. selanjutnya adalah kita tambahkan file tersebut sepaya di track oleh Git dengan perintah berikut:
 
-{% highlight git %}
+{% highlight bash %}
 git add README.md
 {% endhighlight %}
 
@@ -243,13 +243,13 @@ C:\Users\softw\temp\belajar-git>
 
 Untuk menyimpan file yang telah direcord tadi kita bisa gunakan perintah seperti berikut:
 
-{% highlight git %}
+{% highlight bash %}
 git commit -m "Pesan atau message aktivitas"
 {% endhighlight %}
 
 Sekarang studikasusnya saya mau mengimpan file yang tadi telah saya buat yaitu ```README.md``` meskimpun belum ada isinya, saran saya sih sering-seringlah atau secara berkala melakukan ```commit``` bisa di revert jika terjadi file corrupt atau kerusakan file lainya.
 
-{% highlight git %}
+{% highlight bash %}
 git commit -m "Membut project git"
 {% endhighlight %}
 
@@ -268,13 +268,13 @@ C:\Users\softw\temp\belajar-git>
 
 Untuk melihat aktivitas kita bisa menggunakan perintah seperti berikut:
 
-{% highlight git %}
+{% highlight bash %}
 git log
 {% endhighlight %}
 
 atau untuk mempersingkat bisa menggunakan parameter ```--oneline``` seperti berikut:
 
-{% highlight git %}
+{% highlight bash %}
 git log --oneline
 {% endhighlight %}
 
@@ -305,7 +305,7 @@ seperti berikut:
 
 sekarang coba anda lihat statunya kembali maka outputnya seperti berikut:
 
-{% highlight git %}
+{% highlight bash %}
 C:\Users\softw\temp\belajar-git>git status
 On branch master
 Changes not staged for commit:
@@ -321,13 +321,13 @@ C:\Users\softw\temp\belajar-git>
 
 Setelah itu kita track kembali dengan perintah seperti berikut:
 
-{% highlight git %}
+{% highlight bash %}
 git add .
 {% endhighlight %}
 
 Kemudian kita simpan secara permanen menggunakan perintah berikut:
 
-{% highlight git %}
+{% highlight bash %}
 git commit -m "commit ke 2"
 {% endhighlight %}
 
@@ -345,7 +345,7 @@ C:\Users\softw\temp\belajar-git>
 
 Nah sekarang kita lihat lognya:
 
-{% highlight git %}
+{% highlight bash %}
 git log --oneline
 {% endhighlight %}
 
@@ -365,7 +365,7 @@ Kemudian untuk memastikan bahwa filenya memiliki isi coba anda buka kembali file
 
 Masih ada ya isinya yaitu ```Ini adalah text``` setelah itu sama mau kembalikan ke commit pertama yaitu ```Membuat project git``` dengan ref ```885b801``` jadi perintahnya adalah
 
-{% highlight git %}
+{% highlight bash %}
 C:\Users\softw\temp\belajar-git>git reset --hard 885b801
 {% endhighlight %}
 
