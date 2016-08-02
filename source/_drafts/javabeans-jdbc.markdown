@@ -135,3 +135,55 @@ Jadi kesimpulannya koding yang kita buat ini sudah modularisasi artinya kita sud
 Studi kasus yang ke dua, sekarang kita akan menampilkan data dari database pada tabel mahasiswa tersebut. Ok sekarang coba perhatikan koding berikut:
 
 {% gist page.gist JavaBeanSelectAllMahasiswa.java %}
+
+Sekilas memang gak ada perubahan dari postingan sebelumnya tapi jika anda perhatikan kembali, kita telah memisahkan data yang dihasilkan dan dikeluarkan berupa Array atau  List pada bagian berikut:
+
+{% highlight java %}
+List<Mahasiswa> daftarMahasiswa = new ArrayList<>();
+while (rs.next()) {
+  // membuat objek mahasiswa
+  Mahasiswa m = new Mahasiswa();
+
+  /**
+   * mengambil nilai dari database dengan rs.getTipeData('nama_kolom');
+   * kemudian value tersebut dimasukan ke method setter
+   **/
+  m.setNim(rs.getString(1));
+  m.setNama(rs.getString(2));
+  m.setJurusan(rs.getString(3));
+
+  // menambahkan object mahasiswa ke array
+  daftarMahasiswa.add(m);
+}
+{% endhighlight %}
+
+Jadi disini saya membuat sebuah Array atau List kemudian datanya diisi dari objek yang kita buat dari objek mahasiswa yang diambil dari database pada tabel mahasiswa. Ok saya harap ini paham ya karena pada dasarnya sama seperti studi kasus pertama.
+
+Studi kasus selanjutnya mengedit data mahasiswa, berikut kodingnya:
+
+{% gist page.gist JavaBeanUbahMahasiswa.java %}
+
+Penjelasannya kurang lebih sama seperti studi kasus pertama yaitu tambah data mahasiswa jadi kita membutuhkan objek mahasiswa tapi sebenarnya kita bisa select dulu dari database berdasarkan nim terus kita set value yang mau di ubah setelah itu kita jalankan perintah tesebut, tapi supaya gak terlalu panjang kita buat datanya sendiri aja seperti berikut:
+
+{% highlight java %}
+Mahasiswa mhs = new Mahasiswa();
+mhs.setNim("10511173");
+mhs.setJurusan("IF");
+{% endhighlight %}
+
+Sebenarnya seperti itu juga sudah cukup karenan yang kita gunakan untuk mengupdate hanya ```jurusan``` aja lebih jelasnya pada baris berikut:
+
+{% highlight java %}
+String sql = "UPDATE mahasiswa SET jurusan = ? WHERE nim = ?";
+PreparedStatement ps = koneksi.prepareStatement(sql);
+
+ps.setString(1, mahasiswa.getJurusan());
+ps.setString(2, mahasiswa.getNim());
+ps.executeUpdate();
+{% endhighlight %}
+
+Kemudian studi kasus terakhir yaitu hapus data mahasiswa, berikut adalah kodingnya:
+
+{% gist page.gist JavaBeanDeleteMahasiswa.java %}
+
+Penjelasanya kurang-lebih sama kaya studi kasus ke tiga, jadi saya gak perlu jelasin lagi ya panjang euy udah mulai males ngetiknya hehehe. Ok mungkin saya rasa cukup dulu pembahasan tentang Optimalisasi JDBC dengan JavaBeans. see you next post!.
