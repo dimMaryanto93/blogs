@@ -45,7 +45,7 @@ h3{
   text-shadow: 1px 1px darkgray;
 }
 
-#arsip {
+#arsip, #post-related-list, #post-related-list {
     border: none;
     border-radius: 0px;
     margin: 0.5rem 0 1rem;
@@ -57,6 +57,6 @@ h3{
   padding-top: 15px;
 }
 
-.side-nav{
+.side-nav, .shares{
   padding: 10px;
 }

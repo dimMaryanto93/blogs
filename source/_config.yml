@@ -1,6 +1,8 @@
 # Site settings
 title: Blog - Dimas Maryanto
 email: software.dimmaryanto@hotmail.com
+fb_appid: 1172380132803751
+twitter_username: dimMaryanto93
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://software.dimmaryanto93.com" # the base hostname & protocol for your site

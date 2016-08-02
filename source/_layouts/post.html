@@ -36,8 +36,26 @@ layout: default
     <div class="post-content">
       {{ content }}
     </div>
+    <div class="shares">
+      <i class="fa fa-share" aria-hidden="true"></i> Bagikan:
+      <br>
+      <a id="twitter" class="btn blue lighten-1" href="https://twitter.com/intent/tweet?text={{ page.title }}&via={{ site.twitter_username }}&url={{ site.url }}{{ page.url }}">
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+      </a>
+      <a id="facebook" class="btn blue darken-4" target="_blank" href="https://www.facebook.com/dialog/share?app_id={{ site.fb_appid }}&display=popup&href={{ site.url }}{{ page.url }}&redirect_uri={{ site.url }}{{ page.url }}">
+        <i class="fa fa-facebook"></i>
+      </a>
+      <a class="btn blue darken-2" href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }}&source={{ site.title }}">
+        <i class="fa fa-linkedin"></i>
+      </a>
+      <a class="btn red" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}&hl=en-US" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+        <i class="fa fa-google-plus" aria-hidden="true"></i>
+      </a>
+    </div>
     <div class="divider"></div>
     <div class="tags">
+      <i class="fa fa-tags"></i> Tags:
+      <br>
       {% for tag in page.tags %}
         <div class="chip">
           <i class="fa fa-tag"></i>
@@ -67,10 +85,6 @@ layout: default
     {% endif %}
     <div class="divider"></div>
     <div class="social">
-      <div class="fb-like"
-        data-share="true"
-        data-show-faces="true">
-      </div>
       {% if page.comments %}
       <div>
         <div class="fb-comments" data-href="{{ site.url }}{{ page.url }}" data-num-posts="10"></div>
