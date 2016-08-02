@@ -5,9 +5,6 @@ date: 2016-07-29T21:46:00+07:00
 author: Dimas Maryanto
 comments: yes
 gist:
-os:
-- linux
-- redhat
 language: postgresql
 repository:
 categories:

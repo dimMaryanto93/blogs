@@ -4,10 +4,6 @@ title: "Java - Tipe data, Variabel dan Scope"
 date: 2016-07-31T00:10:30+07:00
 author: Dimas Maryanto
 comments: yes
-os:
-- windows8
-- linux
-- apple
 language: java
 gist: dimMaryanto93/519ff848171cb9924338d28343cb1989
 repository:

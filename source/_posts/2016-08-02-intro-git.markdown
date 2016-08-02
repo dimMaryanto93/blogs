@@ -4,14 +4,6 @@ title: "Version Control, is important for developers when build an application"
 date: 2016-08-02T00:06:45+07:00
 author: Dimas Maryanto
 comments: yes
-os:
-- windows8
-- linux
-- apple
-- debian
-- ubuntu
-- redhat
-- android
 language: git
 gist:
 repository:

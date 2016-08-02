@@ -5,14 +5,6 @@ date: 2016-07-28T17:30:24+07:00
 author: Dimas Maryanto
 comments: yes
 gist:
-os:
-- windows8
-- linux
-- apple
-- debian
-- ubuntu
-- redhat
-- android
 language: java
 repository:
 categories:

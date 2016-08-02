@@ -4,8 +4,6 @@ title: "How to Install PostgreSQL on Windows 10"
 date: 2016-07-31T13:13:59+07:00
 author: Dimas Maryanto
 comments: yes
-os:
-- windows8
 language: postgresql
 gist:
 repository:

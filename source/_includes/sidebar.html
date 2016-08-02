@@ -1,4 +1,4 @@
-<div id="profile">
+<div id="profile" class="hide-on-small-only">
   <p class="flow-text">{{ site.data.profile.status }}</p>
   <img id="picture_profile" src="/static/img/profile.png" alt=""
     class="img-responsive img-thumbnail img-rounded" width="150" height="150"/>
@@ -23,11 +23,11 @@
   <p class="text-muted">
     {{ site.data.profile.messages }}
   </p>
-</div>
-<div class="hide-on-small-only">
-  <a class="twitter-timeline" data-lang="id"
+  <div>
+    <a class="twitter-timeline" data-lang="id"
     data-height="600" href="https://twitter.com/dimMaryanto93">
-    Tweets by dimMaryanto93
-  </a>
+      Tweets by dimMaryanto93
+    </a>
+  </div>
+  <div class="divider"></div>
 </div>
-<div class="divider"></div>

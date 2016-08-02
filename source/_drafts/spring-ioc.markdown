@@ -3,13 +3,6 @@ layout: post
 title: "Memahami Dependency Injection, dengan Spring Framework"
 date: 2016-07-28T20:48:09+07:00
 comments: yes
-os:
-- windows8
-- linux
-- apple
-- debian
-- ubuntu
-- redhat
 language: java
 gist:
 repository: https://github.com/dimMaryanto93/belajar-spring-framework.git

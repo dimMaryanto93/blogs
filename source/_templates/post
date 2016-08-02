@@ -3,14 +3,6 @@ layout: {{ layout }}
 title: "{{ title }}"
 date: {{ date }}
 comments: yes
-os:
-- windows8
-- linux
-- apple
-- debian
-- ubuntu
-- redhat
-- android
 language: {{ language }}
 gist: {{ gist }}
 repository: {{ repo }}
