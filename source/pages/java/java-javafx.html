@@ -1,0 +1,20 @@
+---
+layout: page
+title: "JavaFX"
+permalink: /halaman/java/javafx/
+---
+
+<ul class="collection">
+  {% for post in site.posts reversed %}
+    {% if post.page_category == "javafx" %}
+      <li class="collection-item">
+        <a href="{{ post.url }}">
+          <small>
+            {{ post.title }}
+          </small>
+          <span class="badge">{{ post.date | date: "%Y, %b %d"}}</span>
+        </a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>

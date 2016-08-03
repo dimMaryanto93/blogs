@@ -5,6 +5,7 @@ date: 2016-07-31T13:13:59+07:00
 author: Dimas Maryanto
 comments: yes
 language: postgresql
+page_category: windows
 gist:
 repository:
 categories:

@@ -3,6 +3,7 @@ layout: post
 title: "Halo World"
 date: 2016-07-27T12:37:49+07:00
 author: Dimas Maryanto
+page_category: 
 comments: yes
 gist:
 language:

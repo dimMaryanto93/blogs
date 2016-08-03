@@ -3,6 +3,7 @@ layout: {{ layout }}
 title: "{{ title }}"
 date: {{ date }}
 comments: yes
+page_category: {{ category }}
 language: {{ language }}
 gist: {{ gist }}
 repository: {{ repo }}

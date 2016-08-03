@@ -1,19 +1,33 @@
 <div class="navbar-fixed">
   <nav>
-    <div class="nav-wrapper container">
+    <div class="nav-wrapper">
       <a href="{{ site.baseurl }}/" class="brand-logo">
         <i class="material-icons blue">code</i>
         Blog
       </a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-        {% for page in site.pages %}
-          {% if page.title %}
-          <li>
-            <a href="{{ page.url }}" target="_self">{{ page.title }}</a>
-          </li>
-          {% endif %}
-        {% endfor %}
+        <li>
+          <a class="dropdown-button" href="#!"
+            data-activates="java-core">Basic Java <i class="material-icons right">arrow_drop_down</i>
+          </a>
+        </li>
+        <li>
+          <a class="dropdown-button" href="#!"
+            data-activates="java-web">Java WEB <i class="material-icons right">arrow_drop_down</i>
+          </a>
+        </li>
+        <li>
+          <a class="dropdown-button" href="#!"
+            data-activates="framework">Framework <i class="material-icons right">arrow_drop_down</i>
+          </a>
+        </li>
+        <li>
+          <a class="dropdown-button" href="#!"
+            data-activates="os">Operation Systems <i class="material-icons right">arrow_drop_down</i>
+          </a>
+        </li>
+        <li><a href="{{ site.baseurl }}/halaman/arsip/">Arsip</a></li>
         <li><a href="http://personal.dimmaryanto93.com" target="_blank">Daftar Riwayat Hidup</a></li>
       </ul>
       <ul class="side-nav black-text" id="mobile-demo">
@@ -53,3 +67,29 @@
     </div>
   </nav>
 </div>
+
+<ul id="java-core" class="dropdown-content">
+  <li><a href="{{ site.baseurl }}/halaman/java/fundamental/">Fundamental</a></li>
+  <li><a href="{{ site.baseurl }}/halaman/java/jdbc/">JDBC</a></li>
+  <li><a href="{{ site.baseurl }}/halaman/java/swing/">Java Swing</a></li>
+  <li><a href="{{ site.baseurl }}/halaman/java/javafx/">JavaFX</a></li>
+  <li class="divider"></li>
+  <li><a href="{{ site.baseurl }}/halaman/java/apache/maven/">Apache Maven</a></li>
+</ul>
+
+<ul id="java-web" class="dropdown-content">
+  <li><a href="{{ site.baseurl }}/halaman/java/jsp/">JSP &amp; Servlet</a></li>
+    <li><a href="{{ site.baseurl }}/halaman/java/thymeleaf/">Thymeleaf</a></li>
+</ul>
+
+<ul id="framework" class="dropdown-content">
+  <li><a href="{{ site.baseurl }}/halaman/framework/springframework/">Spring Framework</a></li>
+  <li><a href="{{ site.baseurl }}/halaman/framework/hibernate/">Hibernate</a></li>
+  <li><a href="{{ site.baseurl }}/halaman/framework/junit/">JUnit</a></li>
+</ul>
+
+<ul id="os" class="dropdown-content">
+  <li><a href="{{ site.baseurl }}/halaman/os/win10/">Windows 10</a></li>
+  <li><a href="{{ site.baseurl }}/halaman/os/ubuntu/">UBuntu</a></li>
+  <li><a href="{{ site.baseurl }}/halaman/os/fedora/">Fedora</a></li>
+</ul>

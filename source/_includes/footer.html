@@ -4,20 +4,18 @@
       <div class="col l6 s12 flow-text">
         <h5 class="white-text">Halaman</h5>
         <div>
-          {% for page in site.pages %}
-            {% if page.title %}
-              <div>
-                <a href="{{ page.url }}">
-                  <span class="white-text">{{ page.title }}</span>
-                </a>
-              </div>
-            {% endif %}
-          {% endfor %}
-          <div>
-            <a href="http://personal.dimmaryanto93.com" target="_blank">
-              <span class="white-text">Daftar Riwayat Hidup</span>
-            </a>
-          </div>
+          <small>
+            <div>
+              <a href="{{ site.baseurl }}/halaman/arsip/">
+                <span class="white-text">Arsip</span>
+              </a>
+            </div>
+            <div>
+              <a href="http://personal.dimmaryanto93.com" target="_blank">
+                <span class="white-text">Daftar Riwayat Hidup</span>
+              </a>
+            </div>
+          </small>
         </div>
       </div>
       <div class="col l4 offset-l2 s12 flow-text">
@@ -34,9 +32,8 @@
   </div>
   <div class="footer-copyright blue">
     <div class="container">
-      <div>
-        {{ site.data.profile.copyright }}
-      </div>
+      Copyright © 2016 Dimas Maryanto. All Rights Reserved.
+      <a class="grey-text text-lighten-4 right" href="https://jekyllrb.com/">Powered by Jekyll</a>
     </div>
   </div>
 </footer>
