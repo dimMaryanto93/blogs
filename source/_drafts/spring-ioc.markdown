@@ -4,7 +4,7 @@ title: "Memahami Dependency Injection, dengan Spring Framework"
 date: 2016-07-28T20:48:09+07:00
 comments: yes
 language: java
-page_category:
+page_category: spring
 gist:
 repository: https://github.com/dimMaryanto93/belajar-spring-framework.git
 categories:

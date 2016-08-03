@@ -8,27 +8,23 @@
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li>
-          <a class="dropdown-button" href="#!"
-            data-activates="java-core">Basic Java <i class="material-icons right">arrow_drop_down</i>
-          </a>
+          <a class="dropdown-button" href="#!" data-activates="java-core">JavaSE <small>(Standar Edition)</small></a>
         </li>
         <li>
-          <a class="dropdown-button" href="#!"
-            data-activates="java-web">Java WEB <i class="material-icons right">arrow_drop_down</i>
-          </a>
+          <a class="dropdown-button" href="#!" data-activates="java-web">JavaEE <small>(Enterprice Edition)</small></a>
         </li>
         <li>
-          <a class="dropdown-button" href="#!"
-            data-activates="framework">Framework <i class="material-icons right">arrow_drop_down</i>
-          </a>
+          <a class="dropdown-button" href="#!" data-activates="framework">Java Framework</a>
         </li>
         <li>
-          <a class="dropdown-button" href="#!"
-            data-activates="os">Operation Systems <i class="material-icons right">arrow_drop_down</i>
-          </a>
+          <a class="dropdown-button" href="#!" data-activates="db">DBMS <small>(Database Management System)</small></a>
         </li>
-        <li><a href="{{ site.baseurl }}/halaman/arsip/">Arsip</a></li>
-        <li><a href="http://personal.dimmaryanto93.com" target="_blank">Daftar Riwayat Hidup</a></li>
+        <li>
+          <a class="dropdown-button" href="#!" data-activates="other">Lain-Lain <small>(Tips dan Trick)</small></a>
+        </li>
+        <li>
+          <a class="dropdown-button" href="#!" data-activates="other-link"><i class="material-icons right">more_vert</i>Halaman Lain</a>
+        </li>
       </ul>
       <ul class="side-nav black-text" id="mobile-demo">
         <div id="profile">
@@ -79,7 +75,7 @@
 
 <ul id="java-web" class="dropdown-content">
   <li><a href="{{ site.baseurl }}/halaman/java/jsp/">JSP &amp; Servlet</a></li>
-    <li><a href="{{ site.baseurl }}/halaman/java/thymeleaf/">Thymeleaf</a></li>
+  <li><a href="{{ site.baseurl }}/halaman/java/thymeleaf/">Thymeleaf</a></li>
 </ul>
 
 <ul id="framework" class="dropdown-content">
@@ -88,8 +84,20 @@
   <li><a href="{{ site.baseurl }}/halaman/framework/junit/">JUnit</a></li>
 </ul>
 
-<ul id="os" class="dropdown-content">
+<ul id="db" class="dropdown-content">
+  <li><a href="{{ site.baseurl }}/halaman/db/postgresql/">PostgreSQL</a></li>
+  <li><a href="{{ site.baseurl }}/halaman/db/mysql/">MySQL</a></li>
+</ul>
+
+<ul id="other" class="dropdown-content">
   <li><a href="{{ site.baseurl }}/halaman/os/win10/">Windows 10</a></li>
   <li><a href="{{ site.baseurl }}/halaman/os/ubuntu/">UBuntu</a></li>
   <li><a href="{{ site.baseurl }}/halaman/os/fedora/">Fedora</a></li>
+  <li class="divider"></li>
+  <li><a href="{{ site.baseurl }}/halaman/vcs/git/">Git</a></li>
+</ul>
+
+<ul id="other-link" class="dropdown-content">
+  <li><a href="{{ site.baseurl }}/halaman/arsip/">Arsip</a></li>
+  <li><a href="http://personal.dimmaryanto93.com" target="_blank">Daftar Riwayat Hidup</a></li>
 </ul>
