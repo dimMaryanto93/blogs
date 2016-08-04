@@ -7,7 +7,7 @@ comments: yes
 page_category: git
 language: git
 gist:
-repository:
+repository: https://github.com/dimMaryanto93/belajar-git.git
 categories:
 - VCS
 - Git

@@ -30,4 +30,16 @@
     </a>
   </div>
   <div class="divider"></div>
+  <div id="halaman" class="flow-text">
+    <ul>
+      {% for page in site.pages %}
+        {% if page.title %}
+          <li>
+            <a href="{{ page.url }}" target="_self">{{ page.title }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+      <li><a href="http://personal.dimmaryanto93.com" target="_blank">Daftar Riwayat Hidup</a></li>
+    </ul>
+  </div>
 </div>
