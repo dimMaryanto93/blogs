@@ -9,7 +9,7 @@ category: java
 
 {% include programming-language.html lang=page.icon title=page.title %}
 {% for post in site.posts reversed %}
-  {% if post.page_category == "java_core" %}
+  {% if post.page_category == "java_fundamental" %}
     {% include post-by-category.html %}
   {% endif %}
 {% endfor %}

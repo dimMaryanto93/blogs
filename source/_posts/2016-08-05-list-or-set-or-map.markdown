@@ -4,7 +4,7 @@ title: "Perbedaan List, Set dan Map?"
 date: 2016-08-05T11:14:22+07:00
 author: Dimas Maryanto
 comments: yes
-page_category: java_core
+page_category: java_fundamental
 language: java
 gist: dimMaryanto93/e1412b48ea8eb1512c9d2beb94324c1a
 repository:

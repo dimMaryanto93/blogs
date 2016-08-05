@@ -4,7 +4,7 @@ title: "Setup Oracle JDK, Java Development Environtment"
 date: 2016-07-28T17:30:24+07:00
 author: Dimas Maryanto
 comments: yes
-page_category: java_core
+page_category: java_fundamental
 gist:
 language: java
 repository:
