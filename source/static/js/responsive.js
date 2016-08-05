@@ -17,4 +17,5 @@ $(document).ready(function(){
         console.error('Trigger:', e.trigger);
         $.notify("Gagal di salin!", "error");
     });
+
 });
