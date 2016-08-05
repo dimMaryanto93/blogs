@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Java - Percabangan menggunakan IF dan Switch-case"
+date: 2016-08-05T23:34:07+07:00
 author: Dimas Maryanto
 comments: yes
 page_category: java_fundamental
@@ -72,3 +73,64 @@ Berikut penjelasnnya:
 
 * ```bil = 10``` kemudian diseksi ```10 == 10``` maka hasilnya benar. ok kita udah tau ya jawabanya yang ini. tpi angap ja gak tau.
 * ```bil = 10``` kemudian diseleksi ```10 % 2 = 0``` jadi 10 dibagi 2 sama dengan 5 sisanya khan 0 maka hasilnya benar tpi perintah didalamnya tidak akan diksekusi karena buat apa khan statement pertama udah benar dan sebenarnya statement ke 2 ini tidak dieksekusi lagi karena statement ke 1 udah bener jadi hasilnya adalah ```yang ini dieksekusi (==)```
+
+Sekarang anda sudah tau ya konsep percabagan dengan ```IF``` jadi kesimpulannya dari kasus diatas adalah dimana hasil seleksinya pertama kali udah bener selanjutanya akan diabaikan, Selanjutnya kita bahas tentang seleksi dengan ```Switch-case```
+
+## Peracabagan dengan ```Switch-Case```
+
+Percabagan ```switch-case``` sebenarnya tidak jauh berbeda tpi disini kita akan lihat bagaimana cara kerja dari percabagan ini, berikut adalah contoh kasus sederhaan dari kodingnya sering kita jumpai yaitu seperti berikut:
+
+{% highlight java %}
+Integer ip = 4;
+switch(ip){
+  case 4: System.out.println("A"); break;
+  case 3: System.out.println("B"); break;
+  case 2: System.out.println("C"); break;
+  case 1: System.out.println("D"); break;
+  default: System.out.println("E");
+}
+{% endhighlight %}
+
+Nah kasus diatas kita menentukan ip anda memiliki grade apa?
+
+* A
+* B
+* C
+* D
+* E
+
+Ok, supaya gampang seperti biasa kita visualisaksikan menggunakan diagram activity seperti berikut:
+
+![Normal switch-case](/images/2016-08/java-selection/switch-basic.jpg)
+
+
+Nah jadi hasilnya adalah ```A```, kenapa A jadi gini penjelasnnya:
+
+* Membuat variable ```int ip = 4```, kemudian pada dasarnya sama seperti if yaitu kita memasukan expresinya kemudian si switch ini akan mencari mana value yang cocok
+* Setelah menemukan case pertama yaitu ```case: 4``` maka dia akan menjalankan perintah didalamnya yaitu ```System.out.println("A")``` kemudian ada keyword ```break;``` ini artinya kita keluar dari seleksi. maka dari itu hasilnya ```4```
+
+Selanjutnya sekarang kita modifikasi sedikin dari koding yang sama seperti berikut:
+
+{% highlight java %}
+Integer ip = 2;
+switch(ip){
+  case 4: System.out.print("A");
+  case 3: System.out.print("B"); break;
+  case 2: System.out.print("C");
+  case 1: System.out.print("D"); break;
+  default: System.out.print("E");
+}
+{% endhighlight %}
+
+Nah sekarang apa outputnya? seperti biasa kita bisa gunakan diagram activity untuk mempermudah menggambarkan dari koding diatas seperti berikut:
+
+![Switch Modif](/images/2016-08/java-selection/switch-modif.jpg)
+
+Gimana jelaskan apa yang ada saya visualisaksikan dengan, mungkin anda bisa menafsirkan dengan bahasa diri sendiri bagaimana cara kerjanya, tapi disini saya juga bakalan menjelaskan tapi maaf kalo kata-katanya belibet hheehehe, maklum bukan anak bahasa yang pintar merangkai kata-kata.
+
+* Ok jadi gini, pertama sama seperti tadi kita membuat dulu variable ```ip = 2```.
+* Setelah itu si switch meriksa nih case mana yang sesuia.
+* Ketemulah ```case : 2``` setelah itu dia akan menampilkan kelayar yaitu ```C``` setelah itu menampilkan lagi ke layar yaitu ```D``` setelah itu baru dia keluar karena ada keyword ```break;```.
+* Kesimpulannya jadi hasilnya dalah ```CD```.
+
+Ok mungkin cukup sekian dulu penjelasan mengenai cara mudah untuk membaca koding dengan mentranslate ke UML Diagrams - Activity diagrams. see you next post!. 
