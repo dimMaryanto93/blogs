@@ -22,7 +22,7 @@ main {
   list-style-position: inside;
 }
 
-#page-icon-header{
+#page-icon-header,.link-icon{
   font-size: 50px;
 }
 
