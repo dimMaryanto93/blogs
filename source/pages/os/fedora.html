@@ -2,9 +2,10 @@
 layout: page
 title: "Fedora"
 permalink: /halaman/os/fedora/
+icon: devicon-redhat-plain-wordmark
 ---
 
-{% include programming-language.html lang="devicon-linux-plain" title="Linux - Fedora" %}
+{% include programming-language.html lang=page.icon title="Linux - Fedora" %}
 {% for post in site.posts reversed %}
   {% if post.page_category == "fedora" %}
     {% include post-by-category.html %}

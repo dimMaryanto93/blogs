@@ -1,0 +1,13 @@
+---
+layout: page
+title: "CSS"
+permalink: /halaman/java/css/
+icon: devicon-css3-plain-wordmark
+---
+
+{% include programming-language.html lang=page.icon title="CSS" %}
+{% for post in site.posts reversed %}
+  {% if post.page_category == "html" %}
+    {% include post-by-category.html %}
+  {% endif %}
+{% endfor %}

@@ -2,9 +2,10 @@
 layout: page
 title: "PostgreSQL"
 permalink: /halaman/db/postgresql/
+icon: devicon-postgresql-plain-wordmark
 ---
 
-{% include programming-language.html lang="devicon-postgresql-plain-wordmark" title="PostgreSQL Database" %}
+{% include programming-language.html lang=page.icon title="PostgreSQL Database" %}
 {% for post in site.posts reversed %}
   {% if post.page_category == "postgresql" %}
     {% include post-by-category.html %}

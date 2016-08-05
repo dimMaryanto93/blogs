@@ -1,0 +1,13 @@
+---
+layout: page
+title: "Oracle Database"
+permalink: /halaman/db/oracle/
+icon: devicon-oracle-original
+---
+
+{% include programming-language.html lang=page.icon title="Oracle Database" %}
+{% for post in site.posts reversed %}
+  {% if post.page_category == "oracle" %}
+    {% include post-by-category.html %}
+  {% endif %}
+{% endfor %}

@@ -2,9 +2,10 @@
 layout: page
 title: "Java Fundamental"
 permalink: /halaman/java/fundamental/
+icon: devicon-java-plain-wordmark
 ---
 
-{% include programming-language.html lang="devicon-java-plain-wordmark" title="Java - Fundamental" %}
+{% include programming-language.html lang=page.icon title="Java - Fundamental" %}
 {% for post in site.posts reversed %}
   {% if post.page_category == "java_core" %}
     {% include post-by-category.html %}

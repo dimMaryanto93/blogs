@@ -2,9 +2,10 @@
 layout: page
 title: "UBuntu"
 permalink: /halaman/os/ubuntu/
+icon: devicon-ubuntu-plain-wordmark
 ---
 
-{% include programming-language.html lang="devicon-linux-plain" title="Linux - UBuntu" %}
+{% include programming-language.html lang=page.icon title="Linux - UBuntu" %}
 {% for post in site.posts reversed %}
   {% if post.page_category == "ubuntu" %}
     {% include post-by-category.html %}

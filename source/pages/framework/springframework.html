@@ -2,9 +2,10 @@
 layout: page
 title: "Spring Framework"
 permalink: /halaman/framework/springframework/
+icon: devicon-java-plain-wordmark
 ---
 
-{% include programming-language.html lang="devicon-java-plain-wordmark" title="Java Framework - Spring Framework" %}
+{% include programming-language.html lang=page.icon title="Java Framework - Spring Framework" %}
 {% for post in site.posts reversed %}
   {% if post.page_category == "spring" %}
     {% include post-by-category.html %}

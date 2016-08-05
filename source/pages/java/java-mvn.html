@@ -2,9 +2,10 @@
 layout: page
 title: "Apache Maven"
 permalink: /halaman/java/apache/maven/
+icon: devicon-java-plain-wordmark
 ---
 
-{% include programming-language.html lang="devicon-java-plain-wordmark" title="Java - Build Tools Apache Maven" %}
+{% include programming-language.html lang=page.icon title="Java - Build Tools Apache Maven" %}
 {% for post in site.posts reversed %}
   {% if post.page_category == "mvn" %}
     {% include post-by-category.html %}

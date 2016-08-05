@@ -2,9 +2,10 @@
 layout: page
 title: "Thymeleaf"
 permalink: /halaman/java/thymeleaf/
+icon: devicon-java-plain-wordmark
 ---
 
-{% include programming-language.html lang="devicon-java-plain-wordmark" title="Java Web Template Engine - Thymeleaf" %}
+{% include programming-language.html lang=page.icon title="Java Web Template Engine - Thymeleaf" %}
 {% for post in site.posts reversed %}
   {% if post.page_category == "thymeleaf" %}
     {% include post-by-category.html %}

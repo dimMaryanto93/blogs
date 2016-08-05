@@ -2,9 +2,10 @@
 layout: page
 title: "Windows 10"
 permalink: /halaman/os/win10/
+icon: devicon-windows8-plain
 ---
 
-{% include programming-language.html lang="devicon-windows8-plain" title="Microsoft Windows 10" %}
+{% include programming-language.html lang=page.icon title="Microsoft Windows 10" %}
 {% for post in site.posts reversed %}
   {% if post.page_category == "windows" %}
     {% include post-by-category.html %}

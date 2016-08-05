@@ -2,9 +2,10 @@
 layout: page
 title: "Git"
 permalink: /halaman/vcs/git/
+icon: devicon-git-plain-wordmark
 ---
 
-{% include programming-language.html lang="devicon-git-plain-wordmark" title="Version Control System - Git" %}
+{% include programming-language.html lang=page.icon title="Version Control System - Git" %}
 {% for post in site.posts reversed %}
   {% if post.page_category == "git" %}
     {% include post-by-category.html %}

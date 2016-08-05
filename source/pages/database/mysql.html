@@ -2,9 +2,10 @@
 layout: page
 title: "MySQL"
 permalink: /halaman/db/mysql/
+icon: devicon-mysql-plain-wordmark
 ---
 
-{% include programming-language.html lang="devicon-mysql-plain-wordmark" title="MySQL / MariaDB Database" %}
+{% include programming-language.html lang=page.icon title="MySQL / MariaDB Database" %}
 {% for post in site.posts reversed %}
   {% if post.page_category == "mysql" %}
     {% include post-by-category.html %}

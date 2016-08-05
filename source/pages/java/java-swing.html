@@ -2,9 +2,10 @@
 layout: page
 title: "Java Swing"
 permalink: /halaman/java/swing/
+icon: devicon-java-plain-wordmark
 ---
 
-{% include programming-language.html lang="devicon-java-plain-wordmark" title="Java - Java GUI Swing" %}
+{% include programming-language.html lang=page.icon title="Java - Java GUI Swing" %}
 {% for post in site.posts reversed %}
   {% if post.page_category == "swing" %}
     {% include post-by-category.html %}

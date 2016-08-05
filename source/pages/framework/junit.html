@@ -2,9 +2,10 @@
 layout: page
 title: "JUnit"
 permalink: /halaman/framework/junit/
+icon: devicon-java-plain-wordmark
 ---
 
-{% include programming-language.html lang="devicon-java-plain-wordmark" title="Java Framework - JUnit" %}
+{% include programming-language.html lang=page.icon title="Java Framework - JUnit" %}
 {% for post in site.posts reversed %}
   {% if post.page_category == "junit" %}
     {% include post-by-category.html %}

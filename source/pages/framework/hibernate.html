@@ -2,9 +2,10 @@
 layout: page
 title: "Hibernate"
 permalink: /halaman/framework/hibernate/
+icon: devicon-java-plain-wordmark
 ---
 
-{% include programming-language.html lang="devicon-java-plain-wordmark" title="Java Framework - Hibernate" %}
+{% include programming-language.html lang=page.icon title="Java Framework - Hibernate" %}
 {% for post in site.posts reversed %}
   {% if post.page_category == "hibernate" %}
     {% include post-by-category.html %}
