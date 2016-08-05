@@ -12,18 +12,18 @@
       <span class="fa fa-calendar-o text-primary"></span>
       {{ post.date | date: "%Y, %b %-d" }}
       {% if post.author %}•
-      <i class="fa fa-user text-primary"></i>
-      <span itemprop="name">{{ post.author }}</span>
+        <i class="fa fa-user text-primary"></i>
+        <span itemprop="name">{{ post.author }}</span>
       {% endif %}
     </small>
   </div>
 
   <div class="post-content">
     {% if post.content contains '<!--more-->' %}
-    {{ post.content | split:'<!--more-->' | first }}
-    <p><a href="{{ post.url }}">Lanjut membaca ...</a></p>
+      {{ post.content | split:'<!--more-->' | first }}
+      <p><a href="{{ post.url }}">Lanjut membaca ...</a></p>
     {% else %}
-    {{ post.content }}
+      {{ post.content }}
     {% endif %}
   </div>
   <div class="divider"></div>

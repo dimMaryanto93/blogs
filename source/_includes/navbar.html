@@ -80,7 +80,7 @@
   {% for halaman in sorted_pages) %}
     {% if halaman.page_category == "desktop" %}
       <li>
-        <a href="{{ halaman.url }}"><i class="{{ halaman.icon }} left"></i> {{ halaman.title }}</a>
+        <a href="{{ halaman.url }}"><i class="{{ halaman.icon }} colored left"></i> {{ halaman.title }}</a>
       </li>
     {% endif %}
   {% endfor %}
@@ -91,7 +91,7 @@
   {% for halaman in sorted_pages) %}
     {% if halaman.page_category == "web" %}
       <li>
-        <a href="{{ halaman.url }}"><i class="{{ halaman.icon }} left"></i> {{ halaman.title }}</a>
+        <a href="{{ halaman.url }}"><i class="{{ halaman.icon }} colored left"></i> {{ halaman.title }}</a>
       </li>
     {% endif %}
   {% endfor %}
@@ -102,7 +102,7 @@
   {% for halaman in sorted_pages) %}
     {% if halaman.page_category == "framework" %}
       <li>
-        <a href="{{ halaman.url }}"><i class="{{ halaman.icon }} left"></i> {{ halaman.title }}</a>
+        <a href="{{ halaman.url }}"><i class="{{ halaman.icon }} colored left"></i> {{ halaman.title }}</a>
       </li>
     {% endif %}
   {% endfor %}
@@ -113,7 +113,7 @@
   {% for halaman in sorted_pages) %}
     {% if halaman.page_category == "other" %}
       <li>
-        <a href="{{ halaman.url }}"><i class="{{ halaman.icon }} left"></i> {{ halaman.title }}</a>
+        <a href="{{ halaman.url }}"><i class="{{ halaman.icon }} colored left"></i> {{ halaman.title }}</a>
       </li>
     {% endif %}
   {% endfor %}

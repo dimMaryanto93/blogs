@@ -32,12 +32,13 @@
   <div class="divider"></div>
   <div id="halaman" class="flow-text">
     <ul>
-      {% for page in site.pages %}
+      {% assign sorted_pages = (site.pages | sort: 'category') %}
+      {% for page in sorted_pages %}
         {% if page.title and page.title != "Arsip" %}
           <li>
             <a href="{{ page.url }}" target="_self">
               {% if.page.icon %}
-                <i class="{{ page.icon }} link-icon"></i>
+                <i class="{{ page.icon }} link-icon colored"></i>
               {% endif %}
               <small>
                 {{ page.title }}
