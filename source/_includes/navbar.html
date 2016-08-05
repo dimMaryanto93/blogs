@@ -33,7 +33,7 @@
         <li>
           <a class="dropdown-button tooltipped waves-effect waves-light"
             href="#!" data-activates="other" data-tooltip="Lain-Lain (Tips &amp; Trick)">
-              <i class="material-icons right">more_vert</i> Lain-Lain
+              <i class="material-icons right">more_vert</i> Lain-Lain (Tips &amp; Trick)
             </a>
         </li>
       </ul>
@@ -80,7 +80,7 @@
   {% for halaman in sorted_pages) %}
     {% if halaman.page_category == "desktop" %}
       <li>
-        <a href="{{ halaman.url }}">{{ halaman.title }}</a>
+        <a href="{{ halaman.url }}"><i class="{{ halaman.icon }} left"></i> {{ halaman.title }}</a>
       </li>
     {% endif %}
   {% endfor %}
@@ -91,7 +91,7 @@
   {% for halaman in sorted_pages) %}
     {% if halaman.page_category == "web" %}
       <li>
-        <a href="{{ halaman.url }}">{{ halaman.title }}</a>
+        <a href="{{ halaman.url }}"><i class="{{ halaman.icon }} left"></i> {{ halaman.title }}</a>
       </li>
     {% endif %}
   {% endfor %}
@@ -102,7 +102,7 @@
   {% for halaman in sorted_pages) %}
     {% if halaman.page_category == "framework" %}
       <li>
-        <a href="{{ halaman.url }}">{{ halaman.title }}</a>
+        <a href="{{ halaman.url }}"><i class="{{ halaman.icon }} left"></i> {{ halaman.title }}</a>
       </li>
     {% endif %}
   {% endfor %}
@@ -113,7 +113,7 @@
   {% for halaman in sorted_pages) %}
     {% if halaman.page_category == "other" %}
       <li>
-        <a href="{{ halaman.url }}">{{ halaman.title }}</a>
+        <a href="{{ halaman.url }}"><i class="{{ halaman.icon }} left"></i> {{ halaman.title }}</a>
       </li>
     {% endif %}
   {% endfor %}
