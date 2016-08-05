@@ -20,7 +20,6 @@ references:
 
 Halo kembali lagi di blog saya, kali ini saya akan membahas bagaimana cara install database PostgreSQL sama seperti [post sebelumnya]({% post_url 2016-07-29-install-postgresql-f23 %}) hanya salah kali ini di sistem operasi Windows 10. Ok langsung aja kita download softwarenya dari [website PostgreSQL](https://www.postgresql.org/download/windows/)
 
-
 Sebenarnya ada 2 cara untuk menginstall database PostgreSQL di Windows
 
 ![Pilihan install postgresql](/images/2016-07/install-postgresql-win10/pg-download-1.png)

@@ -18,20 +18,26 @@ references:
 
 Halo salam programmer, kali ini saya akan menjelakan tentang tipe data, variable dan scope di bahasa pemograman Java. Seperti yang kita ketahui variabel digunakan untuk menampung nilai atau bahasa kerennya _value_. Di Java variabelnya lumanyan banyak dan memiliki sifatnya masing-masing, contohnya klo bilangan bulat harus Integer sedangkan bilangan pecahan yang bisa dibilang kecil menggunakan Float dan untuk bilangan pecahan besar menggunakan Double binggung? gak lah ya gampang kok sebenarnya ini cuman masalah kebiasaan aja kok. Nah jadi pada dasarnya variable di Java ada 4 jenis yaitu
 
-* Number
+<!--more-->
+
+### Number
+
 * Short
 * Integer
 * Long
 * Float
 * Double
-* String
-* Date
-* Object
+
+### String
+
+### Date
+
+### Object
+
 * Enum
 
 Gimana lumayan banyak khan? tapi kali ini saya tidak akan membahas semua tapi hanya sebagian saja yang penting adalah anda tau cara penggunaanya dan fungsinya seperti apa.
 
-<!--more-->
 
 ## Tipe data Integer
 

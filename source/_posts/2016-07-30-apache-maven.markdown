@@ -34,17 +34,24 @@ Memang dalam membangun sebuah software memang tidak bisa dipandang sebelah mata,
 Biasanya klo aplikasi karya ilmiah khususnya skripsi itu hanya CRUD (Cread Read Update Delete) + sedikit algoritma baik itu dari bahasa pemograman nya atau dari database. Selain itu juga untuk **aplikasi yang sifatnya production biasanya tidak bekerja sendiri** biasnya jumlah team terdiri 5 orang atau bisa lebih banyak klo projectnya besar, Karena kita bekerja dengan programmer orang lain timbullah masalah baru lagi yaitu ini pengalaman saya pribadi, **project terbengkalai karena kebanyakan debat sama programer lain tentang masalah sepele** yaitu penempatan folder yang berbeda karena stadard setiap programmer pasti beda.
 Maka solusinya **sekarang saya sudah menggunakan salah satu build tools untuk membuat software untuk projectkan atau pun project kecil seperti membuat skripsi mahasiswa. karena rata" saya hanya meneriman projectkan menggunakan teknologi Java jadi salah satu pilihan saya adalah [Apache Maven](https://maven.apache.org/)**. Kenapa menggunakan maven jawabanya adalah menurut saya paling mudah digunakan dan secara default Maven ini sudah dikenal di berbagai macam text editor contohnya Netbeans, Eclipse, InteliJ IDEA dan lain-lain. Selain build tools yang saya sebutkan barusan ada lagi sebagai berikut
 
-* Java
-  * [Gradle](http://gradle.org/)
-  * [Ant](http://ant.apache.org/)
-  * [Apache Maven](https://maven.apache.org/)
-* PHP
-  * [Composer](https://getcomposer.org/) (Masuknya ke dependency manager)
-* Javascript
-  * [gruntJs](http://gruntjs.com/)
-  * [gulpJs](http://gulpjs.com/)
-* Ruby
-  * [rake](http://rake.rubyforge.org/)
+### Java
+
+* [Gradle](http://gradle.org/)
+* [Ant](http://ant.apache.org/)
+* [Apache Maven](https://maven.apache.org/)
+
+## PHP
+
+* [Composer](https://getcomposer.org/) (Masuknya ke dependency manager)
+
+## Javascript
+
+* [gruntJs](http://gruntjs.com/)
+* [gulpJs](http://gulpjs.com/)
+
+## Ruby
+
+* [rake](http://rake.rubyforge.org/)
 * dan masih banyak lagi...
 
 ## Install Apache Maven
