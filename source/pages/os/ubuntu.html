@@ -4,17 +4,9 @@ title: "UBuntu"
 permalink: /halaman/os/ubuntu/
 ---
 
-<ul class="collection">
-  {% for post in site.posts reversed %}
-    {% if post.page_category == "ubuntu" %}
-      <li class="collection-item">
-        <a href="{{ post.url }}">
-          <small>
-            {{ post.title }}
-          </small>
-          <span class="badge">{{ post.date | date: "%Y, %b %d"}}</span>
-        </a>
-      </li>
-    {% endif %}
-  {% endfor %}
-</ul>
+{% include programming-language.html lang="devicon-linux-plain" title="Linux - UBuntu" %}
+{% for post in site.posts reversed %}
+  {% if post.page_category == "ubuntu" %}
+    {% include post-by-category.html %}
+  {% endif %}
+{% endfor %}

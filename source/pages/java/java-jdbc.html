@@ -4,17 +4,9 @@ title: "JDBC"
 permalink: /halaman/java/jdbc/
 ---
 
-<ul class="collection">
-  {% for post in site.posts reversed %}
-    {% if post.page_category == "jdbc" %}
-      <li class="collection-item">
-        <a href="{{ post.url }}">
-          <small>
-            {{ post.title }}
-          </small>
-          <span class="badge">{{ post.date | date: "%Y, %b %d"}}</span>
-        </a>
-      </li>
-    {% endif %}
-  {% endfor %}
-</ul>
+{% include programming-language.html lang="devicon-java-plain-wordmark" title="Java - Java Database Connectivity (JDBC)" %}
+{% for post in site.posts reversed %}
+  {% if post.page_category == "jdbc" %}
+    {% include post-by-category.html %}
+  {% endif %}
+{% endfor %}

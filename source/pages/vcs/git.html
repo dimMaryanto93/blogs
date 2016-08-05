@@ -4,17 +4,9 @@ title: "Git"
 permalink: /halaman/vcs/git/
 ---
 
-<ul class="collection">
-  {% for post in site.posts reversed %}
-    {% if post.page_category == "git" %}
-      <li class="collection-item">
-        <a href="{{ post.url }}">
-          <small>
-            {{ post.title }}
-          </small>
-          <span class="badge">{{ post.date | date: "%Y, %b %d"}}</span>
-        </a>
-      </li>
-    {% endif %}
-  {% endfor %}
-</ul>
+{% include programming-language.html lang="devicon-git-plain-wordmark" title="Version Control System - Git" %}
+{% for post in site.posts reversed %}
+  {% if post.page_category == "git" %}
+    {% include post-by-category.html %}
+  {% endif %}
+{% endfor %}

@@ -4,17 +4,9 @@ title: "PostgreSQL"
 permalink: /halaman/db/postgresql/
 ---
 
-<ul class="collection">
-  {% for post in site.posts reversed %}
-    {% if post.page_category == "postgresql" %}
-      <li class="collection-item">
-        <a href="{{ post.url }}">
-          <small>
-            {{ post.title }}
-          </small>
-          <span class="badge">{{ post.date | date: "%Y, %b %d"}}</span>
-        </a>
-      </li>
-    {% endif %}
-  {% endfor %}
-</ul>
+{% include programming-language.html lang="devicon-postgresql-plain-wordmark" title="PostgreSQL Database" %}
+{% for post in site.posts reversed %}
+  {% if post.page_category == "postgresql" %}
+    {% include post-by-category.html %}
+  {% endif %}
+{% endfor %}
