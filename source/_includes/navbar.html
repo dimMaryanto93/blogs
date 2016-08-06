@@ -78,9 +78,15 @@
 <ul id="desktop" class="dropdown-content">
   {% assign sorted_pages = (site.pages | sort: 'order_list') %}
   {% for halaman in sorted_pages) %}
-    {% if halaman.page_category == "desktop" %}
+    {% if halaman.page_category == "desktop" and halaman.active %}
       <li>
-        <a href="{{ halaman.url }}"><i class="{{ halaman.icon }} colored left"></i> {{ halaman.title }}</a>
+        <a href="{{ halaman.url }}">
+          <i class="{{ halaman.icon }} colored left"></i>
+          {{ halaman.title }}
+          {% if halaman.new %}
+            <span class="new badge"></span>
+          {% endif %}
+        </a>
       </li>
     {% endif %}
   {% endfor %}
@@ -89,9 +95,12 @@
 <ul id="web" class="dropdown-content">
   {% assign sorted_pages = (site.pages | sort: 'order_list') %}
   {% for halaman in sorted_pages) %}
-    {% if halaman.page_category == "web" %}
+    {% if halaman.page_category == "web" and halaman.active %}
       <li>
-        <a href="{{ halaman.url }}"><i class="{{ halaman.icon }} colored left"></i> {{ halaman.title }}</a>
+        <a href="{{ halaman.url }}">
+          <i class="{{ halaman.icon }} colored left"></i>
+          {{ halaman.title }}
+        </a>
       </li>
     {% endif %}
   {% endfor %}
@@ -100,9 +109,12 @@
 <ul id="framework" class="dropdown-content">
   {% assign sorted_pages = (site.pages | sort: 'order_list') %}
   {% for halaman in sorted_pages) %}
-    {% if halaman.page_category == "framework" %}
+    {% if halaman.page_category == "framework" and halaman.active %}
       <li>
-        <a href="{{ halaman.url }}"><i class="{{ halaman.icon }} colored left"></i> {{ halaman.title }}</a>
+        <a href="{{ halaman.url }}">
+          <i class="{{ halaman.icon }} colored left"></i>
+          {{ halaman.title }}
+        </a>
       </li>
     {% endif %}
   {% endfor %}
@@ -111,9 +123,12 @@
 <ul id="other" class="dropdown-content">
   {% assign sorted_pages = (site.pages | sort: 'order_list') %}
   {% for halaman in sorted_pages) %}
-    {% if halaman.page_category == "other" %}
+    {% if halaman.page_category == "other" and halaman.active %}
       <li>
-        <a href="{{ halaman.url }}"><i class="{{ halaman.icon }} colored left"></i> {{ halaman.title }}</a>
+        <a href="{{ halaman.url }}">
+          <i class="{{ halaman.icon }} colored left"></i>
+          {{ halaman.title }}
+        </a>
       </li>
     {% endif %}
   {% endfor %}
