@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Optimalisasi JDBC dengan Java Beans"
+title: "JDBC - Optimalisasi JDBC dengan Java Beans"
 date: 2016-08-02T14:19:50+07:00
 author: Dimas Maryanto
 comments: yes
