@@ -1,0 +1,15 @@
+---
+layout: page
+title: "Android"
+permalink: /halaman/mobile/android/
+icon: devicon-android-plain-wordmark
+page_category: desktop
+category: android
+---
+
+{% include programming-language.html lang=page.icon title="Android Mobile Programming" %}
+{% for post in site.posts reversed %}
+  {% if post.page_category == "android" %}
+    {% include post-by-category.html %}
+  {% endif %}
+{% endfor %}

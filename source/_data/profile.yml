@@ -2,3 +2,31 @@ nama: Dimas Maryanto
 status: Never stop learn, code, and contribute
 messages: Saya adalah software developer based Java (Desktop, Mobile, Web) berdomisili di Bandung, Jawa Barat. Selain itu saya juga seorang pengguna sistem operasi Windows 10, Linux Fedora dan Linux UBuntu.
 copyright: <p>Copyright &copy; 2017 Dimas Maryanto. All Rights Reserved.</p>
+socials:
+  - nama: Facebook
+    url: https://www.facebook.com/dimMaryanto93
+    icon: fa fa-facebook
+  - nama: Twitter
+    url: https://twitter.com/dimMaryanto93
+    icon: fa fa-twitter
+  - nama: Instagram
+    url: https://www.instagram.com/dimmaryanto93/
+    icon: fa fa-instagram
+  - nama: Google Plus
+    url: https://plus.google.com/u/0/111893674946436586370
+    icon: fa fa-google-plus
+  - nama: LinkedIn
+    url: https://www.linkedin.com/in/dimmaryanto93
+    icon: fa fa-linkedin
+  - nama: Youtube
+    url: https://www.youtube.com/channel/UCNTS3BwsqzKwaOA0mOPLCgw
+    icon: fa fa-youtube
+  - nama: GitHub
+    url: https://github.com/dimMaryanto93
+    icon: fa fa-github
+  - nama: BitBucket
+    url: https://bitbucket.org/dimMaryanto93/
+    icon: fa fa-bitbucket
+  - nama: StackOverFlow
+    url: http://stackoverflow.com/users/6685789/dimas-maryanto?tab=profile
+    icon: fa fa-stack-overflow

@@ -4,33 +4,13 @@
     class="responsive-img z-depth-5" width="150" height="150"/>
   <h3>{{ site.data.profile.nama }}</h3>
   <div>
-    <div>
-      <ul id="list-button-follow">
-        <li>
-          <div class="fb-follow" data-href="https://www.facebook.com/dimmaryanto93" data-layout="standard"
-            data-size="large" data-show-faces="true">
-          </div>
-        </li>
-        <li>
-          <a href="https://twitter.com/dimMaryanto93" class="twitter-follow-button"
-            data-size="large" data-lang="id" data-show-count="true">
-              Follow @dimMaryanto93
-          </a>
-        </li>
-      </ul>
-    </div>
+    <p class="text-muted">
+      {{ site.data.profile.messages }}
+    </p>
   </div>
-  <p class="text-muted">
-    {{ site.data.profile.messages }}
-  </p>
-  <div>
-    <a class="twitter-timeline" data-lang="id"
-    data-height="600" href="https://twitter.com/dimMaryanto93">
-      Tweets by dimMaryanto93
-    </a>
-  </div>
-  <div class="divider"></div>
+  <hr>
   <div id="halaman" class="flow-text">
+    <h5>Kategori</h5>
     <ul>
       {% assign sorted_pages = (site.pages | sort: 'category') %}
       {% for page in sorted_pages %}
