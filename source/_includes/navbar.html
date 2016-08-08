@@ -1,4 +1,4 @@
-<div class="navbar-fixed">
+<div class="navbar-fixed hide-on-large-only">
   <nav>
     <div class="nav-wrapper">
       <a href="{{ site.baseurl }}/" class="brand-logo">
@@ -6,37 +6,6 @@
         Blog
       </a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li>
-          <a href="{{ site.baseurl }}/halaman/arsip/" class="waves-effect waves-light tooltipped" data-tooltip="Halaman Arsip">
-            <i class="material-icons left">archive</i> Arsip
-          </a>
-        </li>
-        <li>
-          <a class="dropdown-button tooltipped waves-effect waves-light"
-            href="#!" data-activates="desktop" data-tooltip="Desktop Programming Language">
-            <i class="material-icons left">computer</i> Desktop &amp; Mobile Programming
-          </a>
-        </li>
-        <li>
-          <a class="dropdown-button tooltipped waves-effect waves-light"
-            href="#!" data-activates="web" data-tooltip="Website Programming Language">
-              <i class="material-icons left">public</i> Website Programming
-            </a>
-        </li>
-        <li>
-          <a class="dropdown-button tooltipped waves-effect waves-light"
-            href="#!" data-activates="framework" data-tooltip="Framework">
-              <i class="material-icons left">settings</i> Framework Language
-          </a>
-        </li>
-        <li>
-          <a class="dropdown-button tooltipped waves-effect waves-light"
-            href="#!" data-activates="other" data-tooltip="Lain-Lain (Tips &amp; Trick)">
-              <i class="material-icons right">more_vert</i> Lain-Lain (Tips &amp; Trick)
-            </a>
-        </li>
-      </ul>
       <ul class="side-nav black-text" id="mobile-demo">
         <div id="profile">
           <p class="flow-text">{{ site.data.profile.status }}</p>
@@ -75,7 +44,7 @@
   </nav>
 </div>
 
-<ul id="desktop" class="dropdown-content">
+<ul id="desktop" class="side-nav">
   {% assign sorted_pages = (site.pages | sort: 'order_list') %}
   {% for halaman in sorted_pages) %}
     {% if halaman.page_category == "desktop" and halaman.active %}
@@ -92,7 +61,7 @@
   {% endfor %}
 </ul>
 
-<ul id="web" class="dropdown-content">
+<ul id="web" class="side-nav">
   {% assign sorted_pages = (site.pages | sort: 'order_list') %}
   {% for halaman in sorted_pages) %}
     {% if halaman.page_category == "web" and halaman.active %}
@@ -109,7 +78,7 @@
   {% endfor %}
 </ul>
 
-<ul id="framework" class="dropdown-content">
+<ul id="framework" class="side-nav">
   {% assign sorted_pages = (site.pages | sort: 'order_list') %}
   {% for halaman in sorted_pages) %}
     {% if halaman.page_category == "framework" and halaman.active %}
@@ -126,7 +95,7 @@
   {% endfor %}
 </ul>
 
-<ul id="other" class="dropdown-content">
+<ul id="other" class="side-nav">
   {% assign sorted_pages = (site.pages | sort: 'order_list') %}
   {% for halaman in sorted_pages) %}
     {% if halaman.page_category == "other" and halaman.active %}

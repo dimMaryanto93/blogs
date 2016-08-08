@@ -1,5 +1,5 @@
 <div id="profile" class="hide-on-med-and-down">
-  <p class="flow-text">{{ site.data.profile.status }}</p>
+  <p class="flow-text"><a href="{{ site.url }}">{{ site.data.profile.status }}</a></p>
   <img id="picture_profile" src="/static/img/profile.png" alt=""
     class="responsive-img z-depth-5" width="150" height="150"/>
   <h3>{{ site.data.profile.nama }}</h3>
@@ -7,6 +7,54 @@
     <p class="text-muted">
       {{ site.data.profile.messages }}
     </p>
+  </div>
+  <div class="flow-text">
+    <ul>
+      <li>
+        <a href="{{ site.baseurl }}/halaman/arsip/" class="waves-effect waves-light tooltipped" data-tooltip="Halaman Arsip">
+          <i class="material-icons left">archive</i>
+          <small>
+            Arsip
+          </small>
+        </a>
+      </li>
+      <li>
+        <a class="button-collapse tooltipped waves-effect waves-light"
+          href="#!" data-activates="desktop" data-tooltip="Desktop Programming Language">
+          <i class="material-icons left">computer</i>
+          <small>
+            Desktop &amp; Mobile Programming
+          </small>
+        </a>
+      </li>
+      <li>
+        <a class="button-collapse tooltipped waves-effect waves-light"
+        href="#!" data-activates="web" data-tooltip="Website Programming Language">
+          <i class="material-icons left">public</i>
+          <small>
+            Web Programming
+          </small>
+        </a>
+      </li>
+      <li>
+        <a class="button-collapse tooltipped waves-effect waves-light"
+        href="#!" data-activates="framework" data-tooltip="Framework">
+          <i class="material-icons left">settings</i>
+          <small>
+            Framework
+          </small>
+        </a>
+      </li>
+      <li>
+        <a class="button-collapse tooltipped waves-effect waves-light"
+        href="#!" data-activates="other" data-tooltip="Lain-Lain (Tips &amp; Trick)">
+          <i class="material-icons left">more_vert</i>
+          <small>
+            Lain-Lain
+          </small>
+        </a>
+      </li>
+    </ul>
   </div>
   <hr>
   <div id="halaman" class="flow-text">
