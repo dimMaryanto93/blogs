@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "JDBC - Modularisasi untuk JDBC"
+title: "Modularisasi untuk JDBC"
 date: 2016-08-06T18:39:28+07:00
 author: Dimas Maryanto
 comments: yes

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Java - Percabangan menggunakan IF dan Switch-case"
+title: "Percabangan menggunakan IF dan Switch-case"
 date: 2016-08-05T23:34:07+07:00
 author: Dimas Maryanto
 comments: yes
@@ -133,4 +133,4 @@ Gimana jelaskan apa yang ada saya visualisaksikan dengan, mungkin anda bisa mena
 * Ketemulah ```case : 2``` setelah itu dia akan menampilkan kelayar yaitu ```C``` setelah itu menampilkan lagi ke layar yaitu ```D``` setelah itu baru dia keluar karena ada keyword ```break;```.
 * Kesimpulannya jadi hasilnya dalah ```CD```.
 
-Ok mungkin cukup sekian dulu penjelasan mengenai cara mudah untuk membaca koding dengan mentranslate ke UML Diagrams - Activity diagrams. see you next post!. 
+Ok mungkin cukup sekian dulu penjelasan mengenai cara mudah untuk membaca koding dengan mentranslate ke UML Diagrams - Activity diagrams. see you next post!.

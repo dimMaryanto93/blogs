@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "JDBC - Externalisasi Connection dengan properties file"
+title: "Externalisasi Connection dengan properties file"
 author: Dimas Maryanto
 comments: yes
 page_category: jdbc

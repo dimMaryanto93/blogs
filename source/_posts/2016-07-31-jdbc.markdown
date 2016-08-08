@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "JDBC - Pengenalan JDBC, Membuat CRUD sangat sederhana"
+title: "Pengenalan JDBC, Membuat CRUD sangat sederhana"
 date: 2016-07-31T00:28:43+07:00
 author: Dimas Maryanto
 comments: yes

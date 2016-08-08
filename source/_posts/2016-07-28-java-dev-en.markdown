@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Setup Oracle JDK, Java Development Environtment"
+title: "Setup Oracle JDK (Java Development Kit)"
 date: 2016-07-28T17:30:24+07:00
 author: Dimas Maryanto
 comments: yes
@@ -10,7 +10,6 @@ language: java
 repository:
 categories:
 - Java
-- JDK8
 tags:
 - Java
 - JDK

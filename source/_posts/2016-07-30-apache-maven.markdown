@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Apache Maven, build tools untuk membangun aplikasi productions"
+title: "Build tools untuk membangun aplikasi productions"
 date: 2016-07-30T15:38:00+07:00
 author: Dimas Maryanto
 comments: yes
