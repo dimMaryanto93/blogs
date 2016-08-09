@@ -9,6 +9,7 @@ url: "http://software.dimmaryanto93.com" # the base hostname & protocol for your
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
 paginate: 3
 
 # Permalinks
@@ -20,6 +21,8 @@ gems:
 - jekyll-paginate
 - jekyll-youtube
 - jekyll-gist
+- kramdown
+- rouge
 
 # jangan pake default system
 exclude: [vendor]

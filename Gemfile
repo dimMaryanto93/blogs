@@ -9,4 +9,6 @@ group :jekyll_plugins do
   gem "jekyll-youtube"
   gem "jekyll-paginate"
   gem "jekyll-gist"
+  gem "kramdown"
+  gem "rouge"
 end
