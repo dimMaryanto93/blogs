@@ -21,25 +21,25 @@ references:
 
 Halo, kali ini saya mau membahas tentang salah satu teknologi ServerSide di Java yaitu JSP (Java Server Pages) bukan Java Server Faces (JSF) itu beda ya!. JSP ini adalah Server Side programming yang digunakan untuk membangun halaman Web, basicnya kurang lebih sama kaya [PHP](http://php.net/) atau [ASP](http://www.asp.net/) karena kita bisa mengisipkan sintax PHP ke dalam [HTML](https://www.w3.org/html/) dengan menggunakan
 
-```php
+{% highlight php %}
 <?php
   echo "Ini sintax PHP";  
 ?>
-```
+{% endhighlight %}
 
 nah JSP juga sama jadi kita bisa masukin sintax Java ke HTML menggunakan
 
-```jsp
+{% highlight jsp %}
 <%  out.println("Ini sintax JSP"); %>
-```
+{% endhighlight %}
 
 atau anda juga bisa menggunakan gaya bahasa XML seperti berikut:
 
-```jsp
+{% highlight jsp %}
 <jsp:scriptlet>
   out.println("Ini sintax JSP lagi");
 </jsp:scriptlet>
-```
+{% endhighlight %}
 
 Seperti yang kita tau kalo Java ini punya 3 segment yaitu JavaSE, JavaME, JavaEE. nah Java Server Pages ini termasuk package dari JavaEE (Java Enterprice Edition) yang jadi pertanyaan apa cuman ini kompoenent di JavaEE? eistttt gak MASIH BANYAK loh fitur-fitur lain yang ada di JavaEE nih coba [baca disini](http://docs.oracle.com/javaee/6/tutorial/doc/bnaaw.html) banyak banget modul-modul yang harus dikuasai klo mau serius di Java Programmer mulai dari Servlet, Web Service, Security dan masih banyak lagi.
 
