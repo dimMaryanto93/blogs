@@ -9,14 +9,14 @@ $(document).ready(function(){
         console.info('Action:', e.action);
         console.info('Text:', e.text);
         console.info('Trigger:', e.trigger);
-        $.notify("Telah di salin", "success");
+        Materialize.toast('Berhasil di salin', 1000)
         e.clearSelection();
     });
 
     clipboard.on('error', function(e) {
         console.error('Action:', e.action);
         console.error('Trigger:', e.trigger);
-        $.notify("Gagal di salin!", "error");
+        Materialize.toast('Gagal disalin!', 4000)
     });
 
 });
