@@ -132,13 +132,13 @@ $ sudo systemctl restart postgresql.service
 
 setelah itu coba login dengan user postgres dan db postgres (masih dalam root):
 
-{% highlight bash %}
+{% highlight postgresql-console %}
 psql -h localhost -U postgres postgres
 {% endhighlight %}
 
 berikut outputnya:
 
-{% highlight bash %}
+{% highlight postgresql-console %}
 Password for user postgres:
 psql (9.4.7)
 Type "help" for help.
@@ -148,13 +148,13 @@ postgres=#
 
 setelah itu ubah password defaultnya menjadi (bebas terserah anda) klo saya menggunakan ```admin``` menggunakan perintah berikut
 
-{% highlight sql %}
+{% highlight postgresql-console %}
 \password
 {% endhighlight %}
 
 berikut outpunya:
 
-{% highlight bash %}
+{% highlight postgresql-console %}
 postgres=# \password
 Enter new password: # admin
 Enter it again: # admin
