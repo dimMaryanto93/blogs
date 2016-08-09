@@ -69,7 +69,7 @@ Setelah selesai, kita akan melihat tampilan seperti berikut:
 
 Klik **Finish** untuk menutup jendela dialog installasi PostgreSQL, selanjutnya kita login ke database postgresql. Ada 2 cara untuk login ke database yaitu dengan menggunakan command prompt dan juga tools yang telah kita tambahkan tadi yaitu pgAdminIII. sekarang kita coba dulu login dengan command prompt maka gunakan perintah seperti berikut:
 
-{% highlight bash %}
+{% highlight postgresql-console %}
 psql -h localhost -U postgres
 {% endhighlight %}
 

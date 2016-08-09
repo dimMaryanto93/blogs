@@ -25,7 +25,7 @@ Halo kali ini saya mau share bagaimana cara export data dari database ke file ``
 
 Tahap pertama adalah login dulu sebagai default system atau system adminstratornya di PostgreSQl yaitu ```postgres``` menggunakan perintah seperti berikut:
 
-{% highlight bash %}
+{% highlight postgresql-console %}
 psql -h localhost -U postgres
 {% endhighlight %}
 
@@ -50,7 +50,7 @@ CREATE DATABASE universitas WITH OWNER postgres;
 
 Kemudian jalankan script diatas maka outpunya seperti berikut:
 
-{% highlight bash %}
+{% highlight postgresql-console %}
 postgres=# CREATE DATABASE universitas WITH OWNER postgres;
 CREATE DATABASE
 postgres=#
@@ -58,13 +58,13 @@ postgres=#
 
 Setelah database terbuat kita ubah atau kita koneksikan ke database universitas dengan perintah berikut:
 
-{% highlight sql %}
+{% highlight postgresql-console %}
 \c universitas
 {% endhighlight %}
 
 Maka outputnya seperti berikut:
 
-{% highlight bash %}
+{% highlight postgresql-console %}
 postgres=# \c universitas
 WARNING: Console code page (850) differs from Windows code page (1252)
          8-bit characters might not work correctly. See psql reference
@@ -91,13 +91,13 @@ create table mahasiswa(
 
 Setelah itu kita check apakah sesuai dengan perancangan menggunakan perintah seperti berikut:
 
-{% highlight sql %}
+{% highlight postgresql-console %}
 \d mahasiswa
 {% endhighlight %}
 
 Berikut outputnya:
 
-{% highlight bash %}
+{% highlight postgresql-console %}
 universitas=# \d mahasiswa;
           Table "public.mahasiswa"
  Column |         Type          | Modifiers
@@ -125,7 +125,7 @@ SELECT * FROM mahasiswa;
 
 Berikut adalah outputnya:
 
-{% highlight bash %}
+{% highlight postgresql-console %}
 universitas=# select * from mahasiswa;
  npm |          nama
 -----+------------------------
