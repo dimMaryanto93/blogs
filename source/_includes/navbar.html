@@ -37,11 +37,36 @@
     <span class="name white-text">{{ site.data.profile.nama }}</span>
     <a href="mailto:{{ site.data.profile.email }}"><span class="email white-text">{{ site.data.profile.email }}</span></a>
   </div>
-  <li><a class="subheader">Java &amp; Mobile</a></li>
+  <li><a class="subheader">Desktop</a></li>
   <hr>
   {% assign sorted_pages = (site.pages | sort: 'order_list') %}
   {% for halaman in sorted_pages) %}
     {% if halaman.page_category == "desktop" and halaman.active %}
+      <li>
+        <a href="{{ halaman.url }}">
+          <i class="{{ halaman.icon }} colored left flow-text"></i>
+          {{ halaman.title }}
+          {% if halaman.new %}
+            <span class="new badge"></span>
+          {% endif %}
+        </a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+<ul id="mobile" class="side-nav">
+  <div class="userView">
+    <img src="/static/img/banner-bg.jpg" class="background" />
+    <img class="circle" src="/static/img/profile.png">
+    <span class="name white-text">{{ site.data.profile.nama }}</span>
+    <a href="mailto:{{ site.data.profile.email }}"><span class="email white-text">{{ site.data.profile.email }}</span></a>
+  </div>
+  <li><a class="subheader">Mobile</a></li>
+  <hr>
+  {% assign sorted_pages = (site.pages | sort: 'order_list') %}
+  {% for halaman in sorted_pages) %}
+    {% if halaman.page_category == "mobile" and halaman.active %}
       <li>
         <a href="{{ halaman.url }}">
           <i class="{{ halaman.icon }} colored left flow-text"></i>
@@ -92,6 +117,31 @@
   {% assign sorted_pages = (site.pages | sort: 'order_list') %}
   {% for halaman in sorted_pages) %}
     {% if halaman.page_category == "framework" and halaman.active %}
+      <li>
+        <a href="{{ halaman.url }}">
+          <i class="{{ halaman.icon }} colored left flow-text"></i>
+          {{ halaman.title }}
+          {% if halaman.new %}
+            <span class="new badge"></span>
+          {% endif %}
+        </a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+<ul id="database" class="side-nav">
+  <div class="userView">
+    <img src="/static/img/banner-bg.jpg" class="background" />
+    <img class="circle" src="/static/img/profile.png">
+    <span class="name white-text">{{ site.data.profile.nama }}</span>
+    <a href="mailto:{{ site.data.profile.email }}"><span class="email white-text">{{ site.data.profile.email }}</span></a>
+  </div>
+  <li><a class="subheader">Database Management System</a></li>
+  <hr>
+  {% assign sorted_pages = (site.pages | sort: 'order_list') %}
+  {% for halaman in sorted_pages) %}
+    {% if halaman.page_category == "database" and halaman.active %}
       <li>
         <a href="{{ halaman.url }}">
           <i class="{{ halaman.icon }} colored left flow-text"></i>

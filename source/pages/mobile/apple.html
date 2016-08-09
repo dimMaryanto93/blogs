@@ -1,0 +1,17 @@
+---
+layout: page
+title: "Apple - iOS"
+permalink: /halaman/mobile/apple/
+icon: devicon-apple-original
+page_category: mobile
+category: apple
+active: 
+new:
+---
+
+{% include programming-language.html lang=page.icon title="Apple - Mobile Programming" %}
+{% for post in site.posts reversed %}
+  {% if post.page_category == "apple" %}
+    {% include post-by-category.html %}
+  {% endif %}
+{% endfor %}

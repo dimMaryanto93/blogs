@@ -1,0 +1,17 @@
+---
+layout: page
+title: "Windows Phone"
+permalink: /halaman/mobile/win-phone/
+icon: devicon-windows8-original
+page_category: mobile
+category: windows
+active: 
+new:
+---
+
+{% include programming-language.html lang=page.icon title="Microsoft Windows Phone - Mobile Programming" %}
+{% for post in site.posts reversed %}
+  {% if post.page_category == "windows-phone" %}
+    {% include post-by-category.html %}
+  {% endif %}
+{% endfor %}
