@@ -4,7 +4,7 @@ title: "How to install PostgreSQL database on Fedora 24/23 via dnf"
 date: 2016-07-29T21:46:00+07:00
 author: Dimas Maryanto
 comments: yes
-page_category: fedora
+page_category: postgresql
 gist:
 language: postgresql
 repository:

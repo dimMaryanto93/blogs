@@ -5,13 +5,13 @@ permalink: /halaman/java/apache/maven/
 icon: devicon-java-plain-wordmark
 page_category: framework
 category: java
-active: yes
-new: yes
+active:
+new:
 ---
 
 {% include programming-language.html lang=page.icon title="Java - Build Tools Apache Maven" %}
 {% for post in site.posts reversed %}
-  {% if post.page_category == "mvn" %}
+  {% if post.page_category == "maven" %}
     {% include post-by-category.html %}
   {% endif %}
 {% endfor %}

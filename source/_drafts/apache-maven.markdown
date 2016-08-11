@@ -4,7 +4,7 @@ title: "Build tools untuk membangun aplikasi productions"
 date: 2016-07-30T15:38:00+07:00
 author: Dimas Maryanto
 comments: yes
-page_category: mvn
+page_category: maven
 language: java
 repository: https://github.com/dimMaryanto93/belajar-apache-maven.git
 categories:
