@@ -22,7 +22,7 @@ permalink: /halaman/arsip/
   	      {% if year != nyear %}
             <li class="collection-header avatar">
               <i class="fa fa-calendar-o"></i>
-              <span id="{{ post.date | date: '%Y-%b' }}" class="post-list-heade">
+              <span id="{{ post.date | date: '%Y-%b' }}" class="post-list-header">
                 {{ post.date | date: '%B %Y' }}
               </span>
             </li>
@@ -36,20 +36,19 @@ permalink: /halaman/arsip/
               {% if icon.name == post.language %}
                 {% assign versions = icon.versions %}
                 <div>
-                  <i class="devicon-{{ icon.name }}-{{ versions.font[0] }} blue circle"></i>
+                  <i class="devicon-{{ icon.name }}-{{ versions.font[0] }} circle"></i>
                 </div>
                 {{ break }}
               {% endif %}
             {% endfor %}
           {% else %}
           <div>
-            <i class="fa fa-pencil blue circle"></i>
+            <i class="fa fa-pencil circle"></i>
           </div>
           {% endif %}
+          <small>
           <a href="{{ post.url }}">
-            <small>
               {{ post.title }}
-            </small>
             <span class="badge">{{ post.date | date: "%Y, %b %d"}}</span>
           </a>
           <p>
@@ -60,7 +59,8 @@ permalink: /halaman/arsip/
             </div>
             {% endfor %}
           </p>
-        </li>
+        </small>
+      </li>
   	  {% endfor %}
   	</ul>
   </div>
