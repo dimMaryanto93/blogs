@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Memamahi file konfigurasi Apache Maven (pom.xml)"
+date: 2016-08-17T14:50:54+07:00
 author: Dimas Maryanto
 comments: yes
 page_category: maven
