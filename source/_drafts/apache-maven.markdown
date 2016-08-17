@@ -25,39 +25,6 @@ references:
 - http://maven.apache.org/plugins/maven-assembly-plugin/usage.html
 ---
 
-Halo kembali lagi di blog saya, nah kali ini saya akan membahas tentang software yang basicnya atau dikategorikan sebagai build tools yaitu Apache Maven. tapi sebelum kita belajar tentang Apache Maven, kita harus tau dulu apa itu Apache Maven? apa bedanya dengan menggunakan java biasa? dll.
-
-<!--more-->
-
-Memang dalam membangun sebuah software memang tidak bisa dipandang sebelah mata, kita membutuhkan fondasi yang kokoh dibawahnya. Mengapa saya menyebutkan demikian, jawabanya adalah klo kita membuat aplikasi yang sangat kompleks bukan untuk aplikasi karya ilmiah (Skripsi, Belajar dan lain-lain) **dalam arti aplikasi production** (Aplikasi yang benar-benar digunakan di kehipan nyata) gak seperti karya ilmiah, ya klo dikira" perbedaanya 10% lah karena banyak hal yang harus dipikirkan seperti **correctness, performance, stable, dapat dipelihara dengan mudah source codenya dan masih banyak lagi yang bikin mumet** (pusing pala berbi #laguDangdut).
-
-Biasanya klo aplikasi karya ilmiah khususnya skripsi itu hanya CRUD (Cread Read Update Delete) + sedikit algoritma baik itu dari bahasa pemograman nya atau dari database. Selain itu juga untuk **aplikasi yang sifatnya production biasanya tidak bekerja sendiri** biasnya jumlah team terdiri 5 orang atau bisa lebih banyak klo projectnya besar, Karena kita bekerja dengan programmer orang lain timbullah masalah baru lagi yaitu ini pengalaman saya pribadi, **project terbengkalai karena kebanyakan debat sama programer lain tentang masalah sepele** yaitu penempatan folder yang berbeda karena stadard setiap programmer pasti beda.
-Maka solusinya **sekarang saya sudah menggunakan salah satu build tools untuk membuat software untuk projectkan atau pun project kecil seperti membuat skripsi mahasiswa. karena rata" saya hanya meneriman projectkan menggunakan teknologi Java jadi salah satu pilihan saya adalah [Apache Maven](https://maven.apache.org/)**. Kenapa menggunakan maven jawabanya adalah menurut saya paling mudah digunakan dan secara default Maven ini sudah dikenal di berbagai macam text editor contohnya Netbeans, Eclipse, InteliJ IDEA dan lain-lain. Selain build tools yang saya sebutkan barusan ada lagi sebagai berikut
-
-### Java
-
-* [Gradle](http://gradle.org/)
-* [Ant](http://ant.apache.org/)
-* [Apache Maven](https://maven.apache.org/)
-
-## PHP
-
-* [Composer](https://getcomposer.org/) (Masuknya ke dependency manager)
-
-## Javascript
-
-* [gruntJs](http://gruntjs.com/)
-* [gulpJs](http://gulpjs.com/)
-
-## Ruby
-
-* [rake](http://rake.rubyforge.org/)
-* dan masih banyak lagi...
-
-## Install Apache Maven
-
-Nah sekarang kita akan menginstall apache maven di Windows 10, Linux Ubuntu dan Fedora 23, pertama saya mau install di Windows 10 dulu karena klo di windows ini agak ribet dan lumayan panjang stepnya. tpi sebelum installal maven kita harus pastikan anda telah mengginstall JDK dan setting ```JAVA_HOME``` klo belum silahkan install terlebih dahulu lihat [cara install jdk]({% post_url 2016-07-28-java-dev-en %})
-
 ### Install Maven di Linux Fedora 23/24 dari ```dnf```
 
 Seperti biasa kita buka terminanya, kemudian masuk sebagai ```root``` terlebih dahulu dan berikut adalah perintah untuk menginstall maven:
