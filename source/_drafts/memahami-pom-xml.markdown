@@ -1,7 +1,6 @@
 ---
 layout: post
-title: "Build tools untuk membangun aplikasi productions"
-date: 2016-07-30T15:38:00+07:00
+title: "Memamahi file konfigurasi Apache Maven (pom.xml)"
 author: Dimas Maryanto
 comments: yes
 page_category: maven
@@ -20,16 +19,14 @@ tags:
 - IDEA
 references:
 - https://maven.apache.org/
-- http://gradle.org/
 - http://software.endy.muhardin.com/java/apache-maven/
-- http://maven.apache.org/plugins/maven-assembly-plugin/usage.html
 ---
-
-# Memahami ```pom.xml```
 
 Seperti yang saya jelaskan di awal, bahwa software build-tools ini biasanya memiliki konfigurasi sendiri2 contohnya apache maven ini menggunakan file ```pom.xml``` sedangkan untuk gradle menggunakan ```build.gradle``` untuk menampung konfigurasi seperti dependency management, plugins, properties aplikasi contohnya version, nama aplikasi, contributors dan lain-lain.
 
 Nah kalo kita buka file ```pom.xml``` menggunakan text-editor seperti berikut:
+
+<!--more-->
 
 {% highlight xml %}
 <!-- XML header untuk maven project -->
@@ -67,12 +64,9 @@ Nah kalo kita buka file ```pom.xml``` menggunakan text-editor seperti berikut:
 </project>
 {% endhighlight %}
 
-<hr/>
-
 ## XML header
 
 Apache maven ini sebenarnya configurasi menggunakan format ```xml```, berbeda dengan gradle yang menggunakan format ```json```. Dengan diawali dengan tag
-
 
 {% highlight xml %}
 <project>
@@ -85,8 +79,6 @@ kemudian dalam tag project memiliki atribut sebagai berikut
 * ```xmlns``` yaitu sebagai validator atau validasi tag yang digunakan tersedia tidak.
 * ```xmlns:xsi``` yaitu sebagai namespace
 * ```xsi:schemaLocation``` yaitu location schema namespace
-
-<hr/>
 
 ## Aplikasi properties
 
@@ -107,8 +99,6 @@ Untuk aplikasi properties ini sebenarnya udah saya jelaskan tadi di saat membuat
 * ```version``` yaitu menandakan versi sebuah aplikasi yang akan kita bangun jadi contohnya klo aplikasinya masih development contohnya ```1.0-SNAPSHOT```, ```1.2-SNAPSHOT```, ```2.1-SNAPSHOT``` dan seterusnya, Sedangkan untuk production langsung sebuatkan versinya atau menggunakan keyword ```final``` jadi contohnya ```1.0-final```, ```1.2-final``` dan seterusnya```
 * ```name``` yaitu Nama dari sebuah aplikasi, klo yang ini bebas terserah tidak ada aturan yang baku karena biasanya hanya ditampilkan sebagai title atau judul aplikasi.
 * ```packaging``` yaitu hasil akhirnya akan dibuat ke format archive ```jar``` atau ```war```, karena project yang saya mau dibuat jadi **Desktop aplikasi** maka packagingnya yang saya pilih adalah ```jar``` sedangkan untuk **Web aplikasi** maka pilih ```war```.
-
-<hr/>
 
 ## Library
 
@@ -180,8 +170,6 @@ Untuk scope dalam dependency pada dasarnya terdiri dari 4 yaitu
 * test
 
 Berikut penjelasanya
-
-<hr/>
 
 ### Compile
 
@@ -257,8 +245,6 @@ Scope runtime ini, kita tidak diperkenankan untuk melakukan import kedalam sourc
 </dependency>
 {% endhighlight %}
 
-<hr/>
-
 ### Provided
 
 Scope provided ini, kombinasi dari runtime dan compile jadi kita **diperbolehkan import tetapi pada saat kita melakukan package dependencynya tidak akan di include ke hasil akhirnya**. Biasanya scope ini digunakan untuku aplikasi webapp, jadi untuk membuat aplikasi java webapp membutuhkan dependency webserver yang biasanya terdiri Servlet dan JSP, nah biasanya di webserver dependency tersebut udah disediakan tapi di workspace kita belum ada karena klo anda menggunakan JDK Standart Edition maka dalam JDK tersebut belum memiliki paket Enterprice Edition, maka dari itu supaya library yang diimport **tidak bentrok antara dependency yang sudah diinstall pada webserver dan di aplikasi**. berikut implementasinya
@@ -271,8 +257,6 @@ Scope provided ini, kombinasi dari runtime dan compile jadi kita **diperbolehkan
   <scope>provided</scope>
 </dependency>
 {% endhighlight %}
-
-<hr/>
 
 ### Test
 
@@ -291,4 +275,4 @@ Jika anda kurang jelas dengan penjelasan saya di atas berikut ada versi videonya
 
 {% youtube "https://youtu.be/KtDW5bxNx1I" %}
 
-Ok mungkin cukup sekian posting hari ini, semoga bermanfaat.
+Ok mungkin cukup sekian posting tentang memahami file konfigurasi di Apache Maven, semoga bermanfaat. See you next post!
