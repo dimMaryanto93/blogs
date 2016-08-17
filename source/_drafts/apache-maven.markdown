@@ -58,52 +58,6 @@ Maka solusinya **sekarang saya sudah menggunakan salah satu build tools untuk me
 
 Nah sekarang kita akan menginstall apache maven di Windows 10, Linux Ubuntu dan Fedora 23, pertama saya mau install di Windows 10 dulu karena klo di windows ini agak ribet dan lumayan panjang stepnya. tpi sebelum installal maven kita harus pastikan anda telah mengginstall JDK dan setting ```JAVA_HOME``` klo belum silahkan install terlebih dahulu lihat [cara install jdk]({% post_url 2016-07-28-java-dev-en %})
 
-### Install Maven di Windows 10
-
-Untuk installasi di Windows ini kita harus **Download dulu binary** ```zip```, silahkan anda [download di dari sini](https://maven.apache.org/download.cgi) kemudian pilih ```apache-maven-3.3.9-bin.zip``` seperti gambar berikut:
-
-![Download Apache Maven zip](/images/2016-07/apache-maven/mvn-download.png)
-
-setelah berhasil didownload kemudian di extract lokasinya bebas terserah anda klo saya simpanya di ```C:\``` jadi ```C:\apache-maven``` nah setelah itu kita setting setting variablenya dengan cara seperti biasa. Buka **File Explorer** kemudian **Klik Kanan** di menu **This PC** atau **My Computer**, maka akan tampil system info seperti berikut:
-
-![System Info Windows](/images/2016-07/java-dev-en/setpath-jdk-1.png)
-
-Kemudian kita ke **Klik Advanced system setting** maka akan menampilkan form seperti berikut:
-
-![System Advanced settings](/images/2016-07/java-dev-en/setpath-jdk-2.png)
-
-Setelah itu kita **Klik Environtment Variables...** maka akan menampilkan form seperti berikut:
-
-![System Variables List](/images/2016-07/apache-maven/mvn-setpath-1.png)
-
-Nah sekarang kita tinggal **edit** variable **Path** kemudian **tambahkan** lokasi hasil extract dengan sub direktori ```bin``` jadi lokasinya gini ```C:\apache-maven\bin``` seperti gambar berikut:
-
-![System Variable edited](/images/2016-07/apache-maven/mvn-setpath-2.png)
-
-setelah itu kita **Klik OK** untuk semua form yang tampil untuk accept ditambahkan ke system variables. kemudian kita bisa cek menggunakan Command Prompt, sekarang silahkan buka kemudian masukan perintah berikut:
-
-{% highlight bash %}
-mvn -v
-{% endhighlight %}
-
-maka akan menampilkan output seperti berikut:
-
-{% highlight bash %}
-C:\Users\softw>mvn -v
-Apache Maven 3.3.9 (bb52d8502b132ec0a5a3f4c09453c07478323dc5; 2015-11-10T23:41:47+07:00)
-Maven home: C:\apache-maven
-Java version: 1.8.0_91, vendor: Oracle Corporation
-Java home: C:\Program Files\Java\jdk1.8.0_91\jre
-Default locale: en_US, platform encoding: Cp1252
-OS name: "windows 10", version: "10.0", arch: "amd64", family: "dos"
-
-C:\Users\softw>
-{% endhighlight %}
-
-nah sampe sini kita telah berhasil menginstall Apache Maven di Windows tpi jika anda belum paham sama penjelasannya diatas berikut ada versio videonya:
-
-{% youtube "https://youtu.be/XPM9v5TGl4c" %}
-
 ### Install Maven di Linux Fedora 23/24 dari ```dnf```
 
 Seperti biasa kita buka terminanya, kemudian masuk sebagai ```root``` terlebih dahulu dan berikut adalah perintah untuk menginstall maven:
@@ -193,20 +147,6 @@ OS name: "linux", version: "4.6.4-301.fc24.x86_64", arch: "amd64", family: "unix
 berikut ada versi videonya tapi beda caranya masih menggunakan cara manual jadi setupnya kurang lebih sama kayak di Windows seperti berikut:
 
 {% youtube "https://youtu.be/TF6WjsuCkp0" %}
-
-### Install Maven di Linux Ubuntu dari ```apt-get```
-
-Seperti biasa buka terminalnya, kemudian masuk sebagai ```root``` terlebih dahulu dan berikut adalah perintah untuk menginstall maven:
-
-{% highlight bash %}
-$ sudo apt-get install maven -y
-{% endhighlight %}
-
-jika telah selesai maka kita bisa cek hasilnya dengan menggunakan perintah berikut:
-
-{% highlight bash %}
-mvn -version
-{% endhighlight %}
 
 ## Keungulan Build Tools
 
