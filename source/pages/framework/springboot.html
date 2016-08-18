@@ -1,17 +1,17 @@
 ---
 layout: page
-title: "Spring Framework"
-permalink: /halaman/framework/spring-framework/
+title: "Spring Boot"
+permalink: /halaman/framework/spring-boot/
 icon: devicon-java-plain-wordmark
 page_category: framework
 category: java
-active: yes
-new: yes
+active:
+new:
 ---
 
 {% include programming-language.html lang=page.icon title="Java Framework - Spring Framework" %}
 {% for post in site.posts reversed %}
-  {% if post.page_category == "springframework" %}
+  {% if post.page_category == "springboot" %}
     {% include post-by-category.html %}
   {% endif %}
 {% endfor %}
