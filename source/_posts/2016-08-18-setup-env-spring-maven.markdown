@@ -22,7 +22,7 @@ references:
 image_path: /images/2016-08/spring-di-2/
 ---
 
-Di [artikel sebelumnya]({{ post_url 2016-08-18-intro-springframework}}) kita telah memahami tentang konsep Dependency Injection tanpa menggunakan Spring Framework, sekarang kita akan menggunakan Spring Framework. OK sekarang kita buat project dengan menggunakan Apache Maven kalo teman teman belum mengerti tentang Maven silahkan [baca dulu artikel ini]({{ site.url }}/halaman/java/apache/maven/).
+Di [artikel sebelumnya]({% post_url 2016-08-18-intro-springframework %}) kita telah memahami tentang konsep Dependency Injection tanpa menggunakan Spring Framework, sekarang kita akan menggunakan Spring Framework. OK sekarang kita buat project dengan menggunakan Apache Maven kalo teman teman belum mengerti tentang Maven silahkan [baca dulu artikel ini]({{ site.url }}/halaman/framework/apache-maven/).
 
 <!--more-->
 
