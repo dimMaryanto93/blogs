@@ -81,4 +81,8 @@ Text editor yang bisa digunakan untuk membuat program Java Web sebenarnya bebas 
 * <i class="devicon-vim-plain colored"></i> Vim
 * [Visual Studio Code](https://code.visualstudio.com/).
 
+Penjelasan lebih lanjut, berikut video tutorial dari youtube channel saya:
+
+{% youtube "watch?v=g07kx4BuczI" %}
+
 Ok mungkin sekian dulu hal apa saja yang harus disiapkan untuk membuat aplikasi Java Web. See you next post!.
