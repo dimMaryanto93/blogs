@@ -3,7 +3,7 @@ layout: post
 title: "Pengenalan Pemograman Servlet (Basic Java WEB)"
 author: Dimas Maryanto
 comments: yes
-page_category: jsp
+page_category: java-servlet
 language: java
 gist:
 repository: https://github.com/dimMaryanto93/tutorial-java-webapp.git

@@ -4,7 +4,7 @@ title: "Setup Development Environment untuk Java WEB"
 date: 2016-08-21T20:22:04+07:00
 author: Dimas Maryanto
 comments: yes
-page_category: jsp
+page_category: java-servlet
 language: java
 gist:
 repository:

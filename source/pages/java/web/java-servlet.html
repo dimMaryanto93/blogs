@@ -1,0 +1,17 @@
+---
+layout: page
+title: "Java Web - Servlet"
+permalink: /halaman/java/web/servlet/
+icon: devicon-java-plain-wordmark
+page_category: web
+category: java
+active: yes
+new:
+---
+
+{% include programming-language.html lang=page.icon title="Java Web - Servlet" %}
+{% for post in site.posts reversed %}
+  {% if post.page_category == "java-servlet" %}
+    {% include post-by-category.html %}
+  {% endif %}
+{% endfor %}

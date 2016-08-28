@@ -4,7 +4,7 @@ title: "Automated deploy ke webserver dengan tomcat7-maven-plugin"
 date: 2016-08-23T01:25:05+07:00
 author: Dimas Maryanto
 comments: yes
-page_category: jsp
+page_category: java-servlet
 language: java
 gist:
 repository: https://github.com/dimMaryanto93/tutorial-java-webapp.git

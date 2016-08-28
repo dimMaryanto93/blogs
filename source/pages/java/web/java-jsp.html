@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "JSP &amp; Servlet"
-permalink: /halaman/java/jsp/
+title: "Java Web - JSP"
+permalink: /halaman/java/web/jsp/
 icon: devicon-java-plain-wordmark
 page_category: web
 category: java
@@ -9,9 +9,9 @@ active: yes
 new:
 ---
 
-{% include programming-language.html lang=page.icon title="Java Web - JSP &amp; Servlet" %}
+{% include programming-language.html lang=page.icon title="Java Web - Java Server Pages (JSP)" %}
 {% for post in site.posts reversed %}
-  {% if post.page_category == "jsp" %}
+  {% if post.page_category == "java-jsp" %}
     {% include post-by-category.html %}
   {% endif %}
 {% endfor %}

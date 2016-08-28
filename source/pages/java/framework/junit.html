@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Thymeleaf"
-permalink: /halaman/framework/thymeleaf/
+title: "JUnit"
+permalink: /halaman/java/framework/junit/
 icon: devicon-java-plain-wordmark
 page_category: framework
 category: java
@@ -9,9 +9,9 @@ active:
 new:
 ---
 
-{% include programming-language.html lang=page.icon title="Java Web Template Engine - Thymeleaf" %}
+{% include programming-language.html lang=page.icon title="Java Framework - JUnit" %}
 {% for post in site.posts reversed %}
-  {% if post.page_category == "thymeleaf" %}
+  {% if post.page_category == "junit" %}
     {% include post-by-category.html %}
   {% endif %}
 {% endfor %}

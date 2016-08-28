@@ -1,0 +1,17 @@
+---
+layout: page
+title: "Spring Data JPA"
+permalink: /halaman/java/framework/spring-data-jpa/
+icon: devicon-java-plain-wordmark
+page_category: framework
+category: java
+active:
+new:
+---
+
+{% include programming-language.html lang=page.icon title="Java Framework - Spring Data JPA" %}
+{% for post in site.posts reversed %}
+  {% if post.page_category == "spring-data-jpa" %}
+    {% include post-by-category.html %}
+  {% endif %}
+{% endfor %}

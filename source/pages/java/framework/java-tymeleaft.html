@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Hibernate"
-permalink: /halaman/framework/hibernate/
+title: "Thymeleaf"
+permalink: /halaman/java/framework/thymeleaf/
 icon: devicon-java-plain-wordmark
 page_category: framework
 category: java
@@ -9,9 +9,9 @@ active:
 new:
 ---
 
-{% include programming-language.html lang=page.icon title="Java Framework - Hibernate" %}
+{% include programming-language.html lang=page.icon title="Java Web Template Engine - Thymeleaf" %}
 {% for post in site.posts reversed %}
-  {% if post.page_category == "hibernate" %}
+  {% if post.page_category == "thymeleaf" %}
     {% include post-by-category.html %}
   {% endif %}
 {% endfor %}

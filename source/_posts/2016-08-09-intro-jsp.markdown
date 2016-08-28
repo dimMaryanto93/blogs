@@ -4,7 +4,7 @@ title: "Pengenalan Java Server Pages (JSP)"
 date: 2016-08-09T14:13:44+07:00
 author: Dimas Maryanto
 comments: yes
-page_category: jsp
+page_category: java-jsp
 language: java
 gist:
 repository:

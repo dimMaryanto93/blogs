@@ -1,17 +1,17 @@
 ---
 layout: page
-title: "JDBC"
-permalink: /halaman/java/jdbc/
+title: "Java IO package"
+permalink: /halaman/java/core/io/
 icon: devicon-java-plain-wordmark
 page_category: desktop
 category: java
-active: yes
+active:
 new:
 ---
 
-{% include programming-language.html lang=page.icon title="Java - Java Database Connectivity (JDBC)" %}
+{% include programming-language.html lang=page.icon title="Java - Java IO package" %}
 {% for post in site.posts reversed %}
-  {% if post.page_category == "jdbc" %}
+  {% if post.page_category == "java-io" %}
     {% include post-by-category.html %}
   {% endif %}
 {% endfor %}
