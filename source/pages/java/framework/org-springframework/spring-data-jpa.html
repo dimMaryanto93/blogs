@@ -1,7 +1,8 @@
 ---
 layout: page
-title: "Java - Spring Web MVC"
-permalink: /halaman/java/framework/spring-webmvc/
+title: "Spring Data JPA"
+subtitle: "Java - Spring Web MVC"
+permalink: /halaman/java/framework/spring-data-jpa/
 icon: devicon-java-plain-wordmark
 page_category: framework
 category: java
@@ -9,9 +10,9 @@ active:
 new:
 ---
 
-{% include programming-language.html lang=page.icon title="Java Framework - Spring Web MVC" %}
+{% include programming-language.html lang=page.icon title="Java Framework - Spring Data JPA" %}
 {% for post in site.posts reversed %}
-  {% if post.page_category == "spring-webmvc" %}
+  {% if post.page_category == "spring-data-jpa" %}
     {% include post-by-category.html %}
   {% endif %}
 {% endfor %}
