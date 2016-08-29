@@ -4,7 +4,7 @@ title: "Membuat project Java Web &amp; Deploy ke tomcat"
 date: 2016-08-22T09:44:27+07:00
 author: Dimas Maryanto
 comments: yes
-page_category: jsp
+page_category: java-servlet
 language: java
 gist:
 repository:

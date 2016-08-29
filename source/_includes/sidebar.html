@@ -78,7 +78,7 @@
   <div id="halaman" class="flow-text">
     <h5>Kategori</h5>
     <ul class="collection">
-      {% assign sorted_pages = (site.pages | sort: 'category') %}
+      {% assign sorted_pages = (site.pages | sort: 'title') %}
       {% for page in sorted_pages %}
         {% if page.title and page.title != "Arsip" and page.active %}
           <li class="collection-item">
