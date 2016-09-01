@@ -1,0 +1,18 @@
+---
+layout: page
+title: "Apache SubVersion (SVN)"
+subtitle: "Version Control System - Apache Subversion"
+permalink: /halaman/vcs/svn/
+icon: devicon-apache-line-wordmark
+page_category: other
+category: vcs
+active: yes
+new:
+---
+
+{% include programming-language.html lang=page.icon title="Version Control System - Git" %}
+{% for post in site.posts reversed %}
+  {% if post.page_category == "svn" %}
+    {% include post-by-category.html %}
+  {% endif %}
+{% endfor %}
