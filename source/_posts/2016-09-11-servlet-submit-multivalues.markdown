@@ -48,8 +48,8 @@ sekarang klo form tersebut di submit maka akan tampil seperti berikut:
 
 Nah jadi solusinya menggunakan method
 
-```java
+{% highlight java %}
 String[] values = response.getParameterValues("name-atribute");
-```
+{% endhighlight %}
 
 setelah itu kita bisa loop datanya dari variable `values` tersebut. OK mungkin sekian dulu penjelasan tentang mendapatkan multiple value dengan Servlet. See you next post!.
