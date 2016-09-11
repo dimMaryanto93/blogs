@@ -6,7 +6,7 @@ author: Dimas Maryanto
 comments: yes
 page_category: java-servlet
 language: java
-gist:
+gist: dimMaryanto93/c0a51e92e23ada4ecb71f9c18c803fea
 repository: https://github.com/dimMaryanto93/tutorial-java-webapp.git
 categories:
 - Java
@@ -36,26 +36,7 @@ Jadi pada dasarnya untuk membuat servlet itu sama ja dengan postingan sebelumnya
 
 Kemudian kita bisa gunakan versi annotation seperti berikut:
 
-{% highlight java %}
-package belajar.java.web.controller;
-
-import java.io.IOException;
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
-@WebServlet(urlPatterns = {"/servlet-annotation"}, name = "configAnnotation")
-public class ServletAnnotation extends HttpServlet {
-
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        // lakukan proses get
-    }
-
-}
-{% endhighlight %}
+{% gist page.gist "ServletAnnotation.java" %}
 
 klo anda perhatikan, di beris ke  terdapat sepenggalan koding seperti berikut:
 

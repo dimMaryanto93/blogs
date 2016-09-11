@@ -6,7 +6,7 @@ author: Dimas Maryanto
 comments: yes
 page_category: java-servlet
 language: java
-gist:
+gist: dimMaryanto93/c0a51e92e23ada4ecb71f9c18c803fea
 repository: https://github.com/dimMaryanto93/tutorial-java-webapp.git
 categories:
 - Java
@@ -45,24 +45,7 @@ Ok nah sekarang kita akan memulai membuat Servlet, untuk membuat servlet itu seb
 
 Setelah menambahkan dependencynya servlet, kita buat kelas baru dengan nama ```HaloController``` dalam package ```com.hotmail.dimmaryanto.software.controller``` isinya seperti berikut:
 
-{% highlight java %}
-package belajar.java.web.controller;
-
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.ServletException;
-
-import java.io.IOException;
-
-public class HaloController extends HttpServlet{
-
-  public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException{
-    res.getWriter().println("Halo selamat datang, saya dari servlet HaloController");
-  }
-
-}
-{% endhighlight %}
+{% gist page.gist HaloController.java %}
 
 Nah setelah kita membuat servlet, apa yang harus kita lakukan??? mungkin di benak anda mana urlnya untuk mengakses?? yak tepat sekali, kita perlu mapping urlnya untuk servlet tersebut. berikut adalah caranya:
 
