@@ -18,6 +18,7 @@ tags:
 - Hibernate
 - Maven
 - JPA
+- XML
 - ORM
 references:
 - http://docs.jboss.org/hibernate/orm/5.2/quickstart/html_single/
@@ -81,7 +82,8 @@ berikut perintahnya:
 <property name="hibernate.show_sql">true</property>
 {% endhighlight %}
 
-`hibernate.show_sql` hanya bernilai
+`hibernate.show_sql` hanya bernilai:
+
 1. `true` (untuk menampilkan SQL statement)
 2. `false` (untuk mengembungikan SQL statement)
 
