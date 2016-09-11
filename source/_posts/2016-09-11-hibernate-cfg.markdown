@@ -2,7 +2,7 @@
 layout: post
 title: "Memehami file konfigurasi hibernate (hibernate.cfg.xml)"
 author: Dimas Maryanto
-date: 2016-09-11T12:21:27+07:00
+date: 2016-09-11T18:55:14+07:00
 comments: yes
 page_category: hibernate
 language: java
