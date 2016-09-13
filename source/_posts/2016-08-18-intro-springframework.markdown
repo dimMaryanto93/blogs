@@ -7,7 +7,7 @@ comments: yes
 page_category: springframework
 language: java
 gist:
-repository:
+repository: https://github.com/dimMaryanto93/tutorial.springframework-ioc.git
 categories:
 - Java
 - Framework
