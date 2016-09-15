@@ -11,6 +11,8 @@ url: "http://software.dimmaryanto93.com" # the base hostname & protocol for your
 markdown: kramdown
 highlighter: rouge
 paginate: 3
+gist:
+  noscript: false
 
 # Permalinks
 permalink: berita/:categories/:title/
