@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Mengenal Component Scan di Spring Framework"
+date: 2016-09-16T11:11:42+07:00
 author: Dimas Maryanto
 comments: yes
 page_category: springframework
@@ -70,3 +71,7 @@ Penjelasanya jadi kita cukup menambahkan header xml seperti berikut:
     <context:component-scan base-package="com.hotmail.dimmaryanto.software"/>    
 </beans>
 {% endhighlight %}
+
+Jadi dengan menggunakan Component Scan tersebut kita bisa mendetaksi `@Component`, `@Service`, dan lain-lain dalam package `com.hotmail.dimmaryanto.sofware`.
+
+Ok mungkin sekian dulu penjelasan menggenai Component Scan di Spring Framework menggunakan konfigurasi XML. See you next post!.
