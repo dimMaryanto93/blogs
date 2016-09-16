@@ -21,6 +21,8 @@ references:
 
 ok, hai nah kali ini saya mau share bagaimana cara menghitung selisih hari, contohnya tanggal ```2016-05-15 s/d 2017-05-20```  = berapa hari? hayo.... jawabanya sebagai berikut:
 
+<!--more-->
+
 {% highlight java %}
 package com.hotmail.dimmaryanto.software;
 
