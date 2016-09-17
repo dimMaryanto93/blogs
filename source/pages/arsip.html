@@ -36,30 +36,22 @@ permalink: /halaman/arsip/
               {% if icon.name == post.language %}
                 {% assign versions = icon.versions %}
                 <div>
-                  <i class="devicon-{{ icon.name }}-{{ versions.font[0] }} circle"></i>
+                  <i class="devicon-{{ icon.name }}-{{ versions.font[0] }} circle blue"></i>
                 </div>
                 {{ break }}
               {% endif %}
             {% endfor %}
           {% else %}
           <div>
-            <i class="fa fa-pencil circle"></i>
+            <i class="fa fa-pencil circle blue"></i>
           </div>
           {% endif %}
-          <small>
           <a href="{{ post.url }}">
               {{ post.title }}
-            <span class="badge">{{ post.date | date: "%Y, %b %d"}}</span>
           </a>
           <p>
-            {% for tag in post.tags %}
-            <div class="chip">
-              <i class="fa fa-tag"></i>
-              {{ tag }}
-            </div>
-            {% endfor %}
+            <small>{{ post.date | date: "%Y, %b %d"}}</small>
           </p>
-        </small>
       </li>
   	  {% endfor %}
   	</ul>
