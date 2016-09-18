@@ -21,6 +21,7 @@ tags:
 - MVC
 - springframework
 - spring-webmvc
+- CSS
 references:
 - https://projects.spring.io/spring-framework/
 - http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/
