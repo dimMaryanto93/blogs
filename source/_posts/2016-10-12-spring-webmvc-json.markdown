@@ -15,7 +15,7 @@ categories:
 - Spring
 - Web
 - MVC
-- Sitemesh3
+- json
 tags:
 - Java
 - WEB
@@ -26,7 +26,6 @@ tags:
 references:
 - https://projects.spring.io/spring-framework/
 - http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/
-- http://wiki.sitemesh.org/wiki/display/sitemesh3/Home
 ---
 
 Halo kembali lagi di blog saya, kali ini saya mau share tetang menghasilkan json dengan spring web mvc dari object java atau kelas java yaitu kelas `Product` yang berisi atribut `nama, harga, jumlah`.
