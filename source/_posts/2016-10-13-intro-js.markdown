@@ -1,0 +1,68 @@
+---
+layout: post
+title: "Pengenalan client side programming dengan JavaScript"
+date: 2016-10-13T05:53:59+07:00
+author: Dimas Maryanto
+comments: yes
+page_category: js
+language: javascript
+gist:
+repository:
+categories:
+- Web
+- Js
+- Fundamental
+tags:
+- Web
+- Client Side
+references:
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript
+---
+
+Halo kembali lagi di blog saya, kali ini saya mau membahas salah satu bahasa pemograman yang sebenarnya udah banyak digunakan untuk membuat validation atau animasi secara client side. Magsudnya client side artinya di prosesnya yaitu di sisi Browser bukan lagi disisi server seperti Tomcat (JSP), Apache Httpd (PHP) dan bahasa server lainnya.
+
+<!--more-->
+
+sebelum kita mulai koding, ada beberapa hal yang mau saya bahas yaitu
+
+1. Apa itu JavaScript?
+2. Kenapa kita belajar JavaScript?
+3. JavaScript Native or Framework?
+
+Ok sekarang kita masuk ke point pertama yaitu Apa itu JavaScript?
+
+> Menurut MDN (Mozilla Developer Network) JavaScript (JS) is a lightweight, interpreted, programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as node.js and Apache CouchDB. JS is a prototype-based, multi-paradigm, dynamic scripting language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles.
+
+Dari penjelasan diatas coba kita extract kalimat berikut lightweight, interpreted, programming language with first-class functions.
+
+1. Lightweight, JavaScript adalah bahasa pemograman yang ringan dan portable magsudnya protable artinya tidak tergantung pada bahasa bahasa pemograman lain dan bisa juga diintegrasikan seperti PHP-JavaScript, Java-JavaScript, Ruby-JavaScript dll.
+2. Interpreted, JavaScript tidak membutuhkan compiler seperti di Java atau C++ makanya disebut Interpreted
+3. first-class functions.
+
+Jadi setelah saya pelajari bahasanya JavaScript, bahasa pemograman ini memiliki konsep yang cukup unique kenapa unique? jadi bahasa pemograman atau biasanya javascript ini disebut dengan **scripting language** bersifat OOP atau Object Oriented Programming tapi dia tidak menggunakan `Class` seperti di Java, C++ dan PHP tetapi menggunakan `Function`.
+
+Kemudian JavaScript ini juga sama seperti PHP tidak terlalu membedakan tipe data magsudnya untuk membuat variable cukup menggunakan keyword `var namaVariable` tetapi meskipun tidak membedakan tipe data JavaScript penamaanya `case-sensitive` artinya membedakan huruf besar dan huruf kecil.
+
+Mungkin penjelasan tentang apa itu javascript cukup, sekarang kita masuk ke point ke dua yaitu Kenapa kita harus belajar atau menggunakan JavaScript?
+
+Ada beberapa alasan yaitu
+
+1. Biasanya JavaScript digunakan untuk melakukan validasi disisi client, jadi sebelum data di kirim ke server atau web server data tersebut telah di validasi terlebih dahulu sehingga tidak membuat proses server overload karana bolak balik (request -> response)
+2. JavaScript akan menghasilkan DOM (Domain Object Model) yang Dinamic.
+3. Selain itu juga dengan javascript content dari aplikasi web kita bisa bersifat **responsif** bisa dalam bentuk animasi atau multiplatform seperti jika di dekstop tampilanya lebar jika di mobile atau table tampilannya lebih kecil dari yang versi desktop.
+
+Sekarang kita masuk ke point yang terakhir yaitu JavaScript Native atau Framework?, JavaScript jaman sekarang tidak hanya digunakan untuk client side tetapi juga bisa untuk server side berikut adalah framework yang paling banyak digunakan:
+
+## Server side
+
+* [NodeJS](https://nodejs.org/en/)
+* [EmberJS](http://emberjs.com/)
+
+## Client side
+
+* [AngularJS](https://angular.io/)
+* [VueJS](https://vuejs.org/)
+* [JQuery](https://jquery.com/)
+* Dan masih banyak lagi...
+
+Ok mungkin sekian dulu apa yang bisa saya bahas di pengenalan JavaScript ini, maaf klo ada kesalahan karena saya juga baru belajar dan hanya menuangkan apa yang saya tangkap dari hasil proses belajar dan menuangkannya ke tulisan ini. See you next post!.

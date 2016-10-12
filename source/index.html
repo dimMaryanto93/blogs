@@ -24,11 +24,11 @@ layout: default
         </h4>
       </div>
 
-      <div class="post-metadata">        
+      <div class="post-metadata">
         <small>
           <span class="fa fa-calendar-o text-primary"></span>
           {{ post.date | date: "%Y, %b %-d" }}
-          {% if post.author %}•
+          {% if post.author %}<br/>
             <i class="fa fa-user text-primary"></i>
             <span itemprop="name">{{ post.author }}</span>
           {% endif %}
