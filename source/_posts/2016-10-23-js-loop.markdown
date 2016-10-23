@@ -1,0 +1,49 @@
+---
+layout: post
+title: "Perulangan atau Looping dengan JavaScript"
+date: 2016-10-23T08:41:46+07:00
+author: Dimas Maryanto
+comments: yes
+page_category: js
+language: javascript
+gist: dimMaryanto93/b956151354fb8a1454d3b36d22d61a63
+repository: https://github.com/dimMaryanto93/tutorial.js.git
+categories:
+- Web
+- Js
+tags:
+- Web
+- JavaScript
+- Client Side Programming
+references:
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript
+image_path: /images/2016-10/js-fundamental-4/
+---
+
+Halo, di [postingan sebelumnya]({% post_url 2016-10-22-js-selection %}) kita udah membuat selection atau percabangan sekarang kita akan membuat perulangan atau looping.
+
+<!--more-->
+
+Ok sekarang, perulangan sebenarnya juga gak ada yang aneh kurang lebih sama seperti bahasa pemograman yang lain contohnya perulangan menggunakan `for`, `do-while`, `while` dan `for-in`.
+
+## Perulangan dengan FOR
+
+perulangan dengan for basicnya sama seperti biasa yaitu seperti berikut contohnya:
+
+{% gist page.gist "for-loop.js" %}
+
+Jika dijalakan outputnya akan menghasilkan `halo ini pesan ke x` sebangak 10x  dan `x` akan diganti dari nilainya menjadi `1` sampai `10`
+
+## Perulangan dengan WHILE
+
+Perulangan dengan while pada dasarnya dibagi menjadi 2 yaitu `while` dan `do-while` sekarang kita buat dulu yang `while` seperti berikut:
+
+{% gist page.gist "while-loop.js" %}
+
+Jika dihasilkan maka akan menampilkan output `loop ke x` sebanyak 10x dan nilai `x` bernilai dari `1` sampai `10`, sedangkan untuk `do-while` seperti berikut:
+
+{% gist page.gist "dowhile-loop.js" %}
+
+Kalo di jakankan kurang lebih sama dengan perulangan while hanya bedanya adalah klo `do-while` dia perulangannya dikerjakan terlebih dahulu baru diseleksi.
+
+Ok mungkin sekian dulu hal yang bisa saya sharing tentang JavaScript. Mohon maaf jika ada kesalahan, See you next post!.
