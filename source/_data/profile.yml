@@ -1,8 +1,15 @@
 nama: Dimas Maryanto
 status: Never stop learn, code, and contribute
-messages: Saya adalah software developer based Java (Desktop, Mobile, Web) berdomisili di Bandung, Jawa Barat. Selain itu saya juga seorang pengguna sistem operasi Windows 10, Linux Fedora dan Linux UBuntu.
+messages: Saya adalah Staff IT Developer di PT. Usaha Karya Bina Mandiri (UKABIMA), Jakarta Selatan.
 copyright: <p>Copyright &copy; 2016 Dimas Maryanto. All Rights Reserved.</p>
 email: software.dimmaryanto@hotmail.com
+donations:
+  - name: BNI
+    account: 044-325-6641
+    owner: Dimas Maryanto
+  - name: BCA
+    account: 566-031-9737
+    owner: Dimas Maryanto
 socials:
   - nama: Facebook
     url: https://www.facebook.com/dimMaryanto93
