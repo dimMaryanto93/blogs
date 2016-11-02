@@ -1,0 +1,49 @@
+---
+layout: post
+title: "Object Oriented Programming (OOP) dengan JavaScript part 1"
+date: 2016-11-02T21:15:03+07:00
+author: Dimas Maryanto
+comments: yes
+page_category: js
+language: javascript
+gist: dimMaryanto93/b956151354fb8a1454d3b36d22d61a63
+repository: https://github.com/dimMaryanto93/tutorial.js.git
+categories:
+- Web
+- Js
+tags:
+- Web
+- JavaScript
+- Client Side Programming
+references:
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript
+image_path: /images/2016-11/js-fundamental-6/
+---
+
+Halo di [postingan sebelumnya]({% post_url 2016-10-24-js-array %}) kita udah membuat dan memahami tentang tipe data array, kali ini saya akan bahas JavaScript is Object Oriented Programming. ada hal yang menarik di bahasa pemograman javascript ini? apa hayooo!!!
+
+<!--more-->
+
+Seperti yg saya katakan [di awal]({% post_url 2016-10-13-intro-js %}) JavaScript is Object Oriented Programming, tapi unique-nya JavaScript ini bukan **Class Based** seperti Java, C++, C# and PHP. Untuk menulis object di JavaScript ada banyak cara yaitu cara paling sederhana adalah seperti berikut:
+
+```js
+var mhs = {key:"value"};
+```
+
+dan untuk mengakses object tersebut adalah seperti berikut:
+
+```js
+console.log("get value from key is "+ mhs.key);
+```
+
+Contoh lainya adalah seperti berikut:
+
+{% gist page.gist "intro-obj.js" %}
+
+Output yang dihasilkan seperti berikut:
+
+![intro obj hasilnya]({{ page.image_path }}intro-obj-1.png)
+
+Nah jadi object ini sama konsepnya seperti map di Java jadi memiliki key dan value. keynya harus bersifat unique dan direkomendasikan untuk menggunakan hurus di awal sama halnya seperit kita membuat variable. Dan klo anda perhatikan object yang kita buat formatnya mengerupai dengan JSON.
+
+Ok mungkin sekian dulu pengenalan tentang object di JavaScript, selanjutnya kita akan bahas lagi tentang Object di JavaScript. See you next post!.
