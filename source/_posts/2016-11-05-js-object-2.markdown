@@ -1,0 +1,86 @@
+---
+layout: post
+title: "Object Oriented Programming dengan JavaScript part 2"
+date: 2016-11-05T06:13:28+07:00
+author: Dimas Maryanto
+comments: yes
+page_category: js
+language: javascript
+gist: dimMaryanto93/b956151354fb8a1454d3b36d22d61a63
+repository: https://github.com/dimMaryanto93/tutorial.js.git
+categories:
+- Web
+- Js
+tags:
+- Web
+- JavaScript
+- Client Side Programming
+references:
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript
+image_path: /images/2016-11/js-fundamental-7/
+---
+
+Halo, kali ini kita akan lanjutkan pembahasan tentang object di JavaScript. Kita sekarang akan membahas object dalam object kemudian mengaksesnya contohnya seperti berikut:
+
+<!--more-->
+
+Nested object, pada dasarnya memang udah tidak aneh di bahasa Pemograman seperti Java, C++, dan PHP contohnya seperti berikut dalam Java:
+
+{% highlight java %}
+public class Mahasiswa{
+  private String nim;
+  private String nama;
+
+  private Dosen dosenWali;
+  private List<Kelas> ambilKelas;
+
+  // setter & getter
+
+}
+
+public class Dosen{
+  private String nama;
+  private Kelas wali;
+
+  // setter & getter
+}
+
+public class Kelas{
+  private String nama;
+
+  // setter & getter
+}
+{% endhighlight %}
+
+Sekarang coba anda perhatikan di Kelas mahasiswa memiliki 2 object yaitu Dosen dan Kelas, itu menyatakan bahwa mahasiswa tersebut mimiliki relasi satu ke satu atau `One To One` terhadap mahasiswa dan untuk Kelas menyatakan satu ke banyak atau `One To Many` terhadap mahasiswa. Kalo di JavaScript contoh nested object seperti berikut:
+
+{% gist page.gist "obj-2.js" %}
+
+Jadi cara membuat object dalam object seperti berikut:
+
+{% highlight js %}
+{
+  "key" : {
+    "key" : "value"
+  }
+}
+{% endhighlight %}
+
+dan Cara menghaksesnya bisa menggunakan 2 cara yaitu dengan menggunakan yaitu
+
+* Dot notation
+
+{% highlight js %}
+obj.prop;
+{% endhighlight %}
+
+* Square bracket
+
+
+{% highlight js %}
+obj.["prop"];
+{% endhighlight %}
+
+seperti pada koding diatas di baris ke 15 dan 16.
+
+Ok mungkin sekian dulu pembahasan tentang Nested Object di JavaScript, mohon maaf jika ada kesalahan. See you next post!.
