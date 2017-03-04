@@ -42,21 +42,21 @@ Hal yang harus di setup, contohnya disini saya menginstall di **Ubuntu Server 16
 
 - Install package `openssh-server`
 
-```shell
+{% highlight shell %}
 sudo apt install openssh-server
-```
+{% endhighlight %}
 
 - Membuat SSH Key
 
-```shell
+{% highlight shell %}
 ssh-keygen -t rsa
-```
+{% endhighlight %}
 
 - Membuka port 22, supaya bisa di akses dari luar
 
-```shell
+{% highlight shell %}
 sudo iptables -I INPUT 1 -i eth0 -p tcp --dport 22 -j ACCEPT
-```
+{% endhighlight %}
 
 ### SSH Client side
 
@@ -69,7 +69,7 @@ setelah semuanya OK, berikut adalah cara penggunaanya:
 - open terminal atau git-bash atau putty-client
 - login ke sistem server 'ssh username@host' example `ssh dimmaryanto93@10.1.1.48'
 
-```shell
+{% highlight shell %}
 dimmaryanto93@E5-473G:~$ ssh developer@xxx.xxx.xxx.xxx
 developer@xxx.xxx.xxx's password: # input password here and hit enter
 Welcome to Ubuntu 16.04.2 LTS (GNU/Linux 4.4.0-63-generic x86_64)
@@ -84,7 +84,7 @@ Welcome to Ubuntu 16.04.2 LTS (GNU/Linux 4.4.0-63-generic x86_64)
 
 *** System restart required ***
 Last login: Sat Mar  4 10:44:22 2017 from 114.124.6.55
-```
+{% endhighlight %}
 
 Nah sekarang kita udah masuk ke sistem server, sekarang kita tinggal remote dengan perintah linux ubuntu server.
 Happy Working :) ....
