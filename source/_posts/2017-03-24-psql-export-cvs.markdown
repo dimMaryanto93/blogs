@@ -41,7 +41,7 @@ spring_core=#
 
 Kemudian saya punya struktur tabel seperti berikut:
 
-{% highlight psql_console %}
+{% highlight bash %}
                                   Table "public.security_roles"
   Column   |          Type          |                          Modifiers                          
 -----------+------------------------+-------------------------------------------------------------
