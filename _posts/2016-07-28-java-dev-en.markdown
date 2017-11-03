@@ -141,10 +141,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.91-b15, mixed mode)
 C:\Users\softw>
 {% endhighlight %}
 
-Nah untuk setting di Windows udah selesai dan klo install di MacOS kurang lebih sama pada saat installasinya karena udah menggunakan Graphical Installer jadi saya tidak akan bahas. atau klo masih kurang jelas anda bisa melihat vidoenya:
-
-{% youtube "https://youtu.be/2zoPD2xRuIg" %}
-
+Nah untuk setting di Windows udah selesai dan klo install di MacOS kurang lebih sama pada saat installasinya karena udah menggunakan Graphical Installer jadi saya tidak akan bahas.
 <hr>
 
 ## Install Oracle JDK di UBuntu
@@ -299,9 +296,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.101-b13, mixed mode)
 javac 1.8.0_101
 {% endhighlight %}
 
-Sampai sini kita telah berhasil menginstal Oracle JDK di Fedora tapi jika anda kurang paham atau kurang jelas berikut ada versi videonya:
-
-{% youtube "https://youtu.be/MYHEbzOPPOw" %}
+Sampai sini kita telah berhasil menginstal Oracle JDK di Fedora tapi jika anda kurang paham.
 
 <hr>
 

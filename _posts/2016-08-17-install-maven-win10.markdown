@@ -61,7 +61,3 @@ OS name: "windows 10", version: "10.0", arch: "amd64", family: "dos"
 
 C:\Users\softw>
 {% endhighlight %}
-
-nah sampe sini kita telah berhasil menginstall Apache Maven di Windows tpi jika anda belum paham sama penjelasannya diatas berikut ada versio videonya:
-
-{% youtube "https://youtu.be/XPM9v5TGl4c" %}

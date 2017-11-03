@@ -177,8 +177,4 @@ Kemudian tingall anda klik di **Path** dari ```/tutorial-javawebapp``` maka apli
 
 ![application run]({{ page.image_path }}deployed-war.png)
 
-Nah gimana cukup mudah bukan? klo anda masih kurang paham berikut ada versi videonya dari youtube channel saya seperti berikut:
-
-{% youtube "watch?v=kxYG-YMLsAI" %}
-
 Ok mungkin sekian dulu apa yang bisa saya sharing tentang, membuat project di Java Web dengan apache maven dan bagaimana cara deploy ke Apache Tomcat8. See you next post!.

@@ -60,9 +60,7 @@ Selain itu juga kita bisa me-remote repository tersebut sesuia dengan akses. con
 
 Lanjut ke pertanyaan selanjutnya yaitu apakah Git dan GitHub sangat membantu kita dalam mengerjakan sebuah project yang memiliki team yang cukup besar? jawabanya tentu aja ia, soalnya anda tau Linux? pasti tau khan? nah Linux itu khan opensource yang pasti banyak team didalamnya baik dari hardware support developer, Software Enginering, Language Translator dan lain-lain. Mereka bekerja menggunakan Git dan GitHub, klo anda tidak percaya silahkan cek aja, bahkan pencipta Linux yaitu Linus Torvalds me-share [linux kernelnya melalui GitHub](https://github.com/torvalds/linux)
 
-Nah tadi saya udah ngomong panjang lebar tentang Git dan GitHub sekerang gak lengkap klo misalnya cuman teori aja jadi kita sekarang akan praktek menggunakan **dasar Git** dan konsep dan fungsi yang digunakan Git pada perintah-perintahnya. Tapi sebelum kita praktek anda harus meng-install dulu Git di system anda. Gak usah khawatir installnya gampang kok klo di Windows sama seperti menginstall software biasa, klo di Linux ada beberapa distro yg secara default udah ter-install seperti di Fedora dan OpenSuse. klo di UBuntu kita harus install secara manual. berikut adalah video untuk menginstall Git di Sistem Operasi Windows:
-
-{% youtube "https://youtu.be/GXeEcegl-sQ" %}
+Nah tadi saya udah ngomong panjang lebar tentang Git dan GitHub sekerang gak lengkap klo misalnya cuman teori aja jadi kita sekarang akan praktek menggunakan **dasar Git** dan konsep dan fungsi yang digunakan Git pada perintah-perintahnya. Tapi sebelum kita praktek anda harus meng-install dulu Git di system anda. Gak usah khawatir installnya gampang kok klo di Windows sama seperti menginstall software biasa, klo di Linux ada beberapa distro yg secara default udah ter-install seperti di Fedora dan OpenSuse. klo di UBuntu kita harus install secara manual.
 
 Sedangkan untuk di Linux caranya gampang kita bisa pake default repository di masing masing distro contohnya klo di UBuntu:
 

@@ -71,8 +71,5 @@ Berikut outputnya:
 
 ![Enviroment variables]({{ page.image_path }}setting-svn-7.png)
 
-Ok mungkin segitu dulu bagaimana cara install Apache Subversion di Windows 10, berikut juga tersedia versi videonya dari youtube channel saya:
-
-{% youtube "watch?v=JXkB4qePoM4" %}
 
 See you next post!.

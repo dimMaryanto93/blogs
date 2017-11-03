@@ -92,8 +92,6 @@ maka hasilnya akan seperti berikut:
 
 ![servelt pertama]({{ page.image_path }}servlet-1.png)
 
-Jadi penjelasanya adalah kita membuat ketika browser me-request alamat ```http://localhost:8080/tutorial-javawebapp/selamat/datang``` maka akan ditambkan oleh servlet dengan nama ```Halo``` yang mereferensi ke klass servlet yaitu ```belajar.java.web.controller.HaloController```. Ada pertanyaan silakan komentar atau mau lihat versi videonya seperti berikut:
-
-{% youtube "watch?v=vPrviQt4YsQ" %}
+Jadi penjelasanya adalah kita membuat ketika browser me-request alamat ```http://localhost:8080/tutorial-javawebapp/selamat/datang``` maka akan ditambkan oleh servlet dengan nama ```Halo``` yang mereferensi ke klass servlet yaitu ```belajar.java.web.controller.HaloController```. Ada pertanyaan silakan komentar.
 
 OK mungkin sekian dulu postingan kali ini tentang dasar pemograman Java Web dengan Servlet. See you next post!.

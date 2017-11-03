@@ -107,9 +107,7 @@ Jika sudah klik **OK** untuk meng-koneksikan dengan database dan user tersebut, 
 
 ![new connection available](/images/2016-07/install-postgresql-win10/pgadmin-4.png)
 
-Ok sampai sini kita udah melakukan Installasi software Database PosgreSQL dengan benar, jika kurang jelas kita anda bisa tonton versi videonya seperti berikut:
-
-{% youtube "https://youtu.be/wfArJkh74SY" %}
+Ok sampai sini kita udah melakukan Installasi software Database PosgreSQL dengan benar.
 
 Setelah itu, ada beberapa yang harus dilakukan supaya sistem operasi anda tidak menjadi **LEMOT** waktu dihidupkan. berikut adalah caranya:
 

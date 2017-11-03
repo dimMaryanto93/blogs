@@ -221,8 +221,4 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 ok ya, hasilnya file ```HaloDimas.class``` sudah tidak muncul di ```git status```, gimana mengerti?
 
-Kalo anda kesulitan menangkap materi ini berikut ada versi videonya:
-
-{% youtube "https://youtu.be/tS-itwXogqw" %}
-
 Mungkin cukup sekian dulu postingan kali ini tentang File yang tidak perlu atau sebaiknya jangan di track oleh Git, see you next post!.

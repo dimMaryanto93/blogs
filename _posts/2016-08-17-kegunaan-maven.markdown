@@ -77,8 +77,4 @@ Kemudian selain fitur diatas, yang tidak kalah seru itu dengan menggunakan build
 mvn test
 {% endhighlight %}
 
-Kalo kurang jelas dengan penjelasan berikut ada versi videonya seperti berikut:
-
-{% youtube "https://youtu.be/seO95BceaXM" %}
-
 Mungkin sekian dulu penjelasanya. see you next post!.

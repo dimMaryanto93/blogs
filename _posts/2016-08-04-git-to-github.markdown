@@ -146,8 +146,4 @@ C:\Users\softw\Documents\temp\belajar-git>
 
 Ok sampai ini anda telah berhasil membuat project yang tadi nya hanya disimpan di lokal komputer menjadi di share ke GitHub.
 
-Jika anda kurang mengerti dengan penjelasan diatas berikut ada versi videonya:
-
-{% youtube "https://youtu.be/MEsrrV4mk_8" %}
-
 Mungkin sekian dulu postingan tenteng bagimana men-share project Git ke GitHub, see you next post!.

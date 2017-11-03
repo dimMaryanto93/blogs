@@ -272,8 +272,4 @@ Scope test, pada dasarnya ini **dependencynya hanya dikenali saat kita melakukan
 </dependency>
 {% endhighlight %}
 
-Jika anda kurang jelas dengan penjelasan saya di atas berikut ada versi videonya seperti berikut:
-
-{% youtube "https://youtu.be/KtDW5bxNx1I" %}
-
 Ok mungkin cukup sekian posting tentang memahami file konfigurasi di Apache Maven, semoga bermanfaat. See you next post!

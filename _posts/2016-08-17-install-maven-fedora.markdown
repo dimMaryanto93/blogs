@@ -100,6 +100,3 @@ OS name: "linux", version: "4.6.4-301.fc24.x86_64", arch: "amd64", family: "unix
 [dimmaryanto93@localhost ~]$
 {% endhighlight %}
 
-berikut ada versi videonya tapi beda caranya masih menggunakan cara manual jadi setupnya kurang lebih sama kayak di Windows seperti berikut:
-
-{% youtube "https://youtu.be/TF6WjsuCkp0" %}

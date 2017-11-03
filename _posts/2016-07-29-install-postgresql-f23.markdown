@@ -172,8 +172,4 @@ penjelasanya:
 * ```-U``` adalah username kemudian yang diikuti dengan nama databasenya, jadi klo kita perhatikan params diatas ada 2 postgres jadi maksudnya adalah **postgres yang pertama nama user / role** dan **postgres yang kedua adalah nama database**.
 * ```-W``` digunakan untuk memastikan bahwa user tersebut memiliki password tetapi jika tidak memiliki password bisa menggukan ```-w```
 
-jika masih kurang jelas berikut adalah versi videonya:
-
-{% youtube "https://www.youtube.com/watch?v=IQ3WeCPo0B4" %}
-
 ok mungkin cukup sekian dulu tentang bagaimana cara install postgresql, see you next time!.

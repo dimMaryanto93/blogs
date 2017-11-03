@@ -60,8 +60,4 @@ Maka hasilnya seperti berikut:
 
 ![tomcat running]({{ page.image_path }}tomcat7-works-it.png)
 
-Berikut juga tersedia versi video tutorialnya:
-
-{% youtube "watch?v=rxDsvhXwRC8" %}
-
 Ok mungkin sekian dulu postingan kali tentang automated deploy ke web server embeded dengan tomcat7. See you next post!.
