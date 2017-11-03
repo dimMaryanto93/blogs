@@ -21,7 +21,7 @@ references:
 image_path: /images/2016-08/java-web-1/
 ---
 
-Halo di [postingan sebelumnya]({% post_url 2016-08-21-setup-env-java-web %}) kita telah mengetahui hal apa saja yang harus dilakukan untuk belajar Java Web atau JavaEE, kali ini saya akan membuat project Java Web dengan menggunakan Apache Maven dengan template project ```maven-archetype-webapp```. berikut adalah langkah-langkahnya:
+Halo di kita telah mengetahui hal apa saja yang harus dilakukan untuk belajar Java Web atau JavaEE, kali ini saya akan membuat project Java Web dengan menggunakan Apache Maven dengan template project ```maven-archetype-webapp```. berikut adalah langkah-langkahnya:
 
 <!--more-->
 

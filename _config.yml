@@ -4,7 +4,7 @@ email: software.dimmaryanto@hotmail.com
 fb_appid: 1172380132803751
 twitter_username: dimMaryanto93
 
-baseurl: "blogs" # the subpath of your site, e.g. /blog
+baseurl: "/blogs" # the subpath of your site, e.g. /blog
 url: "http://software.dimmaryanto93.com" # the base hostname & protocol for your site
 
 # Build settings
@@ -19,7 +19,7 @@ permalink: berita/:categories/:title/
 paginate_path: halaman-:num/
 
 # Plugins
-gems:
+plugins:
 - jekyll-paginate
 - jekyll-youtube
 - jekyll-gist
