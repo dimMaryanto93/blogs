@@ -1,29 +1,105 @@
-## Jekyll on OpenShift
+# Jekyll Template (Membuat blog dengan mudah)
 
-#### Running on OpenShift
+## Install Ruby
 
-### Using the OpenShift Hub
-You can launch a Jekyll site on OpenShift using the [QuickStart on the OpenShift Hub](https://hub.openshift.com/quickstarts/41-jekyll)
+Pertama anda harus install ruby di mesin anda installasinya bisa dilihat [di sini](https://www.ruby-lang.org/id/downloads/) kemudian install ```jekyll``` dan ```octopress``` melalui ```gem```
 
-### Using the command line
-    rhc app create <appname> php-5.4 --from-code=https://github.com/openshift-quickstart/jekyll-openshift.git
+```bash
+gem install jekyll octopress
+```
 
-#### Updating your site
-- Clone your OpenShift application to your local workstation
-- Make updates to your site
-- git commit your changes
-- git push
+### Membuat post baru
 
-That's it! Your static site files will be generated on your gear and placed in the correct directory.  
+```bash
+octopress new post 'New post'
+```
 
-This QuickStart supports both single gear and scaled deployments.  
+output:
 
-The hot_deploy marker is set for this repository (.openshift/markers/hot_deploy) so your website will not go down while it's being updated.  The files will just be replaced while the server is running.
+```bash
+New post: _posts/2016-04-09-new-title.markdown
+```
 
-### Community
+### Membuat draft baru
 
-The official community support is available here: http://jekyllrb.com/help/
+```bash
+octopress new draft 'new draft'
+```
 
-### Bug Reports
+output
 
-Please report bugs or log feature requests using Github Issues, pull requests are welcome.
+```bash
+New draft: _drafts/new-draft.markdown
+```
+
+### Publish draft to post
+
+```bash
+octopress publish _drafts/new-draft.markdown
+```
+
+output:
+
+```bash
+Published: _drafts/new-draft.markdown → _posts/2016-04-09-new-draft.markdown
+```
+
+### Running local server
+
+```bash
+$ jekyll serve
+```
+
+output:
+
+```bash
+Configuration file: /home/dimMaryanto/workspace/dimmaryanto.github.io/_config.yml
+            Source: /home/dimMaryanto/workspace/dimmaryanto.github.io
+       Destination: /home/dimMaryanto/workspace/dimmaryanto.github.io/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating...
+                    done in 0.238 seconds.
+ Auto-regeneration: enabled for '/home/dimMaryanto/workspace/dimmaryanto.github.io'
+Configuration file: /home/dimMaryanto/workspace/dimmaryanto.github.io/_config.yml
+    Server address: http://127.0.0.1:4000/
+  Server running... press ctrl-c to stop.
+```
+
+### Running local server with drafts
+
+```bash
+$ jekyll serve --drafts
+```
+
+output:
+
+```bash
+Configuration file: /home/dimMaryanto/workspace/dimmaryanto.github.io/_config.yml
+            Source: /home/dimMaryanto/workspace/dimmaryanto.github.io
+       Destination: /home/dimMaryanto/workspace/dimmaryanto.github.io/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating...
+                    done in 0.238 seconds.
+ Auto-regeneration: enabled for '/home/dimMaryanto/workspace/dimmaryanto.github.io'
+Configuration file: /home/dimMaryanto/workspace/dimmaryanto.github.io/_config.yml
+    Server address: http://127.0.0.1:4000/
+  Server running... press ctrl-c to stop.
+```
+
+### Publish to github page
+
+```bash
+git add . && git statu && git commit -m 'new post' && git push origin
+```
+
+output:
+
+```bash
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   README.md
+	new file:   _posts/2016-04-09-new-draft.markdown
+```
