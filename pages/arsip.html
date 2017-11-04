@@ -46,7 +46,7 @@ permalink: /halaman/arsip/
             <i class="fa fa-pencil circle blue"></i>
           </div>
           {% endif %}
-          <a href="{{ post.url }}">
+          <a href="{{ post.url | prepend: site.baseurl }}">
               {{ post.title }}
           </a>
           <p>

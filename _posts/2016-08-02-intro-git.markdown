@@ -50,11 +50,11 @@ Dari kalimat tersebut bisa kita garis bawahi klo GitHub adalah salah satu implem
 
 Pertanyaan berikutnya adalah trus apa bedanya Git dan GitHub? jawabanya masih dalam kalimat yang sama seperti diatas, jadi Git adalah command line based yang bekerja dikomputer local sedangkan GitHub adalah web based jadi digunakan untuk share file (centralize atau distributed). for example, disini saya punya folder atau project git di local dengan nama ```javascript-belajar``` dikomputer saya seperti berikut:
 
-![Local VCS](/images/2016-08/intro-git/project-git.png)
+![Local VCS]({{ site.baseurl }}/images/2016-08/intro-git/project-git.png)
 
 dan juga saya punya repository di webnya dengan isi yang sama dengan project ```javascript-belajar``` di BitBucket. ini menandakan klo kita melakukan share ke public (internet) apa yang kita lakukan di komputer lokal seperti berikut:
 
-![Central VCS](/images/2016-08/intro-git/project-bitbucket.png)
+![Central VCS]({{ site.baseurl }}/images/2016-08/intro-git/project-bitbucket.png)
 
 Selain itu juga kita bisa me-remote repository tersebut sesuia dengan akses. contohnya kita bisa berkolaborasi untuk menulis koding bareng-bareng (Team Work).
 
@@ -185,7 +185,7 @@ git add Halo.java
 
 Nah sekarang saya bakanlan buat file dengan nama ```README.md``` di dalam direktory tersebut:
 
-![New File](/images/2016-08/intro-git/new-file.png)
+![New File]({{ site.baseurl }}/images/2016-08/intro-git/new-file.png)
 
 sekarang anda coba cek statusnya seperti berikut:
 
@@ -292,7 +292,7 @@ Ini adalah text
 
 seperti berikut:
 
-![Perubahan file](/images/2016-08/intro-git/plain-text.png)
+![Perubahan file]({{ site.baseurl }}/images/2016-08/intro-git/plain-text.png)
 
 sekarang coba anda lihat statunya kembali maka outputnya seperti berikut:
 
@@ -352,7 +352,7 @@ C:\Users\softw\temp\belajar-git>
 
 Kemudian untuk memastikan bahwa filenya memiliki isi coba anda buka kembali filenya:
 
-![Membuka lagi filenya](/images/2016-08/intro-git/plain-text.png)
+![Membuka lagi filenya]({{ site.baseurl }}/images/2016-08/intro-git/plain-text.png)
 
 Masih ada ya isinya yaitu ```Ini adalah text``` setelah itu sama mau kembalikan ke commit pertama yaitu ```Membuat project git``` dengan ref ```885b801``` jadi perintahnya adalah
 
@@ -368,6 +368,6 @@ HEAD is now at 885b801 Membut project git
 
 Nah sekarang anda buka lagi filenya:
 
-![Buka filenya lagi setelah reset](/images/2016-08/intro-git/blank-text.png)
+![Buka filenya lagi setelah reset]({{ site.baseurl }}/images/2016-08/intro-git/blank-text.png)
 
 Nah filenya udah kembali ke versi sebelum commit ke dua lebih tepatnya dikemabalikan ke commit pertama. Ok munggin sekian dulu pembahasan tentang pengenalan Git, untuk perintah ```push```, ```merge```, ```pull``` dan masih banyak lagi nanti saya akan lanjutkan di postingan selanjutnya tentang Git. see you next post!.

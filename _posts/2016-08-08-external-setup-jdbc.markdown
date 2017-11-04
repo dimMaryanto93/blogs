@@ -64,19 +64,19 @@ Jadi ```propName``` dan ```propNama``` adalah sebuah **key**, sedangkan ```propV
 
 Pindahkan ke tab **File** seperti berikut:
 
-![Folder src](/images/2016-08/external-setup-jdbc/folder-src.png)
+![Folder src]({{ site.baseurl }}/images/2016-08/external-setup-jdbc/folder-src.png)
 
 Klik kanan di folder ```src``` kemudian pilih **File** lalu **Other** maka akan tampil form seperti berikut:
 
-![new properties file](/images/2016-08/external-setup-jdbc/properties-file.png)
+![new properties file]({{ site.baseurl }}/images/2016-08/external-setup-jdbc/properties-file.png)
 
 Setelah itu filter aja menggunakan key work ```prop``` seperti gambar diatas, lalu akan tampil **file properties** di klik terus **Next** selanjutnya tampil form seperti berikut:
 
-![Properties file name](/images/2016-08/external-setup-jdbc/properties-file-name.png)
+![Properties file name]({{ site.baseurl }}/images/2016-08/external-setup-jdbc/properties-file-name.png)
 
 Nah sekarang kita tinggal kasih nama filenya contohnya kali ini saya mau namain filenya ```jdbc.properties``` setelah itu klik **Finish** maka hasilnya seperti berikut:
 
-![Hasil membuat file properties](/images/2016-08/external-setup-jdbc/result-properties.png)
+![Hasil membuat file properties]({{ site.baseurl }}/images/2016-08/external-setup-jdbc/result-properties.png)
 
 Nah pastikan ya anda membuatnya dalam folder ```src``` karena nanti kita menaggilnya akan dari classpath jadi tidak menggunakan absolut path seperti contohnya ```C:\Documents\bla\bla\jdbc.properties``` tapi kita load ke java dari file yang ada di dalam ```jar```.
 

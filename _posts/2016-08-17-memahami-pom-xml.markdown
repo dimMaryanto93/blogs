@@ -144,11 +144,11 @@ Nah mungkin dari kalian binggung, untuk mendapatkan dependency ini
 
 dari mana????? jawabanya [Maven Repository Central (http://search.maven.org/)](http://search.maven.org/) trus anda tinggal cari aja butuh libary apa nanti bakal tampil kayak gini, contohnya saya mau pake library ```MySQL```
 
-![Mysql connector java](/images/2016-07/apache-maven/maven-repo-central.png)
+![Mysql connector java]({{ site.baseurl }}/images/2016-07/apache-maven/maven-repo-central.png)
 
 Nah udah itu kita tinggal pilih aja library yang mana yang mau dipake, setelah itu klik versinya. Contohnya saya pilih groupId ```mysql```, artifactId ```mysql-connector-java``` dan version ```6.0.2``` maka akan tampil seperti berikut dan anda bisa lihat dibagian ini:
 
-![Dependency information](/images/2016-07/apache-maven/mvn-dependecy-info.png)
+![Dependency information]({{ site.baseurl }}/images/2016-07/apache-maven/mvn-dependecy-info.png)
 
 Setelah itu tinggal copy-paste ke pom.xml setelah itu baru library dalam ```mysql-connector-java``` bisa digunakan.
 

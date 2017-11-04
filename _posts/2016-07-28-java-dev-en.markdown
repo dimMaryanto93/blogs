@@ -40,7 +40,7 @@ java NamaKelas
 
 3. dan lain-lain, karena masih banyak tools yang gak bisa disebutin satu persatu. seperti arsitektur JDK pada gambar dibawah ini:
 
-![JDK 1.8 arstiktur](/images/2016-07/java-dev-en/arc-jdk-1.8.png "Gambar diambil dari http://docs.oracle.com/javase/8/docs/ pada tangal 28-07-2016")
+![JDK 1.8 arstiktur]({{ site.baseurl }}/images//2016-07/java-dev-en/arc-jdk-1.8.png "Gambar diambil dari http://docs.oracle.com/javase/8/docs/ pada tangal 28-07-2016")
 
 
 Nah sekarang kita install JDK, tapi sebelum itu kita download dulu JDKnya di [Website Oracle](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
@@ -50,11 +50,11 @@ Nah sekarang kita install JDK, tapi sebelum itu kita download dulu JDKnya di [We
 seperti gambar berikut:
 
 
-![Situs Oracle](/images/2016-07/java-dev-en/download-jdk-1.png)
+![Situs Oracle]({{ site.baseurl }}/images//2016-07/java-dev-en/download-jdk-1.png)
 
 Kemudian kita pilih **Java Platform (JDK) 8u101 / 8u102** *catatan akan berubah se-waktu2 jadi pilih versi yang paling baru ya!, tapi kalo anda sudah melakukan install JDK di Operasion System anda tidak perlu download cukup update aja JDK.a dari Control Panel atau Java Updater. Setelah ikut maka akan tampil Form seperti berikut:
 
-![Pilih JDK version dan platform](/images/2016-07/java-dev-en/download-jdk-2.png "Pilih Platform sesuia OS dan Download JDK")
+![Pilih JDK version dan platform]({{ site.baseurl }}/images//2016-07/java-dev-en/download-jdk-2.png "Pilih Platform sesuia OS dan Download JDK")
 
 Kemudian pilih sesuia dengan Platform System Operasi dan arsitekturnya, karena saya pake Windows 10 yang 64bit jadi saya pilih yang **Windows x64**
 
@@ -62,63 +62,63 @@ Kemudian pilih sesuia dengan Platform System Operasi dan arsitekturnya, karena s
 
 setelah selesai di Download langsung aja jalankan **jdk-8u101-windows-x64.exe** maka akan muncul form seperti berikut:
 
-![Form Instalasi JDK](/images/2016-07/java-dev-en/install-jdk-1.png)
+![Form Instalasi JDK]({{ site.baseurl }}/images//2016-07/java-dev-en/install-jdk-1.png)
 
 Klik next untuk menanjutkan, kemudian akan tampil form untuk menentukan lokasi JDK disimpan berikutnya:
 
-![Form Installasi JDK 2 ](/images/2016-07/java-dev-en/install-jdk-2.png)
+![Form Installasi JDK 2 ]({{ site.baseurl }}/images//2016-07/java-dev-en/install-jdk-2.png)
 
 Lokasi JDKnya saya mau biarkan default saja, kemudian klik next untuk selanjutnya melakukan instalasi JRE seperti berikut:
 
-![Form Installas JRE](/images/2016-07/java-dev-en/install-jdk-3.png)
+![Form Installas JRE]({{ site.baseurl }}/images//2016-07/java-dev-en/install-jdk-3.png)
 
 Sama dengan JDK lokasi JREnya saya mau biarkan default aja, Setelah itu klik Next lagi dan selesai deh proses extractnya.
 
-![Form Installasi JRE](/images/2016-07/java-dev-en/install-jdk-4.png)
+![Form Installasi JRE]({{ site.baseurl }}/images//2016-07/java-dev-en/install-jdk-4.png)
 
 Tahap selanjutnya adalah setup PATHnya supaya bisa dikenali oleh Sistem Operasi Windowsnya jadi bisa di akses melalui Command Prompt (CMD). berkut langkah langkahnya:
 
 Buka **File Explorer**nya kemudian Klik Kanan pada **This PC** setelah itu pilih **Properties**
 
-![Setting Path Command Prompt](/images/2016-07/java-dev-en/setpath-jdk-1.png)
+![Setting Path Command Prompt]({{ site.baseurl }}/images//2016-07/java-dev-en/setpath-jdk-1.png)
 
 Terus klik **Advanced system settings** maka akan tampil Form seperti Berikut:
 
-![System properties](/images/2016-07/java-dev-en/setpath-jdk-2.png)
+![System properties]({{ site.baseurl }}/images//2016-07/java-dev-en/setpath-jdk-2.png)
 
 Kemudian klik **Environtment Variables...** maka akan tampil form seperti berikut:
 
-![Setting system variable dan variable name](/images/2016-07/java-dev-en/setpath-jdk-3.png)
+![Setting system variable dan variable name]({{ site.baseurl }}/images//2016-07/java-dev-en/setpath-jdk-3.png)
 
 Di menu **User variables for dimMaryanto** klik button **New** maka akan tampil form seperti berikut:
 
-![Setting JAVA_HOME](/images/2016-07/java-dev-en/setpath-jdk-4.png)
+![Setting JAVA_HOME]({{ site.baseurl }}/images//2016-07/java-dev-en/setpath-jdk-4.png)
 
 Kemudian isi **Variable name:** dengan ```JAVA_HOME``` *huruf besar semua dan untuk **Variable value:** anda arahkan ke lokasi hasil installasi **JDK** klo saya lokasinya di sini ```C:\Program Files\Java\jdk1.8.0_91``` setelah ikut Klik **OK**, maka hasilnya seperti berikut:
 
-![Setting JAVA HOME hasil](/images/2016-07/java-dev-en/setpath-jdk-5.png)
+![Setting JAVA HOME hasil]({{ site.baseurl }}/images//2016-07/java-dev-en/setpath-jdk-5.png)
 
 Kemudian kita pindah ke **System variables**, anda cari **variable name:** dengan nama **PATH** atau **Path**
 
-![Setting PATH JAVA](/images/2016-07/java-dev-en/setpath-jdk-6.png)
+![Setting PATH JAVA]({{ site.baseurl }}/images//2016-07/java-dev-en/setpath-jdk-6.png)
 
 kemudian anda klik button **Edit** maka akan tampil form seperti berikut:
 
-![Setting Path Java 2](/images/2016-07/java-dev-en/setpath-jdk-7.png)
+![Setting Path Java 2]({{ site.baseurl }}/images//2016-07/java-dev-en/setpath-jdk-7.png)
 
 Klik button **New** kemudian arahkan ke lokasi yang installasi folder ```bin``` di hasil installasi JDK jadi klo di saya seperti ini ```C:\Program files\Java\jdk-8u101\bin``` hasilnya seperti berikut:
 
-![Setting PATH Java](/images/2016-07/java-dev-en/setpath-jdk-8.png)
+![Setting PATH Java]({{ site.baseurl }}/images//2016-07/java-dev-en/setpath-jdk-8.png)
 
 Setelah itu klik **OK** semua dialog yang ada sampe keluar dari **system properties**. setelah sampe sini proses instalasi di windows udah beres. saatnya tinggal kita cek aja configurasi.a dengan menggunakan **Command Prompt**
 
 Buka Command Prompt dengan menggunakan kombinasi key ```WIN + R``` maka akan tampil form seperti berkut:
 
-![Running CMD](/images/2016-07/java-dev-en/run-cmd-1.png)
+![Running CMD]({{ site.baseurl }}/images//2016-07/java-dev-en/run-cmd-1.png)
 
 Kemudian ketik ```cmd``` setelah itu ```Enter``` maka akan tampil Command Prompt seperti berikut:
 
-![Command Prompt](/images/2016-07/java-dev-en/run-cmd-2.png)
+![Command Prompt]({{ site.baseurl }}/images//2016-07/java-dev-en/run-cmd-2.png)
 
 kemudian coba cek configurasi java.a dengan cara melihat versi yang telah terinstall di OS menggunakan perintah seperti berikut
 
@@ -215,7 +215,7 @@ Nah untuk installasi **Oracle JDK** di Linux UBuntu telas selesai, sekarang kita
 
 Untuk install Oracle JDK di Fedora sebenarnya ada banyak cara salah satunya menggunakan software Fedy, Fedy adalah penyedia software-software yang digunakan untuk mempermudah proses installasi sama halnya seperti via ppa klo di UBuntu. tpi disini saya tidak akan menggunakan Fedy tapi menggunakan cara manual saja supaya apa? supaya anda tau proses mengginstallnya menggunakan package management fedora yaitu ```rpm```. OK sekarang kita download dulu file installernya sama seperti di Windows masuk ke [website oracle](http://www.oracle.com/technetwork/java/javase/downloads/index.html) kemudian pilih sesuai platform, karena saya pake Fedora version 64bit jadi saya pilih yang ```linux-x64.rpm``` pilih yang extensionnya **.rpm** ya!. seperti gambar berikut:
 
-![Download Oracle JDK Fedora](/images/2016-07/java-dev-en/download-jdk-2.png)
+![Download Oracle JDK Fedora]({{ site.baseurl }}/images//2016-07/java-dev-en/download-jdk-2.png)
 
 Setelah selesai di download silahkan anda buka terminalnya kemudian arahkan ke hasil download seperti berikut:
 

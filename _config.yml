@@ -5,7 +5,7 @@ fb_appid: 1172380132803751
 twitter_username: dimMaryanto93
 
 baseurl: "/blogs" # the subpath of your site, e.g. /blog
-url: "http://software.dimmaryanto93.com" # the base hostname & protocol for your site
+url: "http://www.dimas-maryanto.com/" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown

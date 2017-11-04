@@ -78,7 +78,7 @@ Saya rasa konsep JavaBeans udah clear ya? Ok sekarang saya lanjutkan ke pertanya
 
 * Fleksible, magsudnya klo anda pake text editor canggih seperti Netbeans, Eclipse atau IDEA. kita akan menadapatkan fungsi autocomplete dengan menggunakan <kbr>CTRL + Space</kbr> maka akan muncul method-method yang tersedia seperti berikutnya
 
-![Netbeans autocomplete](/images/2016-08/javabeans-jdbc/netbeans-autocomplate.png)
+![Netbeans autocomplete]({{ site.baseurl }}/images/2016-08/javabeans-jdbc/netbeans-autocomplate.png)
 
 Jika anda perhatikan disana ada method ```getNama, getJurusan, getNim``` dan lain-lain jadi kita gampang untuk dimaintance, Sedangkan klo menggunakan variable temporary seperti postingan sebelumnya fungsi ini tidak bisa dilakukan.
 
@@ -88,7 +88,7 @@ Jika anda perhatikan disana ada method ```getNama, getJurusan, getNim``` dan lai
 
 Ok saya harap penjelasan saya diatas tadi jelas dan terbayang oleh anda. Nah sekarang kita masuk ke study kasusnya, masih pada tabel yang sama seperti postingan sebelumnya yaitu tabel mahasiswa seperti berikut:
 
-![Describe table of mahasiswa](/images/2016-08/javabeans-jdbc/desc-tabel-mahasiswa.png)
+![Describe table of mahasiswa]({{ site.baseurl }}/images/2016-08/javabeans-jdbc/desc-tabel-mahasiswa.png)
 
 Nah sekarang kita buat lebih modular yaitu dengan menggunakan JavaBeans. sekarang anda buat kelas baru dengan nama ```Mahasiswa.java``` dalam package ```belajar.jdbc.model``` seperti berikut:
 

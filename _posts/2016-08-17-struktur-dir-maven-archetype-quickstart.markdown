@@ -50,15 +50,15 @@ src/main/java/
 
 kemudian kita lakukan perintah ```mvn package``` setelah ikut kita lihat hasilnya apakah file ```style.css``` ada dalam ```.jar```, file ```.jar``` dapat ditemukan di folder ```target/```, Berikut ini hasilnya
 
-![Maven package](/images/2016-07/apache-maven/mvn-package.png)
+![Maven package]({{ site.baseurl }}/images/2016-07/apache-maven/mvn-package.png)
 
 Setelah itu coba kita extract file ```template-mvn-quickstart-1.0.jar``` tersebut berikut hasilnya
 
-![Extract file jar](/images/2016-07/apache-maven/jar-extract.png)
+![Extract file jar]({{ site.baseurl }}/images/2016-07/apache-maven/jar-extract.png)
 
 Setelah ikut kita lihat file yang ada pada folder tersebut.
 
-![Cari file style.css](/images/2016-07/apache-maven/find-style-css.png)
+![Cari file style.css]({{ site.baseurl }}/images/2016-07/apache-maven/find-style-css.png)
 
 Dari gambar diatas bisa dilihat, tidak ada file yang namanya ```style.css```, ini artinya file tersebut tidak diikut sertakan oleh maven compiler.
 
@@ -104,7 +104,7 @@ src/main/
 
 Setelah itu kita lakukan package lagi dan karena kita menyimpanya diluar maka pasti filenya ada di root direktory jadi kita bisa buka pake program archive seperti zip, winrar dan lain-lain. Berikut adalah hasilnya
 
-![Hasil extract yang telah dipinhakan](/images/2016-07/apache-maven/find-style-css-available.png)
+![Hasil extract yang telah dipinhakan]({{ site.baseurl }}/images/2016-07/apache-maven/find-style-css-available.png)
 
 <h3><i class="fa fa-folder-open-o"></i> <code>src/test/java</code></h3>
 

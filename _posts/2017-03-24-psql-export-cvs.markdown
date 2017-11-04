@@ -61,10 +61,10 @@ psql -h localhost -U postgres spring_core -c "COPY (SELECT * FROM security_roles
 
 Berikut hasilnya:
 
-![hasil-export](/images/2017-03/psql-export/psql-export.png)
+![hasil-export]({{ site.baseurl }}/images/2017-03/psql-export/psql-export.png)
 
 Dan ini isinya:
 
-![hasil-export-filename](/images/2017-03/psql-export/export-filename.png)
+![hasil-export-filename]({{ site.baseurl }}/images/2017-03/psql-export/export-filename.png)
 
 Ok, mungkin sekian dulu klo ada kekurangan mohon maaf.

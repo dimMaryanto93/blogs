@@ -43,19 +43,19 @@ Nah sekarang kita balik lagi ke topik, saya akan menggunakan sebuah IDE atau Int
 
 ok, langsung aja buka Netbeans IDE.
 
-![Starting Netbeans IDE](/images/2016-07/java-jdbc/startup-netbeans.png)
+![Starting Netbeans IDE]({{ site.baseurl }}/images/2016-07/java-jdbc/startup-netbeans.png)
 
 Kemudian pada menu pilih **file** -> **New Project** -> **Categories** pilih **Java Project** -> **Projects** pilih **Java Application**, maka tampilanya seperti berikut:
 
-![Java new application](/images/2016-07/java-jdbc/new-project.png)
+![Java new application]({{ site.baseurl }}/images/2016-07/java-jdbc/new-project.png)
 
 setelah itu klik **Next**. kemudian input **Project Name** ```jdbc-mysql```, **Project Location** bebas terserah anda tpi klo saya disimpan di ```home/dimMaryanto/temp/fundamental-java-belajar``` dan **unchek** untuk **Created Main Class** karena saya mau membuatnya dengan manual. maka hasilnya seperti berikut:
 
-![New Java Project](/images/2016-07/java-jdbc/source-project.png)
+![New Java Project]({{ site.baseurl }}/images/2016-07/java-jdbc/source-project.png)
 
 kemudian klik **Finish**, maka Netbeans akan membuatkan kita project dengan Struktur directory seperti berikut:
 
-![Structur directory java netbeans](/images/2016-07/java-jdbc/structur-java-netbeans.png)
+![Structur directory java netbeans]({{ site.baseurl }}/images/2016-07/java-jdbc/structur-java-netbeans.png)
 
 tahap membuat project di Netbeans telah selesai, berikut nya adalah membuat database.
 
@@ -146,7 +146,7 @@ ok setelah membuat database dan tabel di mysql kita balik lagi ke koding Java.
 
 sebelum kita nulis koding ada baiknya kita siapkan dulu dependency-nya atau lebih sering disebut library pihak ke tiga yaitu ```MySQL JDBC Driver``` berikut adalah cara menambahkan library-nya ke class path di netbeans pada **panel Project ```jdbc_mysql```**, buka tree view kemudian anda dapat melihat terdapat ```Source Package``` dan ```Libraries```, pada item ```Libraries``` klik kanan -> **Add Libary** setelah itu cari ```MySQL JDBC Driver``` kemudian klik **Add Library** maka hasilnya seperti berikut:
 
-![Include Mysql JDBC Driver into Classpath](/images/2016-07/java-jdbc/include-mysql.png)
+![Include Mysql JDBC Driver into Classpath]({{ site.baseurl }}/images/2016-07/java-jdbc/include-mysql.png)
 
 tahap selanjutnya kita harus membuat jembatan antara Java dengan Database Mysql supaya biasa terkoneksi. yang perlu diingat adalah Netbeans itu bukan bahasa pemograman ya! jadi gini ada beberapa waktu lalu ada pertanyaan kurang lebih seperti ini
 
@@ -162,15 +162,15 @@ pertama yang harus dilakukan adalah membuat class baru dengan nama ```MainAplika
 
 Pada menubar klik **file** -> **New File** -> **Categories** pilih **Java** dan **File Types** pilih **Java Class** berikut ini hasilnya:
 
-![Create New Java Class](/images/2016-07/java-jdbc/new-java-class.png)
+![Create New Java Class]({{ site.baseurl }}/images/2016-07/java-jdbc/new-java-class.png)
 
 Klik **Next**, Kemudian input untuk **Class Name:** ```MainApplication```, **Location:** ```Source Packages```, **Packages:** ```belajar.jdbc``` berikut ini hasilnya:
 
-![Create New Java Class Description](/images/2016-07/java-jdbc/main-application-class.png)
+![Create New Java Class Description]({{ site.baseurl }}/images/2016-07/java-jdbc/main-application-class.png)
 
 Klik **Finish**, maka berikut ini hasilnya:
 
-![Result class created by Netbeans IDE](/images/2016-07/java-jdbc/created-class.png)
+![Result class created by Netbeans IDE]({{ site.baseurl }}/images/2016-07/java-jdbc/created-class.png)
 
 Tahap selanjutnya adalah **membuat main method** dalam class tersebut seperti berikut:
 

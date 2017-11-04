@@ -100,17 +100,17 @@ Selanjutnya kita terapkan ke koding yang kita buat untuk kelas ```Mahasiswa``` d
 
 Pertama anda buat dulu package dalam ```belajar.jdbc``` dengan nama ```repo``` jadi seperti berikut:
 
-![Package Repo](/images/2016-08/modular-jdbc/package-repo.png)
+![Package Repo]({{ site.baseurl }}/images/2016-08/modular-jdbc/package-repo.png)
 
 Kemudian buat ```interface``` dengan nama ```RepositoryJurusan.java``` seperti berikut:
 
 Klik kanan di folder atau source **repo** kemudian **New File** maka akan tampil form seperti berikut:
 
-![New interface](/images/2016-08/modular-jdbc/new-interface.png)
+![New interface]({{ site.baseurl }}/images/2016-08/modular-jdbc/new-interface.png)
 
 Di menu categories pilih **Java** kemudian di File Type pilih **Java Interface** kemudian klik **Next** maka akan tampil form sebagai berikut:
 
-![New File Interface](/images/2016-08/modular-jdbc/new-interface-2.png)
+![New File Interface]({{ site.baseurl }}/images/2016-08/modular-jdbc/new-interface-2.png)
 
 Kemudian di Class name input ```RepositoryJurusan``` maka hasilnya seperti berikut:
 
@@ -140,7 +140,7 @@ Maka berikut implementasinya:
 
 Nah jadi dalam interface ```RepositoryJurusan``` itu, kita hanya mendefinisikan method-method kosong, kemudian kita buat package baru dengan nama ```belajar.jdbc.service``` seperti berikut:
 
-![Package service](/images/2016-08/modular-jdbc/package-service.png)
+![Package service]({{ site.baseurl }}/images/2016-08/modular-jdbc/package-service.png)
 
 Kemudian didalam package tersebut anda buat kelas baru dengan nama ```ServiceJurusan``` maka hasilnya seperti berikut:
 
@@ -170,7 +170,7 @@ public class ServiceJurusan implements RepositoryJurusan{
 
 Setelah itu, ada error nih di Netbeans nya seperti berikut:
 
-![Error Implement all abastract method](/images/2016-08/modular-jdbc/error-implement-all-method.png)
+![Error Implement all abastract method]({{ site.baseurl }}/images/2016-08/modular-jdbc/error-implement-all-method.png)
 
 Ini karena ada method yang harus di implement oleh kelas tersebut, caranya untuk mengenerate method-method yang harus implementasikan yaitu klik **lampu yang merah itu** terus pilih **Implement all abstract methods** maka hasil generatenya seperti berikut:
 

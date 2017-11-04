@@ -33,11 +33,11 @@ Pertama yang harus dilakukan adalah yang pasti anda memiliki account GitHub, kal
 
 Hal pertama yang harus anda siapkan yaitu username, password dan email karena nanti ketika ada informasi seperti bergabung ke project orang lain kita akan menerima email dari github berikut adalah formnya:
 
-![Membuat account gith](/images/2016-08/git-to-github/create-account-github.png)
+![Membuat account gith]({{ site.baseurl }}/images/2016-08/git-to-github/create-account-github.png)
 
 Setelah itu ada confirmasi pilih plan yang anda inginkan klo saya sih accountnya yang free aja karena semua source yang saya tulis sifatnya public. klo misalnya anda mau membuat repository yang sifatnya private anda bisa menginvestasikan sedikit uang jajan anda untuk melakukan pembayaran ke github berikut daftar harganya:
 
-![Billing plan](/images/2016-08/git-to-github/github-plan.png)
+![Billing plan]({{ site.baseurl }}/images/2016-08/git-to-github/github-plan.png)
 
 {: .center }
 (gambar diambil pada tanggal 2016-04-27)
@@ -46,11 +46,11 @@ ok, nah gimana gampangkhan bikin account di github tahap selanjutnya melakukan v
 
 Setelah membuat akun tahap selanjutnya untuk melakukan sharing project git ke github yaitu membuat repository di GitHub ok, sekarang anda bisa login setelah account githubnya aktif maka anda akan diarahkan ke GitHub dashboard seperti berikut:
 
-![GitHub dashboard](/images/2016-08/git-to-github/github-dashboard.png)
+![GitHub dashboard]({{ site.baseurl }}/images/2016-08/git-to-github/github-dashboard.png)
 
 kemudian disamping sebelah kanan ada panel **'your repository'**, untuk membuat repository baru bisa klik button **'New Repository'** atau pada navigation yang ada icon **'+'** kemudian pilih **'New Repository'** maka akan muncul form seperti berikut:
 
-![Create new repo](/images/2016-08/git-to-github/blank-repository-github.png)
+![Create new repo]({{ site.baseurl }}/images/2016-08/git-to-github/blank-repository-github.png)
 
 ### Tips memberikan nama _repository_
 
@@ -62,11 +62,11 @@ ok, kita balik lagi membuat repository ya!,
 
 Jadi disini saya mau membuat namanya ```belajar-git``` kemudian sifatnya ```public```. jadi berikut hasilnya:
 
-![Project created](/images/2016-08/git-to-github/created-repo-github.png)
+![Project created]({{ site.baseurl }}/images/2016-08/git-to-github/created-repo-github.png)
 
 kemudian klik button **'Create repository'**, setelah itu maka akan tampil form seperti berikut:
 
-![Repository has been created](/images/2016-08/git-to-github/repository-created.png)
+![Repository has been created]({{ site.baseurl }}/images/2016-08/git-to-github/repository-created.png)
 
 Setelah itu kita akan meng-upload project Git pada [postingan sebelumnya]({% post_url 2016-08-02-intro-git %}) berikut caranya:
 
@@ -102,7 +102,7 @@ git remote add github https://github.com/dimMaryanto93/belajar-git.git
 
 Untuk url-path anda bisa lihat dari seperti gambar berikut ini:
 
-![Github url paht](/images/2016-08/git-to-github/url-path.png)
+![Github url paht]({{ site.baseurl }}/images/2016-08/git-to-github/url-path.png)
 
 Untuk melihat hasilnya menggunakan perintah sebagai berikut:
 
@@ -142,7 +142,7 @@ Branch master set up to track remote branch master from github.
 C:\Users\softw\Documents\temp\belajar-git>
 {% endhighlight %}
 
-![Git PUSH](/images/2016-08/git-to-github/git-push.png)
+![Git PUSH]({{ site.baseurl }}/images/2016-08/git-to-github/git-push.png)
 
 Ok sampai ini anda telah berhasil membuat project yang tadi nya hanya disimpan di lokal komputer menjadi di share ke GitHub.
 

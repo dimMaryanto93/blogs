@@ -31,12 +31,12 @@ Hal pertama yang harus anda lakukan adalah memenuhi syarat berikut ini:
 * Yang pasti harus punya akun github, klo belum bikin silahkan bikin aja gratis kok!. klo mau liat dokumentasinya [lihat disini]({% post_url 2016-08-04-git-to-github %})
 * Anda harus tergabung ke repository tertentu, baik individual maupun group contohnya disini saya sedang mengerjakan sebuat project salah satu mahasiswa ***** #sensor
 
-![Gambar repository](/images/2016-08/github-issues/github-contributor.png)
+![Gambar repository]({{ site.baseurl }}/images/2016-08/github-issues/github-contributor.png)
 
 * Harus rajin periksa email. karena klo ada pesan atau komentar baru, akan masuk ke primary email di account github anda.
 * Dan yang paling penting adalah settingan Issues-nya di repository tersebut aktif. klo tidak ya tidak bisa menerima dan membuat Issues.
 
-![Settingan Issues enabled](/images/2016-08/github-issues/setting-issues-enabled.png)
+![Settingan Issues enabled]({{ site.baseurl }}/images/2016-08/github-issues/setting-issues-enabled.png)
 
 Nah sekarang kita akan membuat issues, tapi Sebelum membuat Issues sekarang saya tanya, apa itu Issues?
 
@@ -61,15 +61,15 @@ Ok, udah cukup jelaskan? jadi langsung ja mulai kita membuat issues.
 
 Untuk membuat issue sebenernya sangatlah mudah, cukup pada tab repository -> **issues**.
 
-![Tab menu issues](/images/2016-08/github-issues/tabs-menu-issues.png)
+![Tab menu issues]({{ site.baseurl }}/images/2016-08/github-issues/tabs-menu-issues.png)
 
 maka akan tampil daftar issues, tpi karena saya belum mempunyai issues jadi masih kosong:
 
-![Daftar issues](/images/2016-08/github-issues/tab-issues.png)
+![Daftar issues]({{ site.baseurl }}/images/2016-08/github-issues/tab-issues.png)
 
 sekarang tinggal klik aja button warna ijo itu, "New Issue" maka akan tampil form seperti berikut:
 
-![Blank issue](/images/2016-08/github-issues/blank-issue.png)
+![Blank issue]({{ site.baseurl }}/images/2016-08/github-issues/blank-issue.png)
 
 sekarang tinggal diisi aja:
 
@@ -77,15 +77,15 @@ sekarang tinggal diisi aja:
 * text -> tulis keterangan error atau logger errornya, dan **yang harus diperhatikan dalam text ini dia formatnya menggunakan markdown** jadi kita bisa menampilkan beberapa component seperti code, image, emoticon dan lain-lain lebih jelasnya bisa lihat di [dokumentasinya markdown](https://daringfireball.net/projects/markdown/syntax) tapi tenang aja klo misalnya gak teralu bisa dengan sintax markdown, sintax markdown tidak sejekan sintax programming kok! klo misalnya salah paling tampilanya aja agak berantakan. so make it easy aja.
 * label -> ini biasanya menandakan hashtag contohnya ada bugs maka pake label bug dan lain-lain.
 
-![Issue labels](/images/2016-08/github-issues/issue-labels.png)
+![Issue labels]({{ site.baseurl }}/images/2016-08/github-issues/issue-labels.png)
 
 * assignees -> ini berati akan di tugaskan kepada siapa? contohnya klo _assign yourself_ artinya issue ini akan di tugaskan kepada diri anda sendiri atau kita bisa memilih siapa yang akan ditugaskan untuk member yang berkolaborasi di repository tersebut.
 
-![Assignees issue](/images/2016-08/github-issues/issue-assignees.png)
+![Assignees issue]({{ site.baseurl }}/images/2016-08/github-issues/issue-assignees.png)
 
 klo udah tingal klik Button "Submit new issue". maka hasilnya seperti berikut:
 
-![Submited new issue](/images/2016-08/github-issues/submited-issue.png)
+![Submited new issue]({{ site.baseurl }}/images/2016-08/github-issues/submited-issue.png)
 
 ## Menutup otomatis issue dengan commit
 
@@ -100,7 +100,7 @@ git commit -m 'fixed #1 masalahya port bentrok'
 
 Jika anda perhatikan pada pesan commitnya saya menggunakan keyword ```fixed``` dan ```#1``` jadi magsudnya adalah saya bugnya telah saya perbaiki dengan kode issue
 
-![Kode issue](/images/2016-08/github-issues/id-issue.png)
+![Kode issue]({{ site.baseurl }}/images/2016-08/github-issues/id-issue.png)
 
 kode ```#1``` berasal dari ```#1 opened ... by ...```, kemudian setelah itu kita push berikut outputnya:
 
@@ -140,6 +140,6 @@ dimmaryanto@MSI-Z87:~/temp/vcs-git-belajar$
 
 setelah itu coba lihat kembali ke Issues di repository GitHub anda maka secara otomatis hasilnya akan seperti berikut:
 
-![Issue auto closed](/images/2016-08/github-issues/issue-auto-closed.png)
+![Issue auto closed]({{ site.baseurl }}/images/2016-08/github-issues/issue-auto-closed.png)
 
 Ok mungin sekian dulu postingan tentang Central Bugs Tracker di GitHub, see you next post!.

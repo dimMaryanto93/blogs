@@ -9,16 +9,16 @@
       <ul class="side-nav black-text" id="mobile-demo">
         <div id="profile">
           <p class="flow-text">{{ site.data.profile.status }}</p>
-          <img id="picture_profile" src="/static/img/profile.png" alt=""
+          <img id="picture_profile" src="{{ site.baseurl }}/static/img/profile.png" alt=""
             class="responsive-img z-depth-5 circle center-image" width="100" height="100"/>
           <h3 class="center">{{ site.data.profile.nama }}</h3>
           <div class="divider"></div>
         </div>
-        <li><a href="{{ site.baseurl}}/halaman/arsip/" target="_self">Arsip</a></li>
+        <li><a href="{{ site.baseurl }}/halaman/arsip/" target="_self">Arsip</a></li>
         {% for page in site.pages %}
           {% if page.title and page.active %}
           <li>
-            <a href="{{ page.url }}" target="_self">
+            <a href="{{ page.url | prepend: site.baseurl }}" target="_self">
               {{ page.subtitle }}
             </a>
           </li>
@@ -32,8 +32,8 @@
 
 <ul id="desktop" class="side-nav">
   <div class="userView">
-    <img src="/static/img/banner-bg.jpg" class="background" />
-    <img class="circle" src="/static/img/profile.png">
+    <img src="{{ site.baseurl }}/static/img/banner-bg.jpg" class="background" />
+    <img class="circle" src="{{ site.baseurl }}/static/img/profile.png">
     <span class="name white-text">{{ site.data.profile.nama }}</span>
     <a href="mailto:{{ site.data.profile.email }}"><span class="email white-text">{{ site.data.profile.email }}</span></a>
   </div>
@@ -43,7 +43,7 @@
   {% for halaman in sorted_pages) %}
     {% if halaman.page_category == "desktop" and halaman.active %}
       <li>
-        <a href="{{ halaman.url }}">
+        <a href="{{ halaman.url | prepend: site.baseurl }}">
           <i class="{{ halaman.icon }} colored left flow-text"></i>
           {{ halaman.title }}
           {% if halaman.new %}
@@ -57,8 +57,8 @@
 
 <ul id="mobile" class="side-nav">
   <div class="userView">
-    <img src="/static/img/banner-bg.jpg" class="background" />
-    <img class="circle" src="/static/img/profile.png">
+    <img src="{{ site.baseurl }}/static/img/banner-bg.jpg" class="background" />
+    <img class="circle" src="{{ site.baseurl }}/static/img/profile.png">
     <span class="name white-text">{{ site.data.profile.nama }}</span>
     <a href="mailto:{{ site.data.profile.email }}"><span class="email white-text">{{ site.data.profile.email }}</span></a>
   </div>
@@ -68,7 +68,7 @@
   {% for halaman in sorted_pages) %}
     {% if halaman.page_category == "mobile" and halaman.active %}
       <li>
-        <a href="{{ halaman.url }}">
+        <a href="{{ halaman.url | prepend: site.baseurl }}">
           <i class="{{ halaman.icon }} colored left flow-text"></i>
           {{ halaman.title }}
           {% if halaman.new %}
@@ -82,8 +82,8 @@
 
 <ul id="web" class="side-nav">
   <div class="userView">
-    <img src="/static/img/banner-bg.jpg" class="background" />
-    <img class="circle" src="/static/img/profile.png">
+    <img src="{{ site.baseurl }}/static/img/banner-bg.jpg" class="background" />
+    <img class="circle" src="{{ site.baseurl }}/static/img/profile.png">
     <span class="name white-text">{{ site.data.profile.nama }}</span>
     <a href="mailto:{{ site.data.profile.email }}"><span class="email white-text">{{ site.data.profile.email }}</span></a>
   </div>
@@ -93,7 +93,7 @@
   {% for halaman in sorted_pages) %}
     {% if halaman.page_category == "web" and halaman.active %}
       <li>
-        <a href="{{ halaman.url }}">
+        <a href="{{ halaman.url | prepend: site.baseurl }}">
           <i class="{{ halaman.icon }} colored left flow-text"></i>
           {{ halaman.title }}
           {% if halaman.new %}
@@ -107,8 +107,8 @@
 
 <ul id="framework" class="side-nav">
   <div class="userView">
-    <img src="/static/img/banner-bg.jpg" class="background" />
-    <img class="circle" src="/static/img/profile.png">
+    <img src="{{ site.baseurl }}/static/img/banner-bg.jpg" class="background" />
+    <img class="circle" src="{{ site.baseurl }}/static/img/profile.png">
     <span class="name white-text">{{ site.data.profile.nama }}</span>
     <a href="mailto:{{ site.data.profile.email }}"><span class="email white-text">{{ site.data.profile.email }}</span></a>
   </div>
@@ -118,7 +118,7 @@
   {% for halaman in sorted_pages) %}
     {% if halaman.page_category == "framework" and halaman.active %}
       <li>
-        <a href="{{ halaman.url }}">
+        <a href="{{ halaman.url | prepend: site.baseurl }}">
           <i class="{{ halaman.icon }} colored left flow-text"></i>
           {{ halaman.title }}
           {% if halaman.new %}
@@ -132,8 +132,8 @@
 
 <ul id="database" class="side-nav">
   <div class="userView">
-    <img src="/static/img/banner-bg.jpg" class="background" />
-    <img class="circle" src="/static/img/profile.png">
+    <img src="{{ site.baseurl }}/static/img/banner-bg.jpg" class="background" />
+    <img class="circle" src="{{ site.baseurl }}/static/img/profile.png">
     <span class="name white-text">{{ site.data.profile.nama }}</span>
     <a href="mailto:{{ site.data.profile.email }}"><span class="email white-text">{{ site.data.profile.email }}</span></a>
   </div>
@@ -143,7 +143,7 @@
   {% for halaman in sorted_pages) %}
     {% if halaman.page_category == "database" and halaman.active %}
       <li>
-        <a href="{{ halaman.url }}">
+        <a href="{{ halaman.url | prepend: site.baseurl }}">
           <i class="{{ halaman.icon }} colored left flow-text"></i>
           {{ halaman.title }}
           {% if halaman.new %}
@@ -157,8 +157,8 @@
 
 <ul id="other" class="side-nav">
   <div class="userView">
-    <img src="/static/img/banner-bg.jpg" class="background" />
-    <img class="circle" src="/static/img/profile.png">
+    <img src="{{ site.baseurl }}/static/img/banner-bg.jpg" class="background" />
+    <img class="circle" src="{{ site.baseurl }}/static/img/profile.png">
     <span class="name white-text">{{ site.data.profile.nama }}</span>
     <a href="mailto:{{ site.data.profile.email }}"><span class="email white-text">{{ site.data.profile.email }}</span></a>
   </div>
@@ -168,7 +168,7 @@
   {% for halaman in sorted_pages) %}
     {% if halaman.page_category == "other" and halaman.active %}
       <li>
-        <a href="{{ halaman.url }}">
+        <a href="{{ halaman.url | prepend: site.baseurl }}">
           <i class="{{ halaman.icon }} colored left flow-text"></i>
           {{ halaman.title }}
           {% if halaman.new %}

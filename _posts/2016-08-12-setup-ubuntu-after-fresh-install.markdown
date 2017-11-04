@@ -32,7 +32,7 @@ sudo apt-get update && apt-get upgrade -y
 
 install driver yang dibutuhkan seperti VGA, Broadcom dan lain-lain.
 
-![Driver](/images/2016-08/setup-ubuntu-after-install/driver-ubuntu.png)
+![Driver]({{ site.baseurl }}/images/2016-08/setup-ubuntu-after-install/driver-ubuntu.png)
 
 ## synaptic
 
@@ -42,7 +42,7 @@ Install ```synaptic``` package manager, untuk mengelola aplikasi yang broken ata
 sudo apt-get install synaptic -y
 {% endhighlight %}
 
-![synaptic package manager](/images/2016-08/setup-ubuntu-after-install/synaptic.png)
+![synaptic package manager]({{ site.baseurl }}/images/2016-08/setup-ubuntu-after-install/synaptic.png)
 
 ## vlc
 
@@ -52,7 +52,7 @@ Install ```vlc``` untuk memutar video
 sudo apt-get install vlc -y
 {% endhighlight %}
 
-![vlc](/images/2016-08/setup-ubuntu-after-install/vlc.png)
+![vlc]({{ site.baseurl }}/images/2016-08/setup-ubuntu-after-install/vlc.png)
 
 ## gimp
 
@@ -62,7 +62,7 @@ Install ```gimp``` sebagai pengganti Photoshop
 sudo apt-get install gimp gimp-data gimp-plugin-registry gimp-data-extra -y
 {% endhighlight %}
 
-![gimp](/images/2016-08/setup-ubuntu-after-install/gimp.png)
+![gimp]({{ site.baseurl }}/images/2016-08/setup-ubuntu-after-install/gimp.png)
 
 ## Inkscape
 
@@ -72,7 +72,7 @@ Install ```inkscape``` sebagai Corel Draw
 sudo apt-get install inkscape -y
 {% endhighlight %}
 
-![inkscape](/images/2016-08/setup-ubuntu-after-install/inkscape.png)
+![inkscape]({{ site.baseurl }}/images/2016-08/setup-ubuntu-after-install/inkscape.png)
 
 ## BleachBit
 
@@ -82,7 +82,7 @@ Install ```bleachbit```, sebagai pengganti CCleaner di Windows
 sudo apt-get install bleachbit -y
 {% endhighlight %}
 
-![bleachbit](/images/2016-08/setup-ubuntu-after-install/bleachbit.png)
+![bleachbit]({{ site.baseurl }}/images/2016-08/setup-ubuntu-after-install/bleachbit.png)
 
 ## Flash Plugins
 
@@ -108,11 +108,11 @@ nautilus --quit
 
 kemudian jalankan ```dropbox``` dari launcher maka akan tampil seperti berikut:
 
-![download dropbox](/images/2016-08/setup-ubuntu-after-install/dropbox-install-1.png)
+![download dropbox]({{ site.baseurl }}/images/2016-08/setup-ubuntu-after-install/dropbox-install-1.png)
 
 Lalu setelah selesai maka tampil form:
 
-![Login dropbox](/images/2016-08/setup-ubuntu-after-install/dropbox.png)
+![Login dropbox]({{ site.baseurl }}/images/2016-08/setup-ubuntu-after-install/dropbox.png)
 
 ## Blender
 
@@ -122,7 +122,7 @@ Install ```blender``` sebagai pengganti 3D Modeling
 apt-get install blender -y
 {% endhighlight %}
 
-![blender](/images/2016-08/setup-ubuntu-after-install/blender.png)
+![blender]({{ site.baseurl }}/images/2016-08/setup-ubuntu-after-install/blender.png)
 
 ## Media Codec
 
@@ -142,7 +142,7 @@ sudo apt-get update
 sudo apt-get install simplescreenrecorder
 {% endhighlight %}
 
-![ssr](/images/2016-08/setup-ubuntu-after-install/ssr.png)
+![ssr]({{ site.baseurl }}/images/2016-08/setup-ubuntu-after-install/ssr.png)
 
 ## Unity Tweak Tool
 
@@ -152,7 +152,7 @@ Install ```unity-tweak-tool``` untuk mengganti theme, icon dll.
 apt-get install unity-tweak-tool -y
 {% endhighlight %}
 
-![unity tweak tool](/images/2016-08/setup-ubuntu-after-install/unity-twak-tool.png)
+![unity tweak tool]({{ site.baseurl }}/images/2016-08/setup-ubuntu-after-install/unity-twak-tool.png)
 
 ## File Compressed
 
@@ -172,7 +172,7 @@ Install ```brasero``` untuk membuat iso, burning dll.
 apt-get install brasero -y
 {% endhighlight %}
 
-![brasero](/images/2016-08/setup-ubuntu-after-install/brasero.png)
+![brasero]({{ site.baseurl }}/images/2016-08/setup-ubuntu-after-install/brasero.png)
 
 ## Audacity
 
@@ -182,7 +182,7 @@ Install ```audacity``` untuk merekam suara atau voice recorder
 apt-get install audacity -y
 {% endhighlight %}
 
-![audacity](/images/2016-08/setup-ubuntu-after-install/audacity.png)
+![audacity]({{ site.baseurl }}/images/2016-08/setup-ubuntu-after-install/audacity.png)
 
 ## WPS Office
 
@@ -196,12 +196,12 @@ dpkg -i /home/user/Downloads/namafile.deb
 
 * Word
 
-![Writer](/images/2016-08/setup-ubuntu-after-install/word.png)
+![Writer]({{ site.baseurl }}/images/2016-08/setup-ubuntu-after-install/word.png)
 
 * Powerpoint
 
-![Persentation](/images/2016-08/setup-ubuntu-after-install/powerpoint.png)
+![Persentation]({{ site.baseurl }}/images/2016-08/setup-ubuntu-after-install/powerpoint.png)
 
 * Excel
 
-![Spreadsheets](/images/2016-08/setup-ubuntu-after-install/excel.png)
+![Spreadsheets]({{ site.baseurl }}/images/2016-08/setup-ubuntu-after-install/excel.png)

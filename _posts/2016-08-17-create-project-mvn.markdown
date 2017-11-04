@@ -117,7 +117,7 @@ Kemudian tekan **Enter** dan maka berikut adalah log nya:
 
 berikut adalah hasil berupa gambar:
 
-![Hasil generate template-mvn-quickstart](/images/2016-07/apache-maven/ls-mvn-template.png)
+![Hasil generate template-mvn-quickstart]({{ site.baseurl }}/images/2016-07/apache-maven/ls-mvn-template.png)
 
 Nah sekarang kita telah memiliki template project yang telah dibuatkan oleh maven-archetype, berikut adalah struktur direktorinya:
 

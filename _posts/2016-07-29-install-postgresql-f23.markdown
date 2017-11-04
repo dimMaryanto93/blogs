@@ -40,15 +40,15 @@ $ sudo postgresql-setup initdb
 
 
 
-![Perintah initdb](/images/2016-07/install-postgresql-f23/postgresql-setup-initdb.png)
+![Perintah initdb]({{ site.baseurl }}/images/2016-07/install-postgresql-f23/postgresql-setup-initdb.png)
 
 jika berhasil maka hasilnya seperti berikut:
 
-![Hasil initdb](/images/2016-07/install-postgresql-f23/postgresql-initdb-post.png)
+![Hasil initdb]({{ site.baseurl }}/images/2016-07/install-postgresql-f23/postgresql-initdb-post.png)
 
 tetapi jika menemukan error seperti berikut:
 
-![Error initdb](/images/2016-07/install-postgresql-f23/postgresql-initdb-error.png)
+![Error initdb]({{ site.baseurl }}/images/2016-07/install-postgresql-f23/postgresql-initdb-error.png)
 
 solusinya adalah hapus folder ```pgsql/data```
 
@@ -164,7 +164,7 @@ kemudian exit dari terminal dan buka lagi terminalnya setelah itu coba login seb
 
 berikut hasilnya:
 
-![Login as user normal](/images/2016-07/install-postgresql-f23/login-as-postgres.png)
+![Login as user normal]({{ site.baseurl }}/images/2016-07/install-postgresql-f23/login-as-postgres.png)
 
 penjelasanya:
 

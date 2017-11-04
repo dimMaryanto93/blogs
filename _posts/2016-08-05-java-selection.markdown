@@ -39,7 +39,7 @@ if (bil1 == bil2) {
 
 Pada dasarnya seleksi dengan IF ini kalo digambarkan ke diagram UML dengan activity diagram berdasarkan koding diatas jadi seperti berikut:
 
-![Basic IF](/images/2016-08/java-selection/if-basic.jpg)
+![Basic IF]({{ site.baseurl }}/images/2016-08/java-selection/if-basic.jpg)
 
 * Nah jadi disini kita mendefinisikan 2 variable integer yaitu ```bil1 = 10``` dan ```bil2 = -10```.
 * Seleksi pertama yaitu ```bil1 == bil2``` jadi kita ubah ke bilangan jadi ```10 == -10``` hasilnya ```false``` karena 10 tidak sama dengan -10 maka perintah dalam ```(bil1 == bil2)``` dilewat atau tidak dijalankan.
@@ -67,7 +67,7 @@ Sekarang coba tebak outputnya yang mana?
 
 Ok, nah jadi jawabanya seperti berikut supaya lebih gampang kita buat dulu activity diagramnya dulu seperti berikut:
 
-![IF yang aneh](/images/2016-08/java-selection/if-aneh.jpg)
+![IF yang aneh]({{ site.baseurl }}/images/2016-08/java-selection/if-aneh.jpg)
 
 Berikut penjelasnnya:
 
@@ -101,7 +101,7 @@ Nah kasus diatas kita menentukan ip anda memiliki grade apa?
 
 Ok, supaya gampang seperti biasa kita visualisaksikan menggunakan diagram activity seperti berikut:
 
-![Normal switch-case](/images/2016-08/java-selection/switch-basic.jpg)
+![Normal switch-case]({{ site.baseurl }}/images/2016-08/java-selection/switch-basic.jpg)
 
 
 Nah jadi hasilnya adalah ```A```, kenapa A jadi gini penjelasnnya:
@@ -124,7 +124,7 @@ switch(ip){
 
 Nah sekarang apa outputnya? seperti biasa kita bisa gunakan diagram activity untuk mempermudah menggambarkan dari koding diatas seperti berikut:
 
-![Switch Modif](/images/2016-08/java-selection/switch-modif.jpg)
+![Switch Modif]({{ site.baseurl }}/images/2016-08/java-selection/switch-modif.jpg)
 
 Gimana jelaskan apa yang ada saya visualisaksikan dengan, mungkin anda bisa menafsirkan dengan bahasa diri sendiri bagaimana cara kerjanya, tapi disini saya juga bakalan menjelaskan tapi maaf kalo kata-katanya belibet hheehehe, maklum bukan anak bahasa yang pintar merangkai kata-kata.
 

@@ -53,10 +53,10 @@ JDBC biasa tanpa Batch processing, sama kayak kita **ngirim barang pake motor (s
 
 Jadi ilustrasinya klo **menggunakan motor  (Tanpa Batch Processing)** di ubah menjadi diagram activity maka kyak gini:
 
-![pake motor](/images/2016-08/batch-jdbc/nonBatchProcessing.jpg)
+![pake motor]({{ site.baseurl }}/images/2016-08/batch-jdbc/nonBatchProcessing.jpg)
 
 Sedangkan berikut ini **menggunakan mobil (Menggunakan Batch Processing)** jadi klo diubah ke diagram activity maka kayak gini:
 
-![pake mobil](/images/2016-08/batch-jdbc/BatchProcessing.jpg)
+![pake mobil]({{ site.baseurl }}/images/2016-08/batch-jdbc/BatchProcessing.jpg)
 
 OK saya rasa konsepnya cukup jelas ya tentang Batch Processing ini mulai dari apa fungsinnya dan bagaimana cara kerjanya, see you next post!.

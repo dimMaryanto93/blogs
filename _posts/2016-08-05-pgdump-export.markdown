@@ -167,12 +167,12 @@ C:\Users\softw\Documents>
 
 berikut isi dari file ```export.sql```
 
-![Export SQL pg_dump](/images/2016-08/pgdump-export/export-sql.png)
+![Export SQL pg_dump]({{ site.baseurl }}/images/2016-08/pgdump-export/export-sql.png)
 
 Satu lagi, setelah kita meng-export menggunakan ```pg_dump``` ada alternatif lain yaitu dengan menggunakan software GUI yaitu PgAdminIII berikut caranya:
 
 Login sebagai ```postgres``` kemudian buka koneksi pada database ```universitas``` seperti berikut:
 
-![PgAdminIII](/images/2016-08/pgdump-export/pg_admin-export.png)
+![PgAdminIII]({{ site.baseurl }}/images/2016-08/pgdump-export/pg_admin-export.png)
 
 Sekarang coba anda perhatikan pada tab **Object browser** setelah itu buka **Database** dengan nama **Universitas** lalu pada scheme **public** terdapat **Tables** buka lalu klik **mahasiswa** setelah itu anda perhatikan pada tab **SQL pane** disitu ada DDL (Data Definition Language). Nah mungkin saya rasa cukup untuk postingan tentang bagaimana cara export dari database ke file ```.sql```, see you next post!.

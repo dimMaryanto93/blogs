@@ -26,7 +26,7 @@ Halo kembali lagi di blog saya, kalo dilihat-lihat udah lumayan panjang topik te
 
 Jawabannya yang pertama, transaction itu kita bisa mengatur atau bisa mengontrol datanya semacam cache lah tapi di database contoh realnya misal kita punya multi query yang akan dikirimkan ke database tetapi salah satu datanya error maka kita bisa melakukan rollback. nah magsudnya rollback ini konsepnya sama seperti di game-game balapan salah satunya crash bandicoot (CTR) anak 90'an pasti tau game ini hehehe, tau khan checkpoint? jadi gini kalo kita melintas checkpoint itu maka setelah melewatinnya trus anda nabrak maka anda akan kembali lagi ke last checkpoint. Saya akan ilustrasikan perbedaan dengan menggunakan transaction dan yang tidak seperti pada gambar berikut ini:
 
-![Perbedaan transaction jdbc dengan non transaction](/images/2016-08/transaction-jdbc/deferent-non-and-transaction.jpg)
+![Perbedaan transaction jdbc dengan non transaction]({{ site.baseurl }}/images/2016-08/transaction-jdbc/deferent-non-and-transaction.jpg)
 
 Gambar sebelah kiri yaitu **tanpa menggunakan transaction** jadi kita punya 3 query yang dikirim ke database tapi pada saat query ke 2 database mendeteksi terjadi kesalahan sql maka query ke 2 tidak akan di simpan database sedangkan untuk query ke 1 dan ke 3 yaitu berhasil disimpan. Gambar sebelah kanan yaitu dengan **menggunakan transaksi**, jadi ini supaya keliatan jadi kita buat 2 blok commit. jadi ketika query 1 berhasil maka di commit kemudian query 2 dan query 3 berhasil maka dicommit. Namun disini kasusnya pada saat query ke 2 dia error maka hasilnya adalah query ke 3 dieksekusi tapi ada interupt yaitu di rollback maka query 2 dan query 3 tidak akan disimpan jadi kesimpulannya query pertama yang disimpan.
 

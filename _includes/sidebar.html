@@ -1,6 +1,6 @@
 <div id="profile" class="hide-on-med-and-down">
   <p class="flow-text"><a href="{{ site.baseurl }}/">{{ site.data.profile.status }}</a></p>
-  <img id="picture_profile" src="/static/img/profile.png" alt=""
+  <img id="picture_profile" src="{{ site.baseurl }}/static/img/profile.png" alt=""
     class="responsive-img z-depth-5" width="150" height="150"/>
   <h3>{{ site.data.profile.nama }}</h3>
   <div>
@@ -82,7 +82,7 @@
       {% for page in sorted_pages %}
         {% if page.title and page.title != "Arsip" and page.active %}
           <li class="collection-item">
-            <a href="{{ page.url }}" target="_self">
+            <a href="{{ page.url | prepend: site.baseurl }}" target="_self">
               {% if.page.icon %}
                 <i class="{{ page.icon }} link-icon colored"></i>
               {% endif %}
